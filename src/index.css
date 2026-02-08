@@ -71,24 +71,3 @@ button:focus-visible {
   }
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #000;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 5px;
-  border: 2px solid #000;
-  /* Creates padding effect inside track */
-}
-
-::-webkit-scrollbar-thumb:hover,
-::-webkit-scrollbar-thumb:active {
-  background: #f0f0f0;
-}

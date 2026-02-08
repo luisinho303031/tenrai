@@ -1812,7 +1812,7 @@ function App() {
                         </div>
 
                         {/* Lista de Avaliações */}
-                        <div className="ratings-list-container" style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                        <div className="ratings-list-container" style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column' }}>
                           <h3 style={{ fontSize: '0.9rem', fontWeight: 500, color: 'rgba(255,255,255,0.7)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Avaliações dos leitores</h3>
 
                           {obraRatingsList.length > 0 ? (

@@ -1657,35 +1657,20 @@
 }
 
 /* Mobile: horizontal scroll for tags */
+/* Mobile: wrap tags just like desktop - no slider */
 @media (max-width: 768px) {
   .obra-tags-container {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 0.5rem;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+    flex-wrap: wrap;
+    /* Changed from nowrap to wrap */
+    overflow-x: visible;
+    /* Changed from auto to visible */
+    padding-bottom: 0;
+    /* scrollbar properties removed */
   }
 
   .obra-tags-container .tag-badge {
     flex-shrink: 0;
-    white-space: nowrap;
-  }
-
-  .obra-tags-container::-webkit-scrollbar {
-    height: 6px;
-  }
-
-  .obra-tags-container::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 3px;
-  }
-
-  .obra-tags-container::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 3px;
-  }
-
-  .obra-tags-container::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.3);
+    white-space: normal;
+    /* Allow text to wrap if necessarily, though tag itself wraps */
   }
 }

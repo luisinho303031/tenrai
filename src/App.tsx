@@ -1534,8 +1534,56 @@ function App() {
           {activeSection === 'obra-detalhe' && !is404 && (
             <div className="section obra-detalhe-section">
               {loadingObra && (
-                <div style={{ padding: '4rem', textAlign: 'center', color: '#fff' }}>
-                  Carregando obra...
+                <div className="obra-container" style={{ maxWidth: '600px', margin: '0 auto' }}>
+                  {/* Skeleton Header: Cover + Info */}
+                  <div className="obra-header" style={{ display: 'grid', gridTemplateColumns: '140px 1fr', gap: '1.5rem', marginBottom: '1.5rem' }}>
+                    {/* Skeleton Cover */}
+                    <div className="skeleton" style={{ width: '100%', aspectRatio: '2/3', borderRadius: '2px' }}></div>
+
+                    {/* Skeleton Info */}
+                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '0.5rem' }}>
+                      <div className="skeleton" style={{ height: '1.5rem', width: '80%', borderRadius: '4px' }}></div>
+                      <div className="skeleton" style={{ height: '1rem', width: '60%', borderRadius: '4px' }}></div>
+                    </div>
+                  </div>
+
+                  {/* Skeleton Action Buttons */}
+                  <div style={{ display: 'flex', width: '100%', marginBottom: '2rem', gap: '1rem' }}>
+                    {[1, 2, 3, 4].map((i) => (
+                      <div key={`skel-btn-${i}`} className="skeleton" style={{ flex: 1, height: '3rem', borderRadius: '4px' }}></div>
+                    ))}
+                  </div>
+
+                  {/* Skeleton Description Box */}
+                  <div style={{ marginBottom: '2rem' }}>
+                    <div className="skeleton" style={{ height: '1rem', width: '30%', marginBottom: '0.8rem', borderRadius: '4px' }}></div>
+                    <div className="skeleton" style={{ height: '0.9rem', width: '100%', marginBottom: '0.5rem', borderRadius: '4px' }}></div>
+                    <div className="skeleton" style={{ height: '0.9rem', width: '95%', marginBottom: '0.5rem', borderRadius: '4px' }}></div>
+                    <div className="skeleton" style={{ height: '0.9rem', width: '85%', borderRadius: '4px' }}></div>
+                  </div>
+
+                  {/* Skeleton Tags */}
+                  <div style={{ marginBottom: '2rem' }}>
+                    <div className="skeleton" style={{ height: '1rem', width: '25%', marginBottom: '0.8rem', borderRadius: '4px' }}></div>
+                    <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                      {[1, 2, 3, 4, 5].map((i) => (
+                        <div key={`skel-tag-${i}`} className="skeleton" style={{ height: '1.8rem', width: '80px', borderRadius: '2px' }}></div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Skeleton Tabs */}
+                  <div style={{ marginBottom: '1rem', display: 'flex', gap: '2rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>
+                    <div className="skeleton" style={{ height: '1.2rem', width: '80px', borderRadius: '4px' }}></div>
+                    <div className="skeleton" style={{ height: '1.2rem', width: '100px', borderRadius: '4px' }}></div>
+                  </div>
+
+                  {/* Skeleton Chapter List */}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+                    {[1, 2, 3, 4, 5, 6].map((i) => (
+                      <div key={`skel-ch-${i}`} className="skeleton" style={{ height: '3rem', width: '100%', borderRadius: '4px' }}></div>
+                    ))}
+                  </div>
                 </div>
               )}
 

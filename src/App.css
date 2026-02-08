@@ -668,7 +668,6 @@
   display: flex;
   width: 100%;
   flex-shrink: 0;
-  gap: 1.5rem;
 }
 
 .recommended-card {

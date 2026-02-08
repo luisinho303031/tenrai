@@ -1565,7 +1565,7 @@ function App() {
                     <div className="obra-info-col" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                       <h1 className="obra-title-main" style={{ fontSize: '1.5rem', margin: '0 0 0.5rem 0', lineHeight: 1.2 }}>{currentObra.obr_nome}</h1>
 
-                      <div className="obra-meta" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem', marginBottom: '0.5rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)' }}>
+                      <div className="obra-meta" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem', marginBottom: '0.5rem', fontSize: '0.8rem', color: 'rgba(255,255,255,0.6)' }}>
                         {averageRating !== null && (
                           <span style={{ color: '#ffd700', display: 'flex', alignItems: 'center', gap: '0.2rem', fontWeight: 600 }}>
                             {averageRating.toFixed(1)} <MdStar size={14} />
@@ -1769,7 +1769,7 @@ function App() {
                         }}>
                           {/* Left Side: Summary */}
                           <div style={{ textAlign: 'center', minWidth: '100px' }}>
-                            <div style={{ fontSize: '2.8rem', fontWeight: 400, color: '#fff', lineHeight: 1, marginBottom: '0.5rem' }}>
+                            <div style={{ fontSize: '2rem', fontWeight: 400, color: '#fff', lineHeight: 1, marginBottom: '0.5rem' }}>
                               {averageRating ? averageRating.toFixed(1).replace('.', ',') : '0,0'}
                             </div>
                             <div style={{ display: 'flex', justifyContent: 'center', gap: '2px', color: 'rgb(255, 215, 0)', marginBottom: '0.5rem' }}>
@@ -1850,7 +1850,7 @@ function App() {
                                 <MdStarBorder size={48} style={{ opacity: 0.5 }} />
                                 <MdCancel size={24} color="#e53e3e" style={{ position: 'absolute', bottom: -5, right: -5, backgroundColor: '#000', borderRadius: '50%' }} />
                               </div>
-                              <p className="no-works-text" style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.4)' }}>Ainda não há avaliações para esta obra.</p>
+                              <p className="no-works-text" style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)' }}>Ainda não há avaliações para esta obra.</p>
                             </div>
                           )}
                         </div>

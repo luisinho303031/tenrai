@@ -42,8 +42,7 @@ const formatRelativeTime = (dateString: string) => {
   if (diffInYears === 1) return '1 ano'
   return `${diffInYears} anos`
 }
-import bannerHome from './assets/bannerhome.webp' // Importing the banner image
-import logoImg from './assets/logo.png' // Importing the logo
+
 import { supabase } from './lib/supabase'
 import { Drawer } from 'vaul'
 import NotFoundContent from './NotFoundContent'

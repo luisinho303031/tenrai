@@ -15,6 +15,13 @@
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 0px !important;
+    background: transparent !important;
+  }
+}
+
 /* Sidebar - Fixed 300px width */
 .sidebar {
   width: 300px;

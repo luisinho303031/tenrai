@@ -875,7 +875,7 @@
 
 @media (max-width: 600px) {
   .releases-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     /* 3 columns on mobile for covers */
     gap: 0.8rem;
   }

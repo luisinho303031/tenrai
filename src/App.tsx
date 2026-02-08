@@ -170,7 +170,7 @@ function App() {
       const slug = location.pathname.split('/obra/')[1]
       if (slug) {
         setLoadingObra(true)
-        fetch(`https://api.verdinha.wtf/obras/${slug}`, {
+        fetch(`/api/obras/${slug}`, {
           headers: { 'Authorization': API_TOKEN }
         })
           .then(res => res.json())
@@ -366,7 +366,7 @@ function App() {
         const tagParams = selectedTags.length > 0 ? `&tag_ids=${selectedTags.join(',')}` : ''
         const statusParams = selectedStatus !== null ? `&stt_id=${selectedStatus}` : ''
         const searchParams = debouncedSearch ? `&obr_nome=${encodeURIComponent(debouncedSearch)}` : ''
-        const response = await fetch(`https://api.verdinha.wtf/obras/search?pagina=${allWorksPage}&limite=24&gen_id=${allWorksGenre}&todos_generos=0&orderBy=rating&orderDirection=DESC${tagParams}${statusParams}${searchParams}`, {
+        const response = await fetch(`/api/obras/search?pagina=${allWorksPage}&limite=24&gen_id=${allWorksGenre}&todos_generos=0&orderBy=rating&orderDirection=DESC${tagParams}${statusParams}${searchParams}`, {
           headers: { 'Authorization': API_TOKEN }
         })
         const data: ApiResponse = await response.json()
@@ -402,7 +402,7 @@ function App() {
   useEffect(() => {
     const fetchTags = async () => {
       try {
-        const response = await fetch('https://api.verdinha.wtf/obras/filtros', {
+        const response = await fetch('/api/obras/filtros', {
           headers: { 'Authorization': API_TOKEN }
         })
         const data = await response.json()
@@ -541,7 +541,7 @@ function App() {
       try {
         setLoading(true)
 
-        const response = await fetch(`https://api.verdinha.wtf/obras/atualizacoes?pagina=${page}&limite=24&gen_id=${selectedGenre}`, {
+        const response = await fetch(`/api/obras/atualizacoes?pagina=${page}&limite=24&gen_id=${selectedGenre}`, {
           headers: {
             'Authorization': API_TOKEN
           }
@@ -579,7 +579,7 @@ function App() {
         }
 
         const promises = RECOMMENDED_SLUGS.map(async (slug) => {
-          const response = await fetch(`https://api.verdinha.wtf/obras/${slug}`, {
+          const response = await fetch(`/api/obras/${slug}`, {
             headers: { 'Authorization': API_TOKEN }
           })
           if (!response.ok) return null
@@ -614,7 +614,7 @@ function App() {
         }
 
         const promises = TRENDING_SLUGS.map(async (slug) => {
-          const response = await fetch(`https://api.verdinha.wtf/obras/${slug}`, {
+          const response = await fetch(`/api/obras/${slug}`, {
             headers: { 'Authorization': API_TOKEN }
           })
           if (!response.ok) return null
@@ -657,9 +657,9 @@ function App() {
   const getImageUrl = (obra: Obra | ObraDetalhada) => {
     if (!obra.obr_imagem) return ''
     if (obra.obr_imagem.startsWith('wp-content')) {
-      return `https://api.verdinha.wtf/cdn/${obra.obr_imagem}`
+      return `/api/cdn/${obra.obr_imagem}`
     }
-    return `https://api.verdinha.wtf/cdn/scans/${obra.scan_id}/obras/${obra.obr_id}/${obra.obr_imagem}`
+    return `/api/cdn/scans/${obra.scan_id}/obras/${obra.obr_id}/${obra.obr_imagem}`
   }
 
   const toggleFavorite = async () => {

@@ -1,0 +1,22 @@
+{
+    "id": "solo-leveling",
+    "meta": {
+        "titulo": "Solo Leveling",
+        "tituloAlternativo": "나 혼자만 레벨업",
+        "descricao": "Em um mundo onde caçadores, humanos que possuem habilidades mágicas, devem lutar contra monstros mortais para proteger a humanidade de certa destruição, um caçador notoriamente fraco chamado Sung Jinwoo se encontra em uma luta aparentemente interminável pela sobrevivência. Um dia, depois de sobreviver por pouco a uma masmorra esmagadoramente poderosa de Rank duplo que quase aniquila seu grupo, um programa misterioso chamado Sistema o escolhe como seu único jogador e, por sua vez, lhe dá a rara habilidade de subir de nível. Isso o coloca em uma jornada como ele nunca poderia ter imaginado.",
+        "ano": 2018,
+        "status": "Completo",
+        "autor": "Chugong",
+        "artista": "DUBU (REDICE STUDIO)"
+    },
+    "imagens": {
+        "capa": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105398-b673Vt5ZSuz3.jpg",
+        "banner": "https://cdn.tenrai.site/solo-leveling/banner.webp"
+    },
+    "generos": [
+        "Ação",
+        "Fantasia",
+        "Aventura",
+        "Sistema"
+    ]
+}

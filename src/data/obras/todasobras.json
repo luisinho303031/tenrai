@@ -1,0 +1,204 @@
+[
+  {
+    "id": "dragao-venenoso-a-lenda-do-asura",
+    "titulo": "Dragão Venenoso: A Lenda do Asura",
+    "tituloAlternativo": "Legend of Asura - The Venom Dragon",
+    "status": "Em Andamento",
+    "capa": "https://cdn.novelupdates.com/images/2025/04/Poison-Dragon-The-Legend-of-an-Asura.jpeg"
+  },
+  {
+    "id": "gosu",
+    "titulo": "Gosu",
+    "tituloAlternativo": "고수",
+    "status": "Em Andamento",
+    "capa": "https://upload.wikimedia.org/wikipedia/en/a/a6/Gosu_manhwa_cover_art.jpg"
+  },
+  {
+    "id": "serio-que-cultivar-e-dificil",
+    "titulo": "Sério que Cultivar é Difícil?",
+    "tituloAlternativo": "People Actually Think Cultivation Is Hard?",
+    "status": "Em Andamento",
+    "capa": "https://preview.redd.it/has-anyone-read-the-novel-for-this-i-want-spoilers-people-v0-xkchb39mqiwf1.jpeg?auto=webp&s=eb3419ef77ba19471c2e858f5a6550a2bc8c4848"
+  },
+  {
+    "id": "o-unico-necromante",
+    "titulo": "O Único Necromante",
+    "tituloAlternativo": "The Lone Necromancer",
+    "status": "Em Andamento",
+    "capa": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139572-e3vwLcOVQISn.jpg"
+  },
+  {
+    "id": "nanotecnologia-marcial",
+    "titulo": "Nanotecnologia Marcial",
+    "tituloAlternativo": "",
+    "status": "Em Andamento",
+    "capa": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx120980-RZ9WLd0o9hyo.jpg"
+  },
+  {
+    "id": "espadachim-em-tempo-integral",
+    "titulo": "Espadachim Em Tempo Integral",
+    "tituloAlternativo": "Full-Time Swordsman",
+    "status": "Em Andamento",
+    "capa": "https://static.comix.to/b86a/i/a/e7/68e08f59f3fe2.jpg"
+  },
+  {
+    "id": "cronicas-do-retorno-do-deus-marcial",
+    "titulo": "Crônicas do Retorno do Deus Marcial",
+    "tituloAlternativo": "",
+    "status": "Em Andamento",
+    "capa": "https://pbs.twimg.com/media/FvFcFCGXgAIo1pF.jpg"
+  },
+  {
+    "id": "renascimento-do-doutor",
+    "titulo": "Renascimento do Doutor",
+    "tituloAlternativo": "Doctor's Rebirth",
+    "status": "Em Andamento",
+    "capa": "https://preview.redd.it/doctors-rebirth-v0-93swm9hhnucg1.jpeg?width=640&crop=smart&auto=webp&s=4ecfcc1602f70375fb0f7c219f9aa7cf20dfd942",
+    "generos": [
+      "Ação",
+      "Aventura",
+      "Artes Marciais",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "o-rei-demonio-de-18-anos",
+    "titulo": "O Rei Demônio de 18 Anos",
+    "tituloAlternativo": "The 18-Year-Old Demon King",
+    "status": "Em Andamento",
+    "capa": "https://storage.vexmanga.com/public/upload/2026/02/04/18ed161b-e976-4fa9-9f45-d9cc23b84744.webp",
+    "generos": [
+      "Ação",
+      "Aventura",
+      "Artes Marciais",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "a-lenda-da-lamina-do-norte",
+    "titulo": "A Lenda da Lâmina do Norte",
+    "tituloAlternativo": "The Legend of the Northern Blade",
+    "status": "Completo",
+    "capa": "https://i.redd.it/329kyf273dnb1.jpg",
+    "generos": [
+      "Ação",
+      "Artes Marciais",
+      "Murim",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "dominacao-do-imperador",
+    "titulo": "Dominação do Imperador",
+    "tituloAlternativo": "",
+    "status": "Em Andamento",
+    "capa": "https://manhuaplus.com/wp-content/uploads/2022/03/thumb-1.jpg",
+    "generos": [
+      "Ação",
+      "Artes Marciais",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "demonio-celestial-quer-viver-em-paz",
+    "titulo": "Demônio Celestial Quer Viver em Paz",
+    "tituloAlternativo": "",
+    "status": "Em Andamento",
+    "capa": "https://cdn.nexustoons.com/covers/3279fe6c180ae65a_1770653468318384385.webp",
+    "generos": [
+      "Ação",
+      "Aventura",
+      "Fantasia",
+      "Artes Marciais"
+    ]
+  },
+  {
+    "id": "o-retorno-do-demonio-louco",
+    "titulo": "O Retorno do Demônio Louco",
+    "tituloAlternativo": "Return of the Mad Demon",
+    "status": "Em Andamento",
+    "capa": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx137304-XZ91kOmUIMQo.png",
+    "generos": [
+      "Ação",
+      "Aventura",
+      "Artes Marciais",
+      "Murim",
+      "Fantasia",
+      "Comédia"
+    ]
+  },
+  {
+    "id": "o-grande-soberano-demonio-celestial",
+    "titulo": "O Grande Soberano Demônio Celestial",
+    "tituloAlternativo": "The Divine Demon's Grand Ascension",
+    "status": "Em Andamento",
+    "capa": "https://cdn.nexustoons.com/covers/be29fe521c8bbbbe_1770163670804902851.webp",
+    "generos": [
+      "Ação",
+      "Fantasia",
+      "Aventura",
+      "Artes Marciais"
+    ]
+  },
+  {
+    "id": "amigo-de-infancia-do-zenite",
+    "titulo": "Amigo de Infância do Zênite",
+    "tituloAlternativo": "",
+    "status": "Em Andamento",
+    "capa": "https://cdn.nexustoons.com/covers/88570849e933b5f4_1770166917396124896.png",
+    "generos": [
+      "Ação",
+      "Aventura",
+      "Artes Marciais",
+      "Shounen",
+      "Comédia"
+    ]
+  },
+  {
+    "id": "as-cronicas-do-demonio-celestial",
+    "titulo": "As Crônicas do Demônio Celestial",
+    "tituloAlternativo": "",
+    "status": "Completo",
+    "capa": "https://preview.redd.it/the-chronicles-of-heavenly-demon-v0-0ki2vgbf7skf1.jpg?width=1080&crop=smart&auto=webp&s=a65c3412e1ca2280e62f82acb308cef8a8734b38",
+    "generos": [
+      "Ação",
+      "Aventura",
+      "Artes Marciais",
+      "Romance",
+      "Fantasia",
+      "Murim"
+    ]
+  },
+  {
+    "id": "eu-reencarnei-como-o-herdeiro-louco",
+    "titulo": "Eu Reencarnei como o Herdeiro Louco",
+    "tituloAlternativo": "",
+    "status": "Em Andamento",
+    "capa": "https://cdn.nexustoons.com/covers/d422ba95efa5c788_1770153322184996262.gif",
+    "generos": [
+      "Ação",
+      "Aventura",
+      "Artes Marciais"
+    ]
+  },
+  {
+    "id": "o-demonio-celestial-nao-pode-viver-uma-vida-normal",
+    "titulo": "O Demônio Celestial não pode viver uma Vida Normal",
+    "tituloAlternativo": "",
+    "status": "Em Andamento",
+    "capa": "https://cdn.nexustoons.com/covers/709b7acbefc145a3_1770155147680432369.jpg",
+    "generos": [
+      "Ação",
+      "Aventura",
+      "Artes Marciais",
+      "Murim"
+    ]
+  },
+  {
+    "id": "solo-leveling",
+    "titulo": "Solo Leveling",
+    "tituloAlternativo": "나 혼자만 レベルアップ",
+    "status": "Completo",
+    "capa": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105398-b673Vt5ZSuz3.jpg"
+  }
+]

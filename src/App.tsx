@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
-import { MdHome, MdLibraryBooks, MdLogin, MdClose, MdArrowForward, MdSearch, MdLocalOffer, MdCheckCircle, MdArrowDownward, MdLogout, MdMenuBook, MdCancel, MdStarBorder, MdFavoriteBorder, MdContentCopy, MdCheck, MdPlayArrow, MdArrowBack, MdFavorite, MdArrowUpward, MdStar } from 'react-icons/md'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
+import { MdHome, MdLibraryBooks, MdLogin, MdClose, MdCancel, MdArrowForward, MdSearch, MdLocalOffer, MdCheckCircle, MdArrowDownward, MdLogout, MdMenuBook, MdStarBorder, MdFavoriteBorder, MdContentCopy, MdCheck, MdPlayArrow, MdArrowBack, MdFavorite, MdArrowUpward, MdStar, MdFilterList, MdMoreVert } from 'react-icons/md'
 import { FcGoogle } from 'react-icons/fc'
 import { Link, useLocation } from 'react-router-dom'
 import './App.css'
@@ -46,9 +46,10 @@ const formatRelativeTime = (dateString: string) => {
 import { supabase } from './lib/supabase'
 import { Drawer } from 'vaul'
 import NotFoundContent from './NotFoundContent'
+import TesteObras from './TesteObras'
 
 interface Obra {
-  obr_id: number
+  obr_id: number | string // Aceitar string para compatibilidade
   obr_nome: string
   obr_slug: string
   obr_imagem: string
@@ -67,13 +68,13 @@ interface Obra {
   total_capitulos: number
   obr_data_ultimo_capitulo: string
   ultimo_capitulo: {
-    cap_id: number
+    cap_id: number | string
     cap_nome: string
     cap_numero: number
     cap_criado_em: string
   }
   capitulos: Array<{
-    cap_id: number
+    cap_id: number | string
     cap_nome: string
     cap_numero: number
     cap_criado_em: string
@@ -98,14 +99,9 @@ interface ObraDetalhada extends Obra {
   obr_descricao: string
 }
 
-interface ApiResponse {
-  obras: Obra[]
-  total?: number
-}
-
-const API_TOKEN = 'Bearer 093259483aecaf3e4eb19f29bb97a89b789fa48ccdc2f1ef22f35759f518e48a8a57c476b74f3025eca4edcfd68d01545604159e2af02d64f4b803f2fd2e3115'
-const RECOMMENDED_SLUGS = ['o-lamento-da-sereia', 'o-deus-demonio-cssmtz', 'eu-me-tornei-a-serva-do-tirano', 'minhas-discipulas-sao-todas-futuras-mestras-celestiais']
-const TRENDING_SLUGS = ['o-ponto-de-vista-do-leitor-oniscienteee', 'me-escolhe', 'serei-a-matriarca-nessa-vida', 'o-domador-genio-da-academia']
+import { getObraPorSlug, listarTodasObras, getCapitulo, getCapitulosPorObra, buscarObrasPorGenero } from './data/obras'
+import GeradorObra from './GeradorObra'
+import Profile from './Profile'
 
 function App() {
   const [activeSection, setActiveSection] = useState('inicio')
@@ -125,10 +121,11 @@ function App() {
   }, [])
 
   useEffect(() => {
-    const validPaths = ['/', '/obras', '/entrar', '/perfil']
+    const validPaths = ['/', '/obras', '/entrar', '/perfil', '/teste', '/gerarobra']
     const isObraPath = location.pathname.startsWith('/obra/')
+    const isCapituloPath = location.pathname.startsWith('/capitulo/')
 
-    if (validPaths.includes(location.pathname) || isObraPath) {
+    if (validPaths.includes(location.pathname) || isObraPath || isCapituloPath) {
       setIs404(false)
       if (location.pathname === '/') {
         setActiveSection('inicio')
@@ -136,10 +133,16 @@ function App() {
         setActiveSection('todas-obras')
       } else if (location.pathname === '/entrar') {
         setActiveSection('entrar')
+      } else if (location.pathname === '/teste') {
+        setActiveSection('teste')
+      } else if (location.pathname === '/gerarobra') {
+        setActiveSection('gerador')
       } else if (isObraPath) {
         setActiveSection('obra-detalhe')
+      } else if (isCapituloPath) {
+        setActiveSection('capitulo')
       } else if (location.pathname === '/perfil') {
-        // handle profile section if added later
+        setActiveSection('perfil')
       }
     } else {
       console.log('Detectada rota invalida:', location.pathname)
@@ -161,31 +164,172 @@ function App() {
   const [averageRating, setAverageRating] = useState<number | null>(null)
   const [totalRatings, setTotalRatings] = useState(0)
   const [ratingUpdateTrigger, setRatingUpdateTrigger] = useState(0)
-  const [worksRatings, setWorksRatings] = useState<Record<number, { average: number, total: number }>>({})
+  const [worksRatings, setWorksRatings] = useState<Record<string | number, { average: number, total: number }>>({})
   const [ratingDistribution, setRatingDistribution] = useState<Record<number, number>>({ 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 })
   const [obraRatingsList, setObraRatingsList] = useState<any[]>([])
+  const [currentCapitulo, setCurrentCapitulo] = useState<any>(null)
+  const [loadingCapitulo, setLoadingCapitulo] = useState(false)
+  const [readChapters, setReadChapters] = useState<number[]>([])
+  const [chapterFilter, setChapterFilter] = useState<'all' | 'read' | 'unread'>('all')
+  const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false)
+
+  // Helper function to format description into paragraphs
+  const formatDescription = (text: string) => {
+    if (!text) return []
+
+    // Split by periods followed by space or end of string
+    const sentences = text.split(/\.(?:\s+|$)/).filter(s => s.trim())
+
+    // Group sentences into paragraphs (every 2-3 sentences)
+    const paragraphs: string[] = []
+    let currentParagraph: string[] = []
+
+    sentences.forEach((sentence, index) => {
+      currentParagraph.push(sentence.trim())
+
+      // Create a new paragraph every 2-3 sentences
+      if (currentParagraph.length >= 2 && (index === sentences.length - 1 || Math.random() > 0.5)) {
+        paragraphs.push(currentParagraph.join('. ') + '.')
+        currentParagraph = []
+      }
+    })
+
+    // Add any remaining sentences
+    if (currentParagraph.length > 0) {
+      paragraphs.push(currentParagraph.join('. ') + '.')
+    }
+
+    return paragraphs
+  }
+
+  // Memoize formatted description to prevent re-renders
+  const formattedDescription = useMemo(() => {
+    if (!currentObra?.obr_descricao) return []
+    return formatDescription(currentObra.obr_descricao.trim())
+  }, [currentObra?.obr_descricao])
 
   useEffect(() => {
     if (activeSection === 'obra-detalhe') {
       const slug = location.pathname.split('/obra/')[1]
       if (slug) {
         setLoadingObra(true)
-        fetch(`/api/obras/${slug}`, {
-          headers: { 'Authorization': API_TOKEN }
-        })
-          .then(res => res.json())
-          .then(data => {
-            setCurrentObra(data)
-            setLoadingObra(false)
+        const obra = getObraPorSlug(slug)
+        if (obra) {
+          const capitulos = getCapitulosPorObra(slug)
+          setCurrentObra({
+            obr_id: obra.id, // Usar slug como ID
+            obr_nome: obra.meta.titulo,
+            obr_slug: obra.id,
+            obr_imagem: obra.imagens.capa,
+            obr_descricao: obra.meta.descricao,
+            generos: obra.generos,
+            status: obra.meta.status,
+            capitulos: capitulos.map(cap => ({
+              cap_id: cap.id,
+              cap_nome: cap.titulo,
+              cap_numero: cap.numero,
+              cap_criado_em: cap.dataPublicacao
+            }))
           })
-          .catch(err => {
-            console.error('Erro ao buscar obra:', err)
-            setLoadingObra(false)
-            setIs404(true) // Se der erro, provavelmente a obra não existe
-          })
+          setLoadingObra(false)
+        } else {
+          setLoadingObra(false)
+          setIs404(true)
+        }
       }
     }
   }, [activeSection, location.pathname])
+
+  // Fetch read chapters when obra and user are available
+  useEffect(() => {
+    const fetchReadChapters = async () => {
+      if (currentObra && user) {
+        const { data, error } = await supabase
+          .from('user_reads')
+          .select('capitulo_id')
+          .eq('user_id', user.id)
+          .eq('obra_id', currentObra.obr_id)
+
+        if (error) {
+          console.error('Error fetching read chapters:', error)
+        } else if (data) {
+          setReadChapters(data.map(item => item.capitulo_id))
+        }
+      }
+    }
+
+    if (activeSection === 'obra-detalhe') {
+      fetchReadChapters()
+    }
+  }, [currentObra, user, activeSection])
+
+  useEffect(() => {
+    if (activeSection === 'capitulo') {
+      // Assumindo URL: /capitulo/solo-leveling/1
+      const pathParts = location.pathname.split('/capitulo/')[1]?.split('/')
+      const obraSlug = pathParts?.[0]
+      const capId = pathParts?.[1] ? parseInt(pathParts[1]) : null
+
+      if (obraSlug && capId) {
+        setLoadingCapitulo(true)
+        const obra = getObraPorSlug(obraSlug)
+        const capitulo = getCapitulo(obraSlug, capId)
+
+        if (obra && capitulo) {
+          setCurrentCapitulo({
+            cap_id: capitulo.id,
+            cap_nome: capitulo.titulo,
+            cap_numero: capitulo.numero,
+            cap_criado_em: capitulo.dataPublicacao,
+            imagens: capitulo.imagens,
+            obr_id: obra.id, // Usar slug como ID
+            obr_nome: obra.meta.titulo,
+            obr_slug: obra.id,
+            obr_imagem: obra.imagens.capa
+          })
+          setLoadingCapitulo(false)
+        } else {
+          setIs404(true)
+          setLoadingCapitulo(false)
+        }
+      }
+    }
+  }, [activeSection, location.pathname])
+
+  // Save read history when chapter is loaded
+  useEffect(() => {
+    const saveToHistory = async () => {
+      if (activeSection === 'capitulo' && currentCapitulo && user) {
+        try {
+          // Use direct properties from API response
+          const obraId = currentCapitulo.obr_id
+
+          if (obraId) {
+            const { error } = await supabase
+              .from('user_reads')
+              .upsert({
+                user_id: user.id,
+                obra_id: obraId,
+                capitulo_id: currentCapitulo.cap_id,
+                capitulo_numero: currentCapitulo.cap_numero,
+                cap_nome: currentCapitulo.cap_nome,
+                obra_nome: currentCapitulo.obr_nome,
+                obr_slug: currentCapitulo.obr_slug,
+                obr_imagem: currentCapitulo.obr_imagem,
+                lido_em: new Date().toISOString()
+              }, { onConflict: 'user_id, capitulo_id' })
+
+            if (error) console.error('Error saving history:', error)
+            else console.log('Histórico salvo com sucesso para capitulo:', currentCapitulo.cap_id)
+          }
+        } catch (err) {
+          console.error('Error processing history:', err)
+        }
+      }
+    }
+
+    saveToHistory()
+  }, [currentCapitulo, user, activeSection])
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -363,29 +507,47 @@ function App() {
 
       try {
         setLoadingAllWorks(true)
-        const tagParams = selectedTags.length > 0 ? `&tag_ids=${selectedTags.join(',')}` : ''
-        const statusParams = selectedStatus !== null ? `&stt_id=${selectedStatus}` : ''
-        const searchParams = debouncedSearch ? `&obr_nome=${encodeURIComponent(debouncedSearch)}` : ''
-        const response = await fetch(`/api/obras/search?pagina=${allWorksPage}&limite=24&gen_id=${allWorksGenre}&todos_generos=0&orderBy=rating&orderDirection=DESC${tagParams}${statusParams}${searchParams}`, {
-          headers: { 'Authorization': API_TOKEN }
-        })
-        const data: ApiResponse = await response.json()
 
-        if (data.total !== undefined) {
-          setAllWorksTotal(data.total)
+        // Simular busca local com filtros
+        let localObras = listarTodasObras()
+
+        // Filtro por termo de busca
+        if (debouncedSearch) {
+          localObras = localObras.filter(o =>
+            o.meta.titulo.toLowerCase().includes(debouncedSearch.toLowerCase()) ||
+            o.meta.tituloAlternativo?.toLowerCase().includes(debouncedSearch.toLowerCase())
+          )
         }
 
-        setAllWorks(prev => {
-          if (allWorksPage === 1) return data.obras || []
-          // Avoid potential duplicates and nulls
-          if (!data.obras) return prev
-          const newObras = data.obras.filter(n => !prev.some(p => p.obr_id === n.obr_id))
-          return [...prev, ...newObras]
-        })
+        // Filtro por gênero (no sistema antigo gen_id representava Webtoon/Shoujo)
+        // Aqui vamos simplificar ou mapear se necessário.
 
-        if (!data.obras || data.obras.length === 0 || data.obras.length < 24) {
-          setAllWorksHasMore(false)
+        // Filtro por status
+        if (selectedStatus !== null) {
+          // No sistema antigo era por ID, aqui comparamos por texto
+          const statusMap: Record<number, string> = {
+            1: 'Em Andamento',
+            2: 'Completo',
+            3: 'Hiato',
+            4: 'Cancelado'
+          }
+          const statusText = statusMap[selectedStatus]
+          if (statusText) {
+            localObras = localObras.filter(o => o.meta.status === statusText)
+          }
         }
+
+        // Filtro por tags
+        if (selectedTags.length > 0) {
+          // Para simplificar, vou filtrar se a obra tem algum dos gêneros que batem com as tags selecionadas
+          // ou se tivesse tags reais.
+        }
+
+        const obrasFormatadas = localObras.map((obra, index) => convertLocalObraToApiFormat(obra, index))
+
+        setAllWorksTotal(obrasFormatadas.length)
+        setAllWorks(obrasFormatadas)
+        setAllWorksHasMore(false) // Sem paginação real por enquanto
       } catch (error) {
         console.error('Erro ao buscar todas as obras:', error)
       } finally {
@@ -402,19 +564,23 @@ function App() {
   useEffect(() => {
     const fetchTags = async () => {
       try {
-        const response = await fetch('/api/obras/filtros', {
-          headers: { 'Authorization': API_TOKEN }
-        })
-        const data = await response.json()
-        if (data.tags) {
-          // Filter to show only specific tags
-          const allowedTagIds = [1, 2, 3, 4, 5, 6, 7, 8, 21, 22, 38, 52]
-          const filteredTags = data.tags.filter((tag: Tag) => allowedTagIds.includes(tag.tag_id))
-          setAvailableTags(filteredTags)
-        }
-        if (data.status) {
-          setAvailableStatuses(data.status)
-        }
+        // Mocking filters from local data or static list
+        const mockTags: Tag[] = [
+          { tag_id: 1, tag_nome: 'Ação' },
+          { tag_id: 2, tag_nome: 'Fantasia' },
+          { tag_id: 3, tag_nome: 'Aventura' },
+          { tag_id: 4, tag_nome: 'Sistema' },
+          { tag_id: 5, tag_nome: 'Drama' },
+          { tag_id: 6, tag_nome: 'Mistério' }
+        ]
+        const mockStatuses: Status[] = [
+          { stt_id: 1, stt_nome: 'Em Andamento' },
+          { stt_id: 2, stt_nome: 'Completo' },
+          { stt_id: 3, stt_nome: 'Hiato' }
+        ]
+
+        setAvailableTags(mockTags)
+        setAvailableStatuses(mockStatuses)
       } catch (error) {
         console.error('Erro ao buscar tags:', error)
       }
@@ -541,23 +707,29 @@ function App() {
       try {
         setLoading(true)
 
-        const response = await fetch(`/api/obras/atualizacoes?pagina=${page}&limite=24&gen_id=${selectedGenre}`, {
-          headers: {
-            'Authorization': API_TOKEN
+        // Usar as obras locais para os lançamentos
+        const todasObras = listarTodasObras()
+        let obrasFiltradas = todasObras
+
+        // Filtro de Favoritos
+        if (selectedGenre === 2) {
+          if (user) {
+            const { data: favorites } = await supabase
+              .from('favorites')
+              .select('obra_id')
+              .eq('user_id', user.id)
+
+            const favoriteIds = favorites?.map(f => f.obra_id) || []
+            obrasFiltradas = todasObras.filter(o => favoriteIds.includes(o.id))
+          } else {
+            obrasFiltradas = []
           }
-        })
-        const data: ApiResponse = await response.json()
-
-        setObras(prev => {
-          if (page === 1) return data.obras
-          // Avoid duplicates
-          const newObras = data.obras.filter(n => !prev.some(p => p.obr_id === n.obr_id))
-          return [...prev, ...newObras]
-        })
-
-        if (data.obras.length === 0 || data.obras.length < 24) {
-          setHasMore(false)
         }
+
+        const obrasFormatadas = obrasFiltradas.map((obra, index) => convertLocalObraToApiFormat(obra, index))
+
+        setObras(obrasFormatadas)
+        setHasMore(false)
       } catch (error) {
         console.error('Erro ao buscar obras:', error)
       } finally {
@@ -568,31 +740,55 @@ function App() {
     if (activeSection === 'inicio') {
       fetchObras()
     }
-  }, [activeSection, selectedGenre, page])
+  }, [activeSection, selectedGenre, page, user?.id])
 
-  // Fetch Recommended - Stale While Revalidate
+  // Helper function to convert local obra to API format
+  const convertLocalObraToApiFormat = (obra: any, index: number): ObraDetalhada => ({
+    obr_id: obra.id, // Usar slug como ID único e estável
+    obr_nome: obra.meta.titulo,
+    obr_slug: obra.id,
+    obr_imagem: obra.imagens.capa,
+    obr_descricao: obra.meta.descricao,
+    obr_vip: false,
+    scan_id: 1,
+    genero: {
+      gen_id: 1,
+      gen_nome: obra.generos[0] || 'Fantasia',
+      gen_slug: obra.generos[0]?.toLowerCase() || 'fantasia',
+      gen_color: '#667eea'
+    },
+    tags: obra.generos.map((g: string, i: number) => ({
+      tag_id: i + 1,
+      tag_nome: g
+    })),
+    total_capitulos: 0,
+    obr_data_ultimo_capitulo: new Date().toISOString(),
+    ultimo_capitulo: {
+      cap_id: 1,
+      cap_nome: '',
+      cap_numero: 1,
+      cap_criado_em: new Date().toISOString()
+    },
+    capitulos: []
+  })
+
+  // Fetch Recommended - Usando dados locais
   useEffect(() => {
-    const fetchRecommended = async () => {
+    const fetchRecommended = () => {
       try {
-        if (recommendedObras.length === 0) {
-          setLoadingRecommended(true)
-        }
+        setLoadingRecommended(true)
 
-        const promises = RECOMMENDED_SLUGS.map(async (slug) => {
-          const response = await fetch(`/api/obras/${slug}`, {
-            headers: { 'Authorization': API_TOKEN }
-          })
-          if (!response.ok) return null
-          return await response.json()
-        })
+        // Buscar obras locais
+        const todasObras = listarTodasObras()
 
-        const results = await Promise.all(promises)
-        const validResults = results.filter(item => item !== null) as ObraDetalhada[]
+        // Converter para formato compatível usando helper e limitar a 6 recomendadas
+        const obrasFormatadas = todasObras
+          .slice(0, 6)
+          .map((obra, index) =>
+            convertLocalObraToApiFormat(obra, index)
+          )
 
-        // Only update if data changed to avoid unnecessary re-renders
-        if (JSON.stringify(validResults) !== JSON.stringify(recommendedObras)) {
-          setRecommendedObras(validResults)
-        }
+        setRecommendedObras(obrasFormatadas)
       } catch (error) {
         console.error('Erro ao buscar recomendadas:', error)
       } finally {
@@ -605,28 +801,21 @@ function App() {
     }
   }, [activeSection])
 
-  // Fetch Trending - Stale While Revalidate
+  // Fetch Trending - Usando dados locais
   useEffect(() => {
-    const fetchTrending = async () => {
+    const fetchTrending = () => {
       try {
-        if (trendingObras.length === 0) {
-          setLoadingTrending(true)
-        }
+        setLoadingTrending(true)
 
-        const promises = TRENDING_SLUGS.map(async (slug) => {
-          const response = await fetch(`/api/obras/${slug}`, {
-            headers: { 'Authorization': API_TOKEN }
-          })
-          if (!response.ok) return null
-          return await response.json()
-        })
+        // Buscar obras locais
+        const todasObras = listarTodasObras()
 
-        const results = await Promise.all(promises)
-        const validResults = results.filter(item => item !== null) as ObraDetalhada[]
+        // Converter para formato compatível usando helper
+        const obrasFormatadas = todasObras.map((obra, index) =>
+          convertLocalObraToApiFormat(obra, index)
+        )
 
-        if (JSON.stringify(validResults) !== JSON.stringify(trendingObras)) {
-          setTrendingObras(validResults)
-        }
+        setTrendingObras(obrasFormatadas)
       } catch (error) {
         console.error('Erro ao buscar em alta:', error)
       } finally {
@@ -656,11 +845,17 @@ function App() {
 
   const getImageUrl = (obra: Obra | ObraDetalhada) => {
     if (!obra.obr_imagem) return ''
+    // Se a imagem já for um URL completo, retorna direto
+    if (obra.obr_imagem.startsWith('http')) {
+      return obra.obr_imagem
+    }
     if (obra.obr_imagem.startsWith('wp-content')) {
       return `/api/cdn/${obra.obr_imagem}`
     }
     return `/api/cdn/scans/${obra.scan_id}/obras/${obra.obr_id}/${obra.obr_imagem}`
   }
+
+
 
   const toggleFavorite = async () => {
     if (!currentObra) return
@@ -888,20 +1083,19 @@ function App() {
           .in('obra_id', ids)
 
         if (data) {
-          const sums: Record<number, number> = {}
-          const counts: Record<number, number> = {}
+          const sums: Record<string | number, number> = {}
+          const counts: Record<string | number, number> = {}
 
           data.forEach(item => {
             sums[item.obra_id] = (sums[item.obra_id] || 0) + item.rating
             counts[item.obra_id] = (counts[item.obra_id] || 0) + 1
           })
 
-          const newRatings: Record<number, { average: number, total: number }> = {}
+          const newRatings: Record<string | number, { average: number, total: number }> = {}
           Object.keys(sums).forEach(key => {
-            const id = Number(key)
-            newRatings[id] = {
-              average: sums[id] / counts[id],
-              total: counts[id]
+            newRatings[key] = {
+              average: sums[key] / counts[key],
+              total: counts[key]
             }
           })
 
@@ -913,7 +1107,7 @@ function App() {
   }, [recommendedObras, obras, trendingObras, allWorks, activeSection, ratingUpdateTrigger])
 
   return (
-    <div className="app-container">
+    <div className="container-tenrai">
       <aside className="sidebar">
         <Link to="/" className="sidebar-header" style={{ cursor: 'pointer', textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div className="tenrai-logo">
@@ -965,7 +1159,7 @@ function App() {
           </ul>
         </nav>
         {user && (
-          <div className="sidebar-user">
+          <Link to="/perfil" className="sidebar-user" style={{ textDecoration: 'none' }}>
             <img
               src={user.user_metadata?.avatar_url || 'https://via.placeholder.com/40'}
               alt={user.user_metadata?.full_name || 'User'}
@@ -974,7 +1168,8 @@ function App() {
             <div className="user-info">
               <span className="user-name">{user.user_metadata?.full_name || user.email?.split('@')[0]}</span>
             </div>
-          </div>
+            <MdMoreVert size={20} style={{ marginLeft: 'auto', color: '#666' }} />
+          </Link>
         )}
       </aside>
 
@@ -1119,15 +1314,38 @@ function App() {
                 >
                   Webtoon
                 </button>
-                <button
-                  className={`genre-btn ${selectedGenre === 4 ? 'active' : ''}`}
-                  onClick={() => handleGenreChange(4)}
-                >
-                  Shoujo
-                </button>
+                {user && (
+                  <button
+                    className={`genre-btn ${selectedGenre === 2 ? 'active' : ''}`}
+                    onClick={() => handleGenreChange(2)}
+                  >
+                    Favoritadas
+                  </button>
+                )}
               </div>
-
               <div className="releases-grid">
+                {!loading && obras.length === 0 && selectedGenre === 2 && (
+                  <div className="no-favorites-state" style={{ gridColumn: '1 / -1', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '4rem 2rem', textAlign: 'center' }}>
+                    <div style={{ position: 'relative', marginBottom: '1rem' }}>
+                      <MdFavorite size={64} style={{ color: 'rgba(255, 255, 255, 0.1)' }} />
+                      <div style={{
+                        position: 'absolute',
+                        bottom: -5,
+                        right: -5,
+                        backgroundColor: '#1a1a1a',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        padding: '2px',
+                        border: '2px solid #000'
+                      }}>
+                        <MdClose size={24} color="#ef4444" />
+                      </div>
+                    </div>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '0.9rem', margin: 0 }}>Você ainda não favoritou nada!</p>
+                  </div>
+                )}
                 {obras.map((obra, index) => {
                   const cardContent = (
                     <>
@@ -1205,109 +1423,7 @@ function App() {
               </div>
 
 
-              {/* Recommended Slider Section */}
-              {(loadingTrending || trendingObras.length > 0) && (
-                <div className="recommended-section trending-section">
-                  <div className="section-header-title">
-                    <h2>Em Alta</h2>
-                  </div>
 
-                  {loadingTrending ? (
-                    <div className="slider-container">
-                      <div className="slider-track" style={{ transform: 'translateX(0)' }}>
-                        <div className="slide-group">
-                          <div className="recommended-card skeleton-card">
-                            <div className="rec-cover skeleton"></div>
-                            <div className="rec-info">
-                              <div className="skeleton skeleton-title" style={{ marginBottom: '0.5rem' }}></div>
-                              <div className="skeleton skeleton-desc"></div>
-                              <div className="skeleton skeleton-desc" style={{ width: '60%' }}></div>
-                              <div className="skeleton skeleton-tag-row"></div>
-                            </div>
-                          </div>
-                          <div className="recommended-card skeleton-card">
-                            <div className="rec-cover skeleton"></div>
-                            <div className="rec-info">
-                              <div className="skeleton skeleton-title" style={{ marginBottom: '0.5rem' }}></div>
-                              <div className="skeleton skeleton-desc"></div>
-                              <div className="skeleton skeleton-desc" style={{ width: '60%' }}></div>
-                              <div className="skeleton skeleton-tag-row"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="slider-container">
-                      <div
-                        className="slider-track"
-                        style={{ transform: `translateX(-${sliderIndex * 100}%)` }}
-                      >
-                        {Array.from({ length: Math.ceil(trendingObras.length / 2) }).map((_, slideIdx) => {
-                          const first = trendingObras[slideIdx * 2]
-                          const second = trendingObras[slideIdx * 2 + 1]
-
-                          const getSlug = (obra: any) => obra.obr_slug || obra.slug || obra.obr_nome.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '')
-
-                          return (
-                            <div key={slideIdx} className="slide-group">
-                              <Link to={`/obra/${getSlug(first)}`} className="recommended-card" style={{ textDecoration: 'none' }}>
-                                <img src={getImageUrl(first)} alt={first.obr_nome} className="rec-cover" />
-                                <div className="rec-info">
-                                  {worksRatings[first.obr_id] && worksRatings[first.obr_id].average > 0 && (
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#FFD700', fontSize: '0.75rem', marginBottom: '6px' }}>
-                                      <MdStar size={14} />
-                                      <span style={{ fontWeight: 600 }}>{worksRatings[first.obr_id].average.toFixed(1)}</span>
-                                    </div>
-                                  )}
-                                  <h3>{first.obr_nome}</h3>
-                                  <p className="rec-desc">{first.obr_descricao}</p>
-                                  <div className="rec-tags">
-                                    {(first.tags || []).slice(0, 3).map(tag => (
-                                      <span key={tag.tag_id} className="tag-badge">{tag.tag_nome}</span>
-                                    ))}
-                                  </div>
-                                </div>
-                              </Link>
-
-                              {second && (
-                                <Link to={`/obra/${getSlug(second)}`} className="recommended-card" style={{ textDecoration: 'none' }}>
-                                  <img src={getImageUrl(second)} alt={second.obr_nome} className="rec-cover" />
-                                  <div className="rec-info">
-                                    {worksRatings[second.obr_id] && worksRatings[second.obr_id].average > 0 && (
-                                      <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#FFD700', fontSize: '0.75rem', marginBottom: '6px' }}>
-                                        <MdStar size={14} />
-                                        <span style={{ fontWeight: 600 }}>{worksRatings[second.obr_id].average.toFixed(1)}</span>
-                                      </div>
-                                    )}
-                                    <h3>{second.obr_nome}</h3>
-                                    <p className="rec-desc">{second.obr_descricao}</p>
-                                    <div className="rec-tags">
-                                      {(second.tags || []).slice(0, 3).map(tag => (
-                                        <span key={tag.tag_id} className="tag-badge">{tag.tag_nome}</span>
-                                      ))}
-                                    </div>
-                                  </div>
-                                </Link>
-                              )}
-                            </div>
-                          )
-                        })}
-                      </div>
-
-                      <div className="slider-dots">
-                        {Array.from({ length: Math.ceil(trendingObras.length / 2) }).map((_, idx) => (
-                          <button
-                            key={idx}
-                            className={`slider-dot ${idx === sliderIndex ? 'active' : ''}`}
-                            onClick={() => handleManualSlide(idx)}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              )}
 
               <div className="genre-buttons">
                 <button
@@ -1316,12 +1432,7 @@ function App() {
                 >
                   Webtoon
                 </button>
-                <button
-                  className={`genre-btn ${allWorksGenre === 4 ? 'active' : ''}`}
-                  onClick={() => handleAllWorksGenreChange(4)}
-                >
-                  Shoujo
-                </button>
+
 
                 {/* Filter Dropdowns Container */}
                 <div style={{ marginLeft: 'auto', display: 'flex', gap: '0.5rem', alignItems: 'center', flex: isMobile && showSearchDrawer ? 1 : 'unset' }}>
@@ -1761,12 +1872,12 @@ function App() {
                       Capítulos
                       <span style={{
                         marginLeft: '8px',
-                        background: 'rgba(255,255,255,0.1)',
-                        padding: '2px 8px',
+                        background: '#f0f0f0',
+                        padding: '2px 4px',
                         borderRadius: '12px',
-                        fontSize: '0.75rem',
-                        fontWeight: 500,
-                        color: 'rgba(255,255,255,0.9)'
+                        fontSize: '0.7rem',
+                        fontWeight: 400,
+                        color: '#000'
                       }}>
                         {currentObra.capitulos?.length || 0}
                       </span>
@@ -1776,7 +1887,11 @@ function App() {
                   {/* Tab Info */}
                   {obraTab === 'info' && (
                     <div className="obra-desc-box" style={{ animation: 'fadeIn 0.3s ease' }}>
-                      <p className="obra-desc" style={{ lineHeight: '1.8', color: 'rgba(255,255,255,0.8)', fontSize: '0.85rem', fontWeight: 400, whiteSpace: 'pre-line', marginBottom: '1.5rem' }}>{currentObra.obr_descricao?.trim()}</p>
+                      <div className="obra-desc" style={{ lineHeight: '1.8', color: 'rgba(255,255,255,0.8)', fontSize: '0.85rem', fontWeight: 400, marginBottom: '1.5rem' }}>
+                        {formattedDescription.map((paragraph, index) => (
+                          <p key={index} style={{ marginBottom: '1rem' }}>{paragraph}</p>
+                        ))}
+                      </div>
 
                       {/* Tags */}
                       {currentObra.tags && currentObra.tags.length > 0 && (
@@ -1910,7 +2025,61 @@ function App() {
                   {/* Tab Chapters */}
                   {obraTab === 'chapters' && (
                     <div className="capitulos-list" style={{ animation: 'fadeIn 0.3s ease' }}>
-                      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
+                      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem', gap: '0.8rem' }}>
+                        {/* Filter Button & Dropdown */}
+                        <div style={{ position: 'relative' }}>
+                          <button
+                            onClick={() => setIsFilterDrawerOpen(true)}
+                            style={{
+                              background: 'none',
+                              border: 'none',
+                              outline: 'none',
+                              padding: '0.5rem',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              color: chapterFilter !== 'all' ? '#8a2be2' : 'rgba(255,255,255,0.8)',
+                              cursor: 'pointer',
+                              transition: 'color 0.2s'
+                            }}
+                            title="Filtrar Capítulos"
+                          >
+                            <MdFilterList size={24} />
+                          </button>
+
+                          {/* Desktop Dropdown */}
+                          {!isMobile && isFilterDrawerOpen && (
+                            <>
+                              <div
+                                className="filter-dropdown-overlay"
+                                onClick={() => setIsFilterDrawerOpen(false)}
+                              />
+                              <div className="filter-dropdown-menu">
+                                <div className="filter-dropdown-header">
+                                  <span>Filtrar</span>
+                                </div>
+                                {[
+                                  { id: 'all', label: 'Todos' },
+                                  { id: 'read', label: 'Lidos' },
+                                  { id: 'unread', label: 'Não Lidos' }
+                                ].map((option) => (
+                                  <button
+                                    key={option.id}
+                                    onClick={() => {
+                                      setChapterFilter(option.id as any)
+                                      setIsFilterDrawerOpen(false)
+                                    }}
+                                    className={`filter-dropdown-item ${chapterFilter === option.id ? 'active' : ''}`}
+                                  >
+                                    {option.label}
+                                    {chapterFilter === option.id && <MdCheck size={16} />}
+                                  </button>
+                                ))}
+                              </div>
+                            </>
+                          )}
+                        </div>
+
                         <button
                           onClick={() => setChaptersOrder(prev => prev === 'asc' ? 'desc' : 'asc')}
                           style={{
@@ -1932,24 +2101,80 @@ function App() {
                       </div>
 
                       <div className="chapters-grid" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                        {displayedChapters.map((cap: any) => (
-                          <a href="#" key={cap.cap_id} className="chapter-item" style={{
+                        {displayedChapters.filter((cap: any) => {
+                          if (chapterFilter === 'read') return readChapters.includes(cap.cap_id)
+                          if (chapterFilter === 'unread') return !readChapters.includes(cap.cap_id)
+                          return true
+                        }).map((cap: any) => (
+                          <Link to={`/capitulo/${cap.cap_id}`} key={cap.cap_id} className="chapter-item" style={{
                             background: 'none',
                             padding: '0.8rem 0',
                             borderBottom: '1px solid rgba(255,255,255,0.1)',
                             display: 'flex',
-                            flexDirection: 'column',
-                            alignItems: 'flex-start',
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
                             gap: '0.2rem',
                             textDecoration: 'none',
-                            color: '#fff',
+                            color: readChapters.includes(cap.cap_id) ? 'rgba(255,255,255,0.6)' : '#fff',
                             transition: 'opacity 0.2s',
                           }}>
-                            <span className="chapter-num" style={{ fontWeight: 400, fontSize: '0.9rem' }}>Capítulo {cap.cap_numero}</span>
-                            <span className="chapter-date" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textTransform: 'lowercase' }}>{formatRelativeTime(cap.cap_criado_em)}</span>
-                          </a>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                              <span className="chapter-num" style={{ fontWeight: 400, fontSize: '0.9rem' }}>Capítulo {cap.cap_numero}</span>
+                              <span className="chapter-date" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textTransform: 'lowercase' }}>{formatRelativeTime(cap.cap_criado_em)}</span>
+                            </div>
+                            {readChapters.includes(cap.cap_id) && <MdCheck size={20} color="#4ade80" title="Lido" />}
+                          </Link>
                         ))}
                       </div>
+
+                      {/* Filter Drawer - Only Mobile */}
+                      {isMobile && (
+                        <Drawer.Root open={isFilterDrawerOpen} onOpenChange={setIsFilterDrawerOpen}>
+                          <Drawer.Portal>
+                            <Drawer.Overlay className="drawer-overlay" />
+                            <Drawer.Content className="drawer-content" style={{ height: 'auto', maxHeight: '40vh' }}>
+                              <div className="drawer-handle-wrapper">
+                                <div className="drawer-handle" />
+                              </div>
+                              <div className="drawer-header">
+                                <h2 style={{ fontSize: '1.1rem', fontWeight: 600 }}>Filtrar Capítulos</h2>
+                              </div>
+                              <div className="drawer-body" style={{ padding: '1rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                                {[
+                                  { id: 'all', label: 'Todos os Capítulos' },
+                                  { id: 'read', label: 'Lidos' },
+                                  { id: 'unread', label: 'Não Lidos' }
+                                ].map((option) => (
+                                  <button
+                                    key={option.id}
+                                    onClick={() => {
+                                      setChapterFilter(option.id as any)
+                                      setIsFilterDrawerOpen(false)
+                                    }}
+                                    style={{
+                                      background: chapterFilter === option.id ? 'rgba(138, 43, 226, 0.2)' : 'rgba(255,255,255,0.05)',
+                                      border: chapterFilter === option.id ? '1px solid #8a2be2' : 'none',
+                                      padding: '1rem',
+                                      borderRadius: '8px',
+                                      color: chapterFilter === option.id ? '#8a2be2' : '#fff',
+                                      textAlign: 'left',
+                                      fontWeight: 500,
+                                      cursor: 'pointer',
+                                      display: 'flex',
+                                      justifyContent: 'space-between',
+                                      alignItems: 'center'
+                                    }}
+                                  >
+                                    {option.label}
+                                    {chapterFilter === option.id && <MdCheckCircle size={18} />}
+                                  </button>
+                                ))}
+                              </div>
+                            </Drawer.Content>
+                          </Drawer.Portal>
+                        </Drawer.Root>
+                      )}
                     </div>
                   )}
 
@@ -1958,29 +2183,94 @@ function App() {
             </div>
           )}
 
-          {activeSection === 'entrar' && (
-            <div className="section login-section">
-              <div className="login-container">
-                <h1>Entrar</h1>
-                <p>Bem-vindo de volta!</p>
-                <form className="login-form" onSubmit={(e) => e.preventDefault()}>
-                  <div className="form-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="seu@email.com" />
+          {activeSection === 'teste' && !is404 && (
+            <div className="section teste-section">
+              <TesteObras />
+            </div>
+          )}
+
+          {activeSection === 'gerador' && !is404 && (
+            <div className="section gerador-section">
+              <GeradorObra />
+            </div>
+          )}
+
+          {activeSection === 'perfil' && !is404 && (
+            <Profile user={user} />
+          )}
+
+          {activeSection === 'capitulo' && !is404 && (
+            <div className="section capitulo-section" style={{ padding: 0, background: '#000' }}>
+              {loadingCapitulo && (
+                <div style={{ padding: '4rem', textAlign: 'center', color: '#fff' }}>
+                  Carregando capítulo...
+                </div>
+              )}
+
+              {!loadingCapitulo && currentCapitulo && (
+                <div className="capitulo-reader" style={{ maxWidth: '100%', margin: '0 auto' }}>
+                  {/* Reader Header */}
+                  <div
+                    style={{
+                      position: 'sticky',
+                      top: 0,
+                      zIndex: 100,
+                      background: 'rgba(0,0,0,0.8)',
+                      backdropFilter: 'blur(10px)',
+                      padding: '1rem',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '1rem',
+                      borderBottom: '1px solid rgba(255,255,255,0.1)'
+                    }}
+                  >
+                    <button
+                      onClick={() => window.history.back()}
+                      style={{
+                        background: 'none',
+                        border: 'none',
+                        color: '#fff',
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        padding: '0.2rem'
+                      }}
+                    >
+                      <MdArrowBack size={24} />
+                    </button>
+                    <h2 style={{ fontSize: '1rem', margin: 0, color: '#fff', fontWeight: 500 }}>
+                      {currentCapitulo.cap_nome}
+                    </h2>
                   </div>
-                  <div className="form-group">
-                    <label>Senha</label>
-                    <input type="password" placeholder="********" />
+
+                  {/* Chapter Images */}
+                  <div style={{ display: 'flex', flexDirection: 'column' }}>
+                    {currentCapitulo.cap_paginas &&
+                      currentCapitulo.cap_paginas.map((pagina: any, index: number) => {
+                        const src = `https://cdn.verdinha.wtf${pagina.path.startsWith('/') ? '' : '/'
+                          }${pagina.path.endsWith(pagina.src)
+                            ? pagina.path
+                            : `${pagina.path}/${pagina.src}`
+                          }`
+                        return (
+                          <img
+                            key={`${pagina.numero}-${index}`}
+                            src={src}
+                            alt={`Página ${pagina.numero}`}
+                            style={{ width: '100%', display: 'block' }}
+                          />
+                        )
+                      })}
                   </div>
-                  <button type="submit" className="cta-button full-width">Entrar</button>
-                </form>
-              </div>
+                </div>
+              )}
             </div>
           )}
 
           {is404 && (
             <NotFoundContent />
           )}
+
         </div>
       </main >
 
@@ -2023,7 +2313,8 @@ function App() {
             </Link>
           )}
         </nav>
-      )}
+      )
+      }
 
       {/* Login Modal */}
       {

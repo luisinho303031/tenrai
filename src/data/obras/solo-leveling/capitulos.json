@@ -1,0 +1,24 @@
+{
+  "capitulos": [
+    {
+      "id": 2,
+      "numero": 2,
+      "titulo": "O Sistema",
+      "dataPublicacao": "2018-03-11",
+      "imagens": [
+        "https://cdn.tenrai.site/solo-leveling/cap-2/01.webp",
+        "https://cdn.tenrai.site/solo-leveling/cap-2/02.webp",
+        "https://cdn.tenrai.site/solo-leveling/cap-2/03.webp"
+      ]
+    },
+    {
+      "id": 1,
+      "numero": 1,
+      "titulo": "Capítulo 1",
+      "dataPublicacao": "2026-02-11T19:08:38.059Z",
+      "imagens": [
+        "https://cdn.nexustoons.com/covers/b46a0dd1d7565b18_1770666217650447545.jpg"
+      ]
+    }
+  ]
+}

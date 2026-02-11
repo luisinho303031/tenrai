@@ -16,6 +16,7 @@ import {
 // ============================================
 
 // ❌ ANTES (com API):
+/*
 useEffect(() => {
     if (activeSection === 'obra-detalhe') {
         const slug = location.pathname.split('/obra/')[1]
@@ -37,8 +38,10 @@ useEffect(() => {
         }
     }
 }, [activeSection, location.pathname])
+*/
 
 // ✅ DEPOIS (com dados locais):
+/*
 useEffect(() => {
     if (activeSection === 'obra-detalhe') {
         const slug = location.pathname.split('/obra/')[1]
@@ -76,12 +79,14 @@ useEffect(() => {
         }
     }
 }, [activeSection, location.pathname])
+*/
 
 // ============================================
 // 2. SUBSTITUIR FETCH DE CAPÍTULO
 // ============================================
 
 // ❌ ANTES (com API):
+/*
 useEffect(() => {
     if (activeSection === 'capitulo') {
         const capId = location.pathname.split('/capitulo/')[1]
@@ -103,8 +108,10 @@ useEffect(() => {
         }
     }
 }, [activeSection, location.pathname])
+*/
 
 // ✅ DEPOIS (com dados locais):
+/*
 useEffect(() => {
     if (activeSection === 'capitulo') {
         // Assumindo URL: /capitulo/solo-leveling/1
@@ -138,12 +145,14 @@ useEffect(() => {
         }
     }
 }, [activeSection, location.pathname])
+*/
 
 // ============================================
 // 3. LISTAR TODAS AS OBRAS
 // ============================================
 
 // ❌ ANTES (com API):
+/*
 const fetchAllWorks = async () => {
     try {
         setLoadingAllWorks(true)
@@ -158,8 +167,10 @@ const fetchAllWorks = async () => {
         setLoadingAllWorks(false)
     }
 }
+*/
 
 // ✅ DEPOIS (com dados locais):
+/*
 const fetchAllWorks = () => {
     setLoadingAllWorks(true)
 
@@ -195,12 +206,14 @@ const fetchAllWorks = () => {
     setAllWorks(obrasFormatadas)
     setLoadingAllWorks(false)
 }
+*/
 
 // ============================================
 // 4. HELPER PARA CONVERTER FORMATO
 // ============================================
 
 // Função helper para converter ObraInfo para o formato antigo
+/*
 const converterObraParaFormatoAntigo = (obra: ObraInfo) => ({
     obr_id: obra.id,
     obr_nome: obra.meta.titulo,
@@ -213,11 +226,13 @@ const converterObraParaFormatoAntigo = (obra: ObraInfo) => ({
     autor: obra.meta.autor,
     artista: obra.meta.artista
 })
+*/
 
 // ============================================
 // 5. EXEMPLO COMPLETO DE COMPONENTE
 // ============================================
 
+/*
 function ObraCard({ slug }: { slug: string }) {
     const obra = getObraPorSlug(slug)
 
@@ -239,3 +254,4 @@ function ObraCard({ slug }: { slug: string }) {
 }
 
 export default ObraCard
+*/

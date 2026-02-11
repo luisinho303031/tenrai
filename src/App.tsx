@@ -99,7 +99,7 @@ interface ObraDetalhada extends Obra {
   obr_descricao: string
 }
 
-import { getObraPorSlug, listarTodasObras, getCapitulo, getCapitulosPorObra, buscarObrasPorGenero } from './data/obras'
+import { getObraPorSlug, listarTodasObras, getCapitulo, getCapitulosPorObra } from './data/obras'
 import GeradorObra from './GeradorObra'
 import Profile from './Profile'
 
@@ -447,7 +447,7 @@ function App() {
   })
   const [loading, setLoading] = useState(true)
   const [loadingRecommended, setLoadingRecommended] = useState(true)
-  const [loadingTrending, setLoadingTrending] = useState(true)
+
   const [selectedGenre, setSelectedGenre] = useState(() => {
     const saved = localStorage.getItem('lancamentos_genre')
     const parsed = saved ? parseInt(saved, 10) : 1
@@ -543,7 +543,7 @@ function App() {
           // ou se tivesse tags reais.
         }
 
-        const obrasFormatadas = localObras.map((obra, index) => convertLocalObraToApiFormat(obra, index))
+        const obrasFormatadas = localObras.map((obra) => convertLocalObraToApiFormat(obra))
 
         setAllWorksTotal(obrasFormatadas.length)
         setAllWorks(obrasFormatadas)
@@ -726,7 +726,7 @@ function App() {
           }
         }
 
-        const obrasFormatadas = obrasFiltradas.map((obra, index) => convertLocalObraToApiFormat(obra, index))
+        const obrasFormatadas = obrasFiltradas.map((obra) => convertLocalObraToApiFormat(obra))
 
         setObras(obrasFormatadas)
         setHasMore(false)
@@ -743,7 +743,7 @@ function App() {
   }, [activeSection, selectedGenre, page, user?.id])
 
   // Helper function to convert local obra to API format
-  const convertLocalObraToApiFormat = (obra: any, index: number): ObraDetalhada => ({
+  const convertLocalObraToApiFormat = (obra: any): ObraDetalhada => ({
     obr_id: obra.id, // Usar slug como ID único e estável
     obr_nome: obra.meta.titulo,
     obr_slug: obra.id,
@@ -784,8 +784,8 @@ function App() {
         // Converter para formato compatível usando helper e limitar a 6 recomendadas
         const obrasFormatadas = todasObras
           .slice(0, 6)
-          .map((obra, index) =>
-            convertLocalObraToApiFormat(obra, index)
+          .map((obra) =>
+            convertLocalObraToApiFormat(obra)
           )
 
         setRecommendedObras(obrasFormatadas)
@@ -805,21 +805,21 @@ function App() {
   useEffect(() => {
     const fetchTrending = () => {
       try {
-        setLoadingTrending(true)
+
 
         // Buscar obras locais
         const todasObras = listarTodasObras()
 
         // Converter para formato compatível usando helper
-        const obrasFormatadas = todasObras.map((obra, index) =>
-          convertLocalObraToApiFormat(obra, index)
+        const obrasFormatadas = todasObras.map((obra) =>
+          convertLocalObraToApiFormat(obra)
         )
 
         setTrendingObras(obrasFormatadas)
       } catch (error) {
         console.error('Erro ao buscar em alta:', error)
       } finally {
-        setLoadingTrending(false)
+
       }
     }
 

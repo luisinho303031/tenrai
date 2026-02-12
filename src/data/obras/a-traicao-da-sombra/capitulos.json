@@ -1,0 +1,208 @@
+{
+    "capitulos": [
+        {
+            "id": 228017,
+            "numero": 34,
+            "titulo": "Capítulo 34",
+            "dataPublicacao": "2026-02-08T02:46:22.514768+00:00"
+        },
+        {
+            "id": 228010,
+            "numero": 33,
+            "titulo": "Capítulo 33",
+            "dataPublicacao": "2026-02-08T02:44:07.992932+00:00"
+        },
+        {
+            "id": 228004,
+            "numero": 32,
+            "titulo": "Capítulo 32",
+            "dataPublicacao": "2026-02-08T02:43:39.582033+00:00"
+        },
+        {
+            "id": 228292,
+            "numero": 31,
+            "titulo": "Capítulo 31",
+            "dataPublicacao": "2026-02-08T04:15:27.508989+00:00"
+        },
+        {
+            "id": 228045,
+            "numero": 30,
+            "titulo": "Capítulo 30",
+            "dataPublicacao": "2026-02-08T02:51:59.496435+00:00"
+        },
+        {
+            "id": 228041,
+            "numero": 29,
+            "titulo": "Capítulo 29",
+            "dataPublicacao": "2026-02-08T02:51:26.200220+00:00"
+        },
+        {
+            "id": 228030,
+            "numero": 28,
+            "titulo": "Capítulo 28",
+            "dataPublicacao": "2026-02-08T02:50:39.196894+00:00"
+        },
+        {
+            "id": 227994,
+            "numero": 26,
+            "titulo": "Capítulo 26",
+            "dataPublicacao": "2026-02-08T02:32:05.060503+00:00"
+        },
+        {
+            "id": 227989,
+            "numero": 25,
+            "titulo": "Capítulo 25",
+            "dataPublicacao": "2026-02-08T02:30:05.794422+00:00"
+        },
+        {
+            "id": 227983,
+            "numero": 24,
+            "titulo": "Capítulo 24",
+            "dataPublicacao": "2026-02-08T02:28:33.387169+00:00"
+        },
+        {
+            "id": 227978,
+            "numero": 23,
+            "titulo": "Capítulo 23",
+            "dataPublicacao": "2026-02-08T02:26:52.579422+00:00"
+        },
+        {
+            "id": 227973,
+            "numero": 22,
+            "titulo": "Capítulo 22",
+            "dataPublicacao": "2026-02-08T02:25:49.862046+00:00"
+        },
+        {
+            "id": 227969,
+            "numero": 21,
+            "titulo": "Capítulo 21",
+            "dataPublicacao": "2026-02-08T02:24:42.339459+00:00"
+        },
+        {
+            "id": 227967,
+            "numero": 20,
+            "titulo": "Capítulo 20",
+            "dataPublicacao": "2026-02-08T02:23:42.452462+00:00"
+        },
+        {
+            "id": 227959,
+            "numero": 19,
+            "titulo": "Capítulo 19",
+            "dataPublicacao": "2026-02-08T02:21:24.911809+00:00"
+        },
+        {
+            "id": 227953,
+            "numero": 18,
+            "titulo": "Capítulo 18",
+            "dataPublicacao": "2026-02-08T02:20:01.322540+00:00"
+        },
+        {
+            "id": 227946,
+            "numero": 17,
+            "titulo": "Capítulo 17",
+            "dataPublicacao": "2026-02-08T02:18:32.206776+00:00"
+        },
+        {
+            "id": 227942,
+            "numero": 16,
+            "titulo": "Capítulo 16",
+            "dataPublicacao": "2026-02-08T02:17:22.177314+00:00"
+        },
+        {
+            "id": 227938,
+            "numero": 15,
+            "titulo": "Capítulo 15",
+            "dataPublicacao": "2026-02-08T02:16:15.509593+00:00"
+        },
+        {
+            "id": 227931,
+            "numero": 14,
+            "titulo": "Capítulo 14",
+            "dataPublicacao": "2026-02-08T02:14:47.420515+00:00"
+        },
+        {
+            "id": 238737,
+            "numero": 13,
+            "titulo": "Capítulo 13",
+            "dataPublicacao": "2026-02-09T17:24:35.658212+00:00"
+        },
+        {
+            "id": 238727,
+            "numero": 12,
+            "titulo": "Capítulo 12",
+            "dataPublicacao": "2026-02-09T17:22:59.434200+00:00"
+        },
+        {
+            "id": 238713,
+            "numero": 11,
+            "titulo": "Capítulo 11",
+            "dataPublicacao": "2026-02-09T17:21:36.153289+00:00"
+        },
+        {
+            "id": 238700,
+            "numero": 10,
+            "titulo": "Capítulo 10",
+            "dataPublicacao": "2026-02-09T17:20:01.956555+00:00"
+        },
+        {
+            "id": 238685,
+            "numero": 9,
+            "titulo": "Capítulo 09",
+            "dataPublicacao": "2026-02-09T17:18:12.278685+00:00"
+        },
+        {
+            "id": 238673,
+            "numero": 8,
+            "titulo": "Capítulo 08",
+            "dataPublicacao": "2026-02-09T17:16:50.528906+00:00"
+        },
+        {
+            "id": 238660,
+            "numero": 7,
+            "titulo": "Capítulo 07",
+            "dataPublicacao": "2026-02-09T17:15:27.872138+00:00"
+        },
+        {
+            "id": 227884,
+            "numero": 6,
+            "titulo": "Capítulo 6",
+            "dataPublicacao": "2026-02-08T02:04:09.819152+00:00"
+        },
+        {
+            "id": 227881,
+            "numero": 5,
+            "titulo": "Capítulo 5",
+            "dataPublicacao": "2026-02-08T02:03:08.122353+00:00"
+        },
+        {
+            "id": 227871,
+            "numero": 4,
+            "titulo": "Capítulo 4",
+            "dataPublicacao": "2026-02-08T02:01:42.099016+00:00"
+        },
+        {
+            "id": 227863,
+            "numero": 3,
+            "titulo": "Capítulo 3",
+            "dataPublicacao": "2026-02-08T02:00:21.642943+00:00"
+        },
+        {
+            "id": 227856,
+            "numero": 2,
+            "titulo": "Capítulo 2",
+            "dataPublicacao": "2026-02-08T01:58:59.713723+00:00"
+        },
+        {
+            "id": 227850,
+            "numero": 1,
+            "titulo": "Capítulo 1",
+            "dataPublicacao": "2026-02-08T01:57:52.361164+00:00"
+        },
+        {
+            "id": 227843,
+            "numero": 0,
+            "titulo": "Capítulo 0",
+            "dataPublicacao": "2026-02-08T01:55:37.348368+00:00"
+        }
+    ]
+}

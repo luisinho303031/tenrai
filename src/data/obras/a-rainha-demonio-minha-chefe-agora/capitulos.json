@@ -1,0 +1,34 @@
+{
+    "capitulos": [
+        {
+            "id": 212855,
+            "numero": 5,
+            "titulo": "Capítulo 5",
+            "dataPublicacao": "2026-02-06T10:38:59.282783+00:00"
+        },
+        {
+            "id": 212816,
+            "numero": 4,
+            "titulo": "Capítulo 4",
+            "dataPublicacao": "2026-02-06T10:37:50.756741+00:00"
+        },
+        {
+            "id": 212771,
+            "numero": 3,
+            "titulo": "Capítulo 3",
+            "dataPublicacao": "2026-02-06T10:36:15.329418+00:00"
+        },
+        {
+            "id": 212688,
+            "numero": 2,
+            "titulo": "Capítulo 2",
+            "dataPublicacao": "2026-02-06T10:32:33.738978+00:00"
+        },
+        {
+            "id": 212630,
+            "numero": 1,
+            "titulo": "Capítulo 1",
+            "dataPublicacao": "2026-02-06T10:30:09.649971+00:00"
+        }
+    ]
+}

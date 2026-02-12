@@ -1,0 +1,16 @@
+{
+    "id": 23456,
+    "numero": 66,
+    "titulo": "Capítulo 66",
+    "dataPublicacao": "2025-08-03T20:24:03.121111+00:00",
+    "imagens": [
+        "https://cdn.nexustoons.com/manga_pages/258/23456/page_1_eabd0146.avif",
+        "https://cdn.nexustoons.com/manga_pages/258/23456/page_2_be42db35.avif",
+        "https://cdn.nexustoons.com/manga_pages/258/23456/page_3_9379b27b.avif",
+        "https://cdn.nexustoons.com/manga_pages/258/23456/page_4_6642834e.avif",
+        "https://cdn.nexustoons.com/manga_pages/258/23456/page_5_a06af9e6.avif",
+        "https://cdn.nexustoons.com/manga_pages/258/23456/page_6_97679995.avif",
+        "https://cdn.nexustoons.com/manga_pages/258/23456/page_7_2309d923.avif",
+        "https://cdn.nexustoons.com/manga_pages/258/23456/page_8_4ebfea99.avif"
+    ]
+}

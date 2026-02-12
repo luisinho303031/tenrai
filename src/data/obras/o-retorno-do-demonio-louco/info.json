@@ -1,24 +1,22 @@
 {
-  "id": "o-retorno-do-demonio-louco",
-  "meta": {
-    "titulo": "O Retorno do Demônio Louco",
-    "tituloAlternativo": "Return of the Mad Demon",
-    "descricao": "Yi Zaha. O demônio louco por artes marciais. Enquanto fugia depois de roubar a pérola celestial do Líder do Culto Demoníaco, ele caiu de um penhasco. Depois de achar que tudo estava acabado, ele abriu os olhos e viu que havia retornado para o tempo em que era um garoto de recados… E ele está apanhando por algo que não fez. O demônio insano que voltou para o começo de seus dias como garoto de recados! Ele enlouquecerá novamente ou irá levar seus inimigos à loucura? tempo em que era um garoto de recados… E ele está apanhando por algo que não fez. O demônio insano que voltou para o começo de seus dias como garoto de recados! Ele enlouquecerá novamente ou irá levar seus inimigos à loucura?",
-    "ano": 2026,
-    "status": "Em Andamento",
-    "autor": "",
-    "artista": ""
-  },
-  "imagens": {
-    "capa": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx137304-XZ91kOmUIMQo.png",
-    "banner": "https://s4.anilist.co/file/anilistcdn/media/manga/banner/137304-6aGcY98dBeUY.jpg"
-  },
-  "generos": [
-    "Ação",
-    "Aventura",
-    "Artes Marciais",
-    "Murim",
-    "Fantasia",
-    "Comédia"
-  ]
+    "id": "o-retorno-do-demonio-louco",
+    "meta": {
+        "titulo": "O Retorno do Demônio Louco",
+        "tituloAlternativo": "",
+        "descricao": "Yi Zaha. O demônio louco por artes marciais. Enquanto fugia depois de roubar a pérola celestial do Líder do Culto Demoníaco, ele caiu de um penhasco. Depois de achar que tudo estava acabado, ele abriu os olhos e viu que havia retornado para o tempo em que era um garoto de recados… E ele está apanhando por algo que não fez. O demônio insano que voltou para o começo de seus dias como garoto de recados! Ele enlouquecerá novamente ou irá levar seus inimigos à loucura? tempo em que era um garoto de recados… E ele está apanhando por algo que não fez. O demônio insano que voltou para o começo de seus dias como garoto de recados! Ele enlouquecerá novamente ou irá levar seus inimigos à loucura?",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/bda9514d03a04d1f_1770169139477577179.webp",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Aventura",
+        "Ação",
+        "Comédia"
+    ]
 }

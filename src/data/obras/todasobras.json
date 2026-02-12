@@ -1,204 +1,3523 @@
 [
   {
-    "id": "dragao-venenoso-a-lenda-do-asura",
-    "titulo": "Dragão Venenoso: A Lenda do Asura",
-    "tituloAlternativo": "Legend of Asura - The Venom Dragon",
-    "status": "Em Andamento",
-    "capa": "https://cdn.novelupdates.com/images/2025/04/Poison-Dragon-The-Legend-of-an-Asura.jpeg"
-  },
-  {
-    "id": "gosu",
-    "titulo": "Gosu",
-    "tituloAlternativo": "고수",
-    "status": "Em Andamento",
-    "capa": "https://upload.wikimedia.org/wikipedia/en/a/a6/Gosu_manhwa_cover_art.jpg"
-  },
-  {
-    "id": "serio-que-cultivar-e-dificil",
-    "titulo": "Sério que Cultivar é Difícil?",
-    "tituloAlternativo": "People Actually Think Cultivation Is Hard?",
-    "status": "Em Andamento",
-    "capa": "https://preview.redd.it/has-anyone-read-the-novel-for-this-i-want-spoilers-people-v0-xkchb39mqiwf1.jpeg?auto=webp&s=eb3419ef77ba19471c2e858f5a6550a2bc8c4848"
-  },
-  {
-    "id": "o-unico-necromante",
-    "titulo": "O Único Necromante",
-    "tituloAlternativo": "The Lone Necromancer",
-    "status": "Em Andamento",
-    "capa": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139572-e3vwLcOVQISn.jpg"
-  },
-  {
-    "id": "nanotecnologia-marcial",
-    "titulo": "Nanotecnologia Marcial",
+    "id": "a-centesima-regressao-do-jogador-de-nivel-maximo",
+    "titulo": "100ª Regressão do Jogador de Nível Máximo",
     "tituloAlternativo": "",
-    "status": "Em Andamento",
-    "capa": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx120980-RZ9WLd0o9hyo.jpg"
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/e7a38f3ea4dbcfd1_1770213368002913740.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Tela de Sistema"
+    ]
   },
   {
-    "id": "espadachim-em-tempo-integral",
-    "titulo": "Espadachim Em Tempo Integral",
-    "tituloAlternativo": "Full-Time Swordsman",
-    "status": "Em Andamento",
-    "capa": "https://static.comix.to/b86a/i/a/e7/68e08f59f3fe2.jpg"
+    "id": "999-girls-chased-me",
+    "titulo": "999 Girls Chased Me",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/30bffe577a20c127_1770676863648391825.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Harem",
+      "Romance"
+    ]
+  },
+  {
+    "id": "a-ascensao-da-cobra-imortal",
+    "titulo": "A Ascensão da Cobra Imortal",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/08eb18356b80795c_1770160004254436634.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama"
+    ]
+  },
+  {
+    "id": "a-batalha-atraves-dos-ceus",
+    "titulo": "A batalha através dos céus",
+    "tituloAlternativo": "Doupo Cangqiong",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/d51904c99f63abae_1770676729176507670.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Shounen",
+      "Sobrevivência"
+    ]
+  },
+  {
+    "id": "a-biografia-da-espada-luar",
+    "titulo": "A Biografia da Espada Luar",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/6cfc3edcd0f5a33c_1770305574090580458.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Histórico",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "a-confissao-da-bela-mestra-e-o-sistema-celestial",
+    "titulo": "A Confissão da Bela Mestra e o Sistema Celestial",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/653b14709d1c753d_1770676743597268625.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Fantasia",
+      "Harém"
+    ]
+  },
+  {
+    "id": "a-espada-do-imperador",
+    "titulo": "A Espada do Imperador",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/5f592b44e5198747_1770649531035617004.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Histórico",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "a-esposa-riqueza",
+    "titulo": "A Esposa Riqueza",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/47f4d0f281190105_1770181325506905358.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Harém",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "a-grande-saga-da-espada-celestial",
+    "titulo": "A Grande Saga da Espada Celestial",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/b9c9b2e0c5e66e1b_1770226375951750550.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "a-jornada-pos-apocaliptica",
+    "titulo": "A Jornada Pós-Apocalíptica",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/df38fa17bcf936db_1770226286211308850.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Seinen"
+    ]
+  },
+  {
+    "id": "a-jovem-concubina-quer-viver-tranquilamente",
+    "titulo": "A Jovem Concubina Quer Viver Tranquilamente",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/f24913e8fe1de6c3_1770399691569979374.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Comédia",
+      "Drama",
+      "Histórico",
+      "Isekai",
+      "Magia",
+      "Reencarnação",
+      "Romance",
+      "Shoujo",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "a-lenda-de-tang-yin",
+    "titulo": "A Lenda de Tang Yin",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/62d164a71ffc9a0e_1770226577577381937.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Cultivo",
+      "Fantasia",
+      "Histórico",
+      "Isekai",
+      "Romance"
+    ]
+  },
+  {
+    "id": "a-padaria-do-demonio-celestial",
+    "titulo": "A Padaria do Demônio Celestial",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/58aa6617426cbbd0_1770226293985715146.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Shounen",
+      "Slice of Life"
+    ]
+  },
+  {
+    "id": "a-rainha-demonio-minha-chefe-agora",
+    "titulo": "A Rainha Demônio, Minha Chefe Agora",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/922a711d8aa69a8f_1770228351579576072.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Isekai",
+      "Militar",
+      "Wuxia"
+    ]
+  },
+  {
+    "id": "a-serpente-negra",
+    "titulo": "A Serpente Negra",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/09a913c12b9834f3_1770656089650349242.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "a-superacao-do-nobre-vagabundo",
+    "titulo": "A Superação do Nobre Vagabundo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/34b8de31649610e9_1770161664950091300.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Superpoderes"
+    ]
+  },
+  {
+    "id": "a-traicao-da-sombra",
+    "titulo": "A Traição da Sombra",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/ddef55334afa7d0f_1770228052804021012.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Fantasia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "a-vinganca-da-flor-desabrochada",
+    "titulo": "A Vingança Da Flor Desabrochada",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/e5a4422510f6bb66_1770393094963058474.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama"
+    ]
+  },
+  {
+    "id": "adonis-reminiscencias-de-amor-e-odio",
+    "titulo": "Adonis: Reminiscências de Amor e Ódio",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/a9aa2e6939470104_1770649603698889336.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Drama",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "alguem-te-forcou-se-tornar-o-demonio-celestial",
+    "titulo": "Alguém Te Forçou Se Tornar o Demônio Celestial?",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/354312ea001267f6_1770244537471752010.png",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Reencarnação",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "andarilho-do-coracao-carmesim",
+    "titulo": "Andarilho do Coração Carmesim",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/3714b2a7bc8d0d2a_1770676588226839158.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Cultivo",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "antigo-corpo-sagrado",
+    "titulo": "Antigo Corpo Sagrado",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/dfa9cd52bbad076d_1770166357251513470.png",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Cultivo",
+      "Harem"
+    ]
+  },
+  {
+    "id": "aparencias",
+    "titulo": "Aparências",
+    "tituloAlternativo": "Aparencias, lookskin",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/34ecd5d066666939_1770167925100333641.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Comédia",
+      "Drama",
+      "Escolar",
+      "Luta",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "apocalipse-de-kangho",
+    "titulo": "Apocalipse de Kangho",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/01317111c8747cf9_1770226261725650862.jpeg",
+    "generos": [
+      "Artes Marciais",
+      "Comédia",
+      "Demônios",
+      "Terror"
+    ]
+  },
+  {
+    "id": "artes-marciais-absolutas",
+    "titulo": "Artes Marciais Absolutas",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/041eca8fbce1ffc9_1770228074320977316.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "as-cronicas-das-runas",
+    "titulo": "As Crônicas das Runas",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/60ebbb1dac41f72d_1770655750558650116.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Magia",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "chronicles-of-the-heavenly-demon",
+    "titulo": "As Crônicas do Demônio Celestial",
+    "tituloAlternativo": "",
+    "status": "Completo",
+    "capa": "https://cdn.nexustoons.com/covers/279715a48e5661fb_1770164680970026339.jpeg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "as-mulheres-do-vilao-eram-suas-inimigas",
+    "titulo": "As Mulheres Do Vilão Eram Suas Inimigas",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/9a87e0a3e9d50d8f_1770676363803505389.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Cultivo",
+      "Ecchi"
+    ]
+  },
+  {
+    "id": "as-tentacoes-de-alcatraz",
+    "titulo": "As Tentações de Alcatraz",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/584ce82402edb706_1770228051992743905.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Tragédia"
+    ]
+  },
+  {
+    "id": "ascension-to-godhood-by-slaying-demons",
+    "titulo": "Ascension to Godhood by Slaying Demons",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/aafa32d7e779d027_1770669061042076008.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Mistério"
+    ]
+  },
+  {
+    "id": "atirador",
+    "titulo": "Atirador",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/a7aa4dee3a7d7a48_1770664759006503373.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Histórico",
+      "Isekai"
+    ]
+  },
+  {
+    "id": "avancando-de-nivel-apenas-comendo",
+    "titulo": "Avançando de Nível, Apenas Comendo!",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/8e255834b464971d_1770306713905282604.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Culinária",
+      "Realidade Virtual",
+      "Tela de Sistema"
+    ]
+  },
+  {
+    "id": "aventura-de-um-barbaro-em-um-mundo-de-fantasia",
+    "titulo": "Aventura de um Bárbaro em um Mundo de Fantasia",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/ccd364774d545e37_1770153879945149748.png",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Isekai"
+    ]
+  },
+  {
+    "id": "banished-disciples-counterattack",
+    "titulo": "Banished Disciple’s Counterattack",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/010cac5e6b9ec577_1770676479429571872.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Fantasia",
+      "Harem"
+    ]
+  },
+  {
+    "id": "cacador-suicida-rank-sss",
+    "titulo": "Caçador Suicida Rank-SSS",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/2b030626a7b9c222_1770152875182574561.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Drama",
+      "Fantasia",
+      "Psicológico",
+      "Superpoderes",
+      "Tragédia",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "colorista",
+    "titulo": "Colorista",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/manga_covers/manga_new/colorista_b2836850.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "como-lutar",
+    "titulo": "Como Lutar",
+    "tituloAlternativo": "",
+    "status": "Completo",
+    "capa": "https://cdn.nexustoons.com/covers/a7390e379a2111f4_1770247039876655261.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Comédia",
+      "Drama",
+      "Romance"
+    ]
+  },
+  {
+    "id": "contrato-de-mercenario",
+    "titulo": "Contrato de Mercenário",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/b766241923698078_1770162664697612634.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Romance"
+    ]
+  },
+  {
+    "id": "copiando-talentos-uma-sobrevivencia-em-dimensoes-paralelas",
+    "titulo": "Copiando Talentos: Uma Sobrevivência em Dimensões Paralelas",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/304a492815781e3f_1770181330880346455.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Shounen Ai",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "comecando-a-criar-dragoes-desde-hoje",
+    "titulo": "Criador de Dragões: Minha Jornada Épica",
+    "tituloAlternativo": "Start Raising Dragons From Today",
+    "status": "Completo",
+    "capa": "https://cdn.nexustoons.com/covers/af705df4365dff42_1770614466190430200.jpeg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Monstros"
+    ]
   },
   {
     "id": "cronicas-do-retorno-do-deus-marcial",
     "titulo": "Crônicas do Retorno do Deus Marcial",
-    "tituloAlternativo": "",
-    "status": "Em Andamento",
-    "capa": "https://pbs.twimg.com/media/FvFcFCGXgAIo1pF.jpg"
-  },
-  {
-    "id": "renascimento-do-doutor",
-    "titulo": "Renascimento do Doutor",
-    "tituloAlternativo": "Doctor's Rebirth",
-    "status": "Em Andamento",
-    "capa": "https://preview.redd.it/doctors-rebirth-v0-93swm9hhnucg1.jpeg?width=640&crop=smart&auto=webp&s=4ecfcc1602f70375fb0f7c219f9aa7cf20dfd942",
+    "tituloAlternativo": "Crónicas del regreso del dios marcial • Record of the Heavenly Demon's Comeback • Chronicles of the Martial God • Le retour du dieu martial • Crônicas do retorno do deus marcial • Crónicas del dios marcial • Crónicas del retorno del dios marcial • Возвращение бессмертного • بازگشت خدای هنرهای رزمی • A hadak ura visszatér • Возвращение еретика • ตำนานเทพยุทธ์หวนปฐพี • Ký sự về sự trở lại của thần chiến • 무신귀환록 • Record of Return • Chronicles of a Returner • Musingwihwallok • 武神帰還録 • 武神回归录 • Chron",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/4cabbe7418e23be5_1770154730783528435.webp",
     "generos": [
-      "Ação",
+      "Artes Marciais",
       "Aventura",
-      "Artes Marciais",
+      "Ação",
+      "Comédia",
+      "Família",
       "Fantasia"
     ]
   },
   {
-    "id": "o-rei-demonio-de-18-anos",
-    "titulo": "O Rei Demônio de 18 Anos",
-    "tituloAlternativo": "The 18-Year-Old Demon King",
-    "status": "Em Andamento",
-    "capa": "https://storage.vexmanga.com/public/upload/2026/02/04/18ed161b-e976-4fa9-9f45-d9cc23b84744.webp",
-    "generos": [
-      "Ação",
-      "Aventura",
-      "Artes Marciais",
-      "Fantasia"
-    ]
-  },
-  {
-    "id": "a-lenda-da-lamina-do-norte",
-    "titulo": "A Lenda da Lâmina do Norte",
-    "tituloAlternativo": "The Legend of the Northern Blade",
-    "status": "Completo",
-    "capa": "https://i.redd.it/329kyf273dnb1.jpg",
-    "generos": [
-      "Ação",
-      "Artes Marciais",
-      "Murim",
-      "Aventura"
-    ]
-  },
-  {
-    "id": "dominacao-do-imperador",
-    "titulo": "Dominação do Imperador",
+    "id": "cronicas-do-soberano-preguicoso",
+    "titulo": "Crônicas do Soberano Preguiçoso",
     "tituloAlternativo": "",
-    "status": "Em Andamento",
-    "capa": "https://manhuaplus.com/wp-content/uploads/2022/03/thumb-1.jpg",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/f474583ca5b3d0b6_1770166521705426857.webp",
     "generos": [
-      "Ação",
       "Artes Marciais",
-      "Fantasia"
+      "Aventura",
+      "Ação",
+      "Murim"
+    ]
+  },
+  {
+    "id": "cultivando-preguica-no-mundo-imortal-9-5",
+    "titulo": "Cultivando Preguiça no Mundo Imortal (9-5)",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/17a81a6f5b30856c_1770210947482717097.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação"
+    ]
+  },
+  {
+    "id": "cultivation-chat-group",
+    "titulo": "Cultivation Chat Group",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/80c8b650236cf973_1770676372892655603.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Fantasia",
+      "Mistério",
+      "Slice of Life",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "cultivation-return-on-campus",
+    "titulo": "Cultivation Return on Campus",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/1d3b50a5dfc1f3cd_1770666849037466516.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comida",
+      "Escolar",
+      "Fantasia",
+      "Super Poderes"
+    ]
+  },
+  {
+    "id": "de-repente-invicivel",
+    "titulo": "De repente, Invicível",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/147cbc0e12cb146b_1770228240650291530.png",
+    "generos": [
+      "Artes Marciais",
+      "Ação"
     ]
   },
   {
     "id": "demonio-celestial-quer-viver-em-paz",
     "titulo": "Demônio Celestial Quer Viver em Paz",
     "tituloAlternativo": "",
-    "status": "Em Andamento",
+    "status": "Em andamento",
     "capa": "https://cdn.nexustoons.com/covers/3279fe6c180ae65a_1770653468318384385.webp",
     "generos": [
-      "Ação",
-      "Aventura",
-      "Fantasia",
-      "Artes Marciais"
-    ]
-  },
-  {
-    "id": "o-retorno-do-demonio-louco",
-    "titulo": "O Retorno do Demônio Louco",
-    "tituloAlternativo": "Return of the Mad Demon",
-    "status": "Em Andamento",
-    "capa": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx137304-XZ91kOmUIMQo.png",
-    "generos": [
-      "Ação",
-      "Aventura",
       "Artes Marciais",
-      "Murim",
-      "Fantasia",
-      "Comédia"
-    ]
-  },
-  {
-    "id": "o-grande-soberano-demonio-celestial",
-    "titulo": "O Grande Soberano Demônio Celestial",
-    "tituloAlternativo": "The Divine Demon's Grand Ascension",
-    "status": "Em Andamento",
-    "capa": "https://cdn.nexustoons.com/covers/be29fe521c8bbbbe_1770163670804902851.webp",
-    "generos": [
       "Ação",
+      "Demônios",
       "Fantasia",
-      "Aventura",
-      "Artes Marciais"
+      "Reencarnação",
+      "Shounen"
     ]
   },
   {
-    "id": "amigo-de-infancia-do-zenite",
-    "titulo": "Amigo de Infância do Zênite",
+    "id": "demonio-da-lanca-incomparavel",
+    "titulo": "Demônio da Lança Incomparável",
     "tituloAlternativo": "",
-    "status": "Em Andamento",
-    "capa": "https://cdn.nexustoons.com/covers/88570849e933b5f4_1770166917396124896.png",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/31aca39d6b9eed6d_1770168029379706009.webp",
     "generos": [
-      "Ação",
-      "Aventura",
       "Artes Marciais",
-      "Shounen",
-      "Comédia"
+      "Aventura",
+      "Ação",
+      "Cultivo",
+      "Fantasia"
     ]
   },
   {
-    "id": "as-cronicas-do-demonio-celestial",
-    "titulo": "As Crônicas do Demônio Celestial",
-    "tituloAlternativo": "",
-    "status": "Completo",
-    "capa": "https://preview.redd.it/the-chronicles-of-heavenly-demon-v0-0ki2vgbf7skf1.jpg?width=1080&crop=smart&auto=webp&s=a65c3412e1ca2280e62f82acb308cef8a8734b38",
+    "id": "demonio-do-punho-do-monte-hua",
+    "titulo": "Demônio do Punho do Monte Hua",
+    "tituloAlternativo": "Demônio do Punho do Monte Hua",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/77cd7f0e5ea3227e_1770658450732815241.jpg",
     "generos": [
-      "Ação",
-      "Aventura",
       "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Luta",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "depois-da-descida-do-sobrenatural-eu-desbloqueei-a-torre-celeste",
+    "titulo": "Depois da Descida do Sobrenatural, Eu Desbloqueei a Torre Celeste",
+    "tituloAlternativo": "After the weirdness came, I unlocked the Tower of Babel - 诡异降临后，我解锁了通天塔",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/manga_covers/manga_new/depois-da-descida-do-sobrenatural-eu-desbloqueei-a-torre-celeste_96bf4111.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Romance"
+    ]
+  },
+  {
+    "id": "descendente-do-mestre-demoniaco",
+    "titulo": "Descendente do Mestre Demoníaco",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/35678f651140fd9c_1770387484684705504.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Reencarnação",
+      "Volta no Tempo"
+    ]
+  },
+  {
+    "id": "deus-das-artes-marciais",
+    "titulo": "Deus das Artes Marciais",
+    "tituloAlternativo": "God of Martial Arts",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/cac6ffd1ae0819e9_1770676982607511432.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Harem"
+    ]
+  },
+  {
+    "id": "dominacao-do-imperador",
+    "titulo": "Dominação do Imperador",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/3f26ece7c3c88880_1770649129474006560.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
       "Romance",
+      "Xianxia",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "dominacao-do-rei-demonio-a-pequena-genio-meng-bao-e-a-mae-negra",
+    "titulo": "Dominação do Rei Demônio: A Pequena Gênio Meng Bao e a Mãe Negra",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/fb4b26aa73933c09_1770210960951627703.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
       "Fantasia",
-      "Murim"
+      "Romance"
+    ]
+  },
+  {
+    "id": "dominando-as-terras-devastadas-eu-comando-uma-seita-imortal-no-apocalipse",
+    "titulo": "Dominando as Terras Devastadas: Eu Comando uma Seita Imortal no Apocalipse",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/b91aa138299f6317_1770676181531547610.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação"
+    ]
+  },
+  {
+    "id": "dominando-todas-as-oportunidades",
+    "titulo": "Dominando Todas as Oportunidades",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/c200215cf0c8b5ae_1770226291628305096.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "dominate-the-three-realms",
+    "titulo": "Dominate the Three Realms",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/a7cbfb7641ef7553_1770676948962709740.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "dominei-o-mundo-de-cultivacao-na-porrada",
+    "titulo": "Dominei o Mundo de Cultivação na Porrada",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/d91eeb8c63d063dc_1770677468514401947.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Seinen"
+    ]
+  },
+  {
+    "id": "dormindo-desde-os-tempos-antigos-ascendo-aos-ceus-apos-ressurgir",
+    "titulo": "Dormindo Desde os Tempos Antigos: Ascendo aos Céus Após Ressurgir",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/2fe21e730ba2b751_1770226237865625926.png",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "dupla-baek",
+    "titulo": "Dupla Baek",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/48fad09d6dc5dede_1770387594287553545.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Estratégia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "entomologista-do-cla-tang-de-sichuan",
+    "titulo": "Entomologista Do Clã Tang De Sichuan",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/1efca66ace1da239_1770166489798559167.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Cultivo",
+      "Drama"
+    ]
+  },
+  {
+    "id": "era-vulcanica",
+    "titulo": "Era Vulcânica",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/7ba68c45e6af6540_1770650272639870197.jpeg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "espada-da-explosao-nuclear",
+    "titulo": "Espada da Explosão Nuclear",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/557aa62e6699bef5_1770669269025795949.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Gore",
+      "Isekai"
+    ]
+  },
+  {
+    "id": "espadachim-em-tempo-integral",
+    "titulo": "Espadachim Em Tempo Integral",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/e35d97b6c9952c17_1770164716825698575.png",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "essencia-da-reencarnacao",
+    "titulo": "Essência da Reencarnação",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/b9f11104f381936f_1770155421600100595.png",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Reencarnação",
+      "Superpoderes",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "eu-confio-na-minha-invencibilidade-para-causar-toneladas-de-dano-passivamente",
+    "titulo": "Eu Confio na Minha Invencibilidade para Causar Toneladas de Dano Passivamente",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/4a64b48f07f375b1_1770676247171635468.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Isekai",
+      "Monstros"
+    ]
+  },
+  {
+    "id": "eu-realmente-nao-quero-ser-o-primeiro",
+    "titulo": "Eu realmente não quero ser o primeiro",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/85783e516e6822ed_1770676780283464290.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Ecchi",
+      "Fantasia",
+      "Harem",
+      "Isekai",
+      "Reencarnação"
     ]
   },
   {
     "id": "eu-reencarnei-como-o-herdeiro-louco",
     "titulo": "Eu Reencarnei como o Herdeiro Louco",
     "tituloAlternativo": "",
-    "status": "Em Andamento",
+    "status": "Em andamento",
     "capa": "https://cdn.nexustoons.com/covers/d422ba95efa5c788_1770153322184996262.gif",
     "generos": [
-      "Ação",
+      "Artes Marciais",
       "Aventura",
-      "Artes Marciais"
+      "Ação",
+      "Fantasia",
+      "Reencarnação"
+    ]
+  },
+  {
+    "id": "eu-sou-o-vilao-predestinado",
+    "titulo": "Eu sou o Vilão Predestinado",
+    "tituloAlternativo": "I Am the Fated Villain",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/0d63fffe9394501d_1770165252336421304.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Ecchi",
+      "Fantasia",
+      "Harem",
+      "Isekai",
+      "Wuxia"
+    ]
+  },
+  {
+    "id": "eu-sou-um-deus-do-mal",
+    "titulo": "Eu sou um Deus do Mal",
+    "tituloAlternativo": "I'm an Evil God",
+    "status": "cancelled",
+    "capa": "https://cdn.nexustoons.com/manga_covers/manga_80/eu-sou-um-deus-do-mal_5621e9b5.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Cultivo",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "eu-tirei-ferias-por-motivos-pessoais",
+    "titulo": "Eu Tirei Férias Por Motivos Pessoais",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/c862fd37ff42c9f0_1770655826677096927.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "eu-vou-ser-imortal-sem-fazer-nada",
+    "titulo": "Eu vou ser Imortal sem Fazer Nada",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/ab31b4b533b6898a_1770673982560590520.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "eu-o-lorde-demonio-estou-sendo-alvo-das-minhas-discipulas",
+    "titulo": "Eu, o Lorde Demônio, Estou Sendo Alvo Das Minhas Discípulas!",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/ca58f508f6ea8894_1770676688524368490.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Cultivo",
+      "Ecchi",
+      "Harem"
+    ]
+  },
+  {
+    "id": "evolucao-avancada",
+    "titulo": "Evolução Avançada",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/40c9d02685cb1783_1770678607529664366.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Cultivo",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "evolucao-demoniaca",
+    "titulo": "Evolução Demoníaca",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/9e5654745e7401f2_1770164309667018340.png",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama"
+    ]
+  },
+  {
+    "id": "evolucao-infinita-comecando-do-zero",
+    "titulo": "Evolução Infinita: Começando do Zero",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/9fb54f46c8075177_1770165051478775915.png",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Fantasia",
+      "Isekai"
+    ]
+  },
+  {
+    "id": "evolucao-marcial-despertar-do-rei-dos-monstros",
+    "titulo": "Evolução Marcial: Despertar do Rei dos Monstros",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/0d24f63fd1c25555_1770165801866621818.png",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "furia-de-batalha-1770226445",
+    "titulo": "Fúria de Batalha",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/a3519f9a621ba7c8_1770226444336781709.png",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Romance"
+    ]
+  },
+  {
+    "id": "gosu",
+    "titulo": "Gosu",
+    "tituloAlternativo": "",
+    "status": "Completo",
+    "capa": "https://cdn.nexustoons.com/covers/4b1b37bf3926baa1_1770166751650249273.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Histórico",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "grande-imperador-da-luz-e-das-trevas",
+    "titulo": "Grande Imperador da Luz e das Trevas",
+    "tituloAlternativo": "Great Emperor of Light and Darkness",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/8544bd28133a0665_1770399571063804177.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Guerra",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "guerreiro-congelado",
+    "titulo": "Guerreiro Congelado",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/38dfcaf43364d5a7_1770399414793852264.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "hectopascal",
+    "titulo": "Hectopascal",
+    "tituloAlternativo": "",
+    "status": "Completo",
+    "capa": "https://cdn.nexustoons.com/covers/a7862bda56f41053_1770168359265596844.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "herdeiro-espadachim-do-cla-tang-so-quer-uma-vida-normal",
+    "titulo": "Herdeiro Espadachim do Clã Tang Só Quer uma Vida Normal",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/fd029e48da7a4931_1770166343660572453.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Murim"
+    ]
+  },
+  {
+    "id": "homem-moderno-que-reencarnou-no-mundo-murim",
+    "titulo": "Homem Moderno Que Reencarnou no Mundo Murim",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/6882747da5bbcd62_1770164998674693179.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Magia",
+      "Monstros",
+      "Reencarnação",
+      "luta"
+    ]
+  },
+  {
+    "id": "imperador-demoniaco",
+    "titulo": "Imperador Demoníaco",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/74ca7093a28a09a8_1770164687686411409.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "imperador-espiritual-divino",
+    "titulo": "Imperador Espiritual Divino",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/d5b2ed3fd8d292e5_1770678477004543571.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "imperador-ling-tian",
+    "titulo": "Imperador Ling Tian",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/cd97b421ab9006e0_1770210977683116050.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "imperial-nian-masters",
+    "titulo": "Imperial Nian Masters",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/ce381a19b37630e1_1770667070302605614.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Fantasia",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "invincivel-com-100-hits",
+    "titulo": "Invincível com 100 Hits",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/2a0e512ce94e4333_1770226287703141069.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Histórico",
+      "Seinen"
+    ]
+  },
+  {
+    "id": "jogo-de-deus",
+    "titulo": "jogo de deus",
+    "tituloAlternativo": "God Game",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/0aa7269007b02fc1_1770394769699050294.png",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Seinen",
+      "Shounen",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "levei-um-fora-e-despertei-como-um-guerreiro-divino",
+    "titulo": "Levei um fora e Despertei como um Guerreiro Divino",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/d4d385cef966228d_1770164163090934056.png",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Isekai",
+      "Sistema",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "logado-no-mundo-murim",
+    "titulo": "Logado no Mundo Murim",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/e01493e33ce1890f_1770217903235287535.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Cultivo",
+      "Drama",
+      "Fantasia",
+      "Superpoderes"
+    ]
+  },
+  {
+    "id": "logando-10000-anos-no-futuro",
+    "titulo": "Logando 10.000 Anos No Futuro",
+    "tituloAlternativo": "Log into the Future ; Logado 10.000 Anos No Futuro",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/56d7a6dfdd0ad334_1770162511713843016.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Harem",
+      "Shounen",
+      "Wuxia"
+    ]
+  },
+  {
+    "id": "lorde-do-gelo",
+    "titulo": "Lorde do Gelo",
+    "tituloAlternativo": "Lorde de gelo, Lorde da Neve, Lorde de neve",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/775d0a658173d29d_1770226800587755115.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Murim"
+    ]
+  },
+  {
+    "id": "lorde-xueying",
+    "titulo": "Lorde Xueying",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/bc47b533efe808ff_1770678408053464989.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Xuanhuan"
+    ]
+  },
+  {
+    "id": "mantenha-um-perfil-discreto-lider-da-seita",
+    "titulo": "Mantenha um Perfil Discreto, Líder da Seita",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/dc2a587b28753ca8_1770676658691100930.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Reencarnação"
+    ]
+  },
+  {
+    "id": "memorias-do-rei-da-guerra",
+    "titulo": "Memórias do Rei da Guerra",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/8282849f575cca19_1770229307905060658.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "mestre-da-espada-no-telhado",
+    "titulo": "Mestre da Espada no Telhado",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/fd424667bd5affa9_1770399621329793350.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Luta",
+      "Magia",
+      "Shoujo",
+      "Vingança",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "mestre-da-seita-aos-3-anos",
+    "titulo": "Mestre da Seita aos 3 Anos?",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/40c7818442013561_1770227309717237692.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Comédia",
+      "Fantasia",
+      "Harém",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "mestre-espadachim-criado-pelas-estrelas",
+    "titulo": "Mestre Espadachim Criado Pelas Estrelas",
+    "tituloAlternativo": "The Stellar Swordmaster",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/a6c2ecec06908474_1770153210545095548.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Superpoderes"
+    ]
+  },
+  {
+    "id": "mestre-supremo-de-artes-marciais",
+    "titulo": "Mestre Supremo de Artes Marciais",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/4a5c50550f11a390_1770167349221744397.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "meu-caminho-simulado-rumo-a-imortalidade",
+    "titulo": "Meu Caminho Simulado Rumo à Imortalidade",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/3fe3eca71742d82b_1770158283755375097.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Cultivo",
+      "Fantasia",
+      "Regressão"
+    ]
+  },
+  {
+    "id": "meu-sistema-e-muito-serio",
+    "titulo": "Meu Sistema é Muito Serio",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/9ab23cc7b1fc93e3_1770676667924085832.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Sistema"
+    ]
+  },
+  {
+    "id": "minha-esposa-e-uma-figurona-celestial",
+    "titulo": "Minha esposa é uma figurona Celestial",
+    "tituloAlternativo": "My Wife Is a Heavenly Big Shot",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/c3aa2c9831525112_1770673969758434010.jpeg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Cultivo",
+      "Fantasia",
+      "Reencarnação",
+      "Romance"
+    ]
+  },
+  {
+    "id": "minha-esposa-e-na-verdade-a-imperatriz",
+    "titulo": "Minha esposa é, na verdade, a imperatriz? ",
+    "tituloAlternativo": "My Wife Is Actualy the Empress? ",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/d3ee4dffe55b4d00_1770678526578017419.png",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Isekai",
+      "Romance"
+    ]
+  },
+  {
+    "id": "minha-esposa-a-vila-do-destino",
+    "titulo": "Minha Esposa, a Vilã do Destino",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/1c042aa646ec0955_1770227668493800738.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Ecchi",
+      "Fantasia",
+      "Romance",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "missoes-na-vida-real",
+    "titulo": "Missões na Vida Real",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/0a83299c7db51259_1770166257043311958.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Comédia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "mookhyang-a-origem",
+    "titulo": "MookHyang - A Origem",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/e8aa681254580ffa_1770657197181563966.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "mundo-marcial-verdadeiro",
+    "titulo": "Mundo Marcial Verdadeiro",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/99779212ea36cce2_1770667128185298453.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Luta",
+      "Wuxia",
+      "Xianxia",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "nanotecnologia-marcial",
+    "titulo": "Nanotecnologia Marcial",
+    "tituloAlternativo": "Nano Machine",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/655051080efd2624_1770161278880087100.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Cultivo",
+      "Fantasia",
+      "Histórico"
+    ]
+  },
+  {
+    "id": "necromante-o-rei-da-calamidade",
+    "titulo": "Necromante: O Rei da Calamidade",
+    "tituloAlternativo": "Necromancer: the Ultimate Scourge!, Necromante Catastrófico, Necromante: Rei dos Mortos",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/a8620083e5b49df2_1770151719744263973.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Escolar",
+      "Fantasia",
+      "Isekai"
+    ]
+  },
+  {
+    "id": "nunca-mexa-com-o-senior",
+    "titulo": "Nunca Mexa com o Sênior",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/aa331689e2574298_1770676770672869412.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "o-alquimista-antigo",
+    "titulo": "O Alquimista Antigo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/706c169e44668dba_1770226237556117916.png",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Histórico",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-antigo-inigualavel",
+    "titulo": "O Antigo Inigualável",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/87376c62398b41c3_1770227939867596264.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia"
+    ]
+  },
+  {
+    "id": "o-antigo-soberano-da-eternidade",
+    "titulo": "O Antigo Soberano da Eternidade",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/0e0403a6ad466498_1770151595421328691.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Cultivo",
+      "Harem"
+    ]
+  },
+  {
+    "id": "o-avancado-jogador-da-torre-tutorial",
+    "titulo": "O Avançado Jogador da Torre Tutorial",
+    "tituloAlternativo": "The Tutorial Tower of the Advanced Player",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/f6eec82d9c3c26dd_1770226944726843980.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Comédia",
+      "Fantasia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-filho-mais-novo-do-mestre-espadachim",
+    "titulo": "O Caçula do Mestre Espadachim",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/f151a9471035108d_1770167593189619982.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Regressão",
+      "Superpoderes",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "o-caminho-divino-do-destino",
+    "titulo": "O Caminho Divino do Destino",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/a8f25d1257de3337_1770228051889810542.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Cultivo",
+      "Drama",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "o-conto-do-erudito-que-vive-no-interior",
+    "titulo": "O Conto do Erudito que vive no Interior",
+    "tituloAlternativo": "Tale of a Scribe Who Retires to the Countryside",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/00520f900650e857_1770646160068468754.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Histórico",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-cultivador-imortal-da-cidade-renascido",
+    "titulo": "O Cultivador Imortal da Cidade Renascido",
+    "tituloAlternativo": "Rebirth Of The Urban Immortal Cultivator",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/f2a971e5f805f810_1770166056535199866.png",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "o-cultivador-inesperado",
+    "titulo": "O Cultivador Inesperado",
+    "tituloAlternativo": "Na verdade, sou um grande mestre do cultivo",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/75b5cee0954d65f0_1770604877125729632.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Fantasia",
+      "Shounen"
     ]
   },
   {
     "id": "o-demonio-celestial-nao-pode-viver-uma-vida-normal",
     "titulo": "O Demônio Celestial não pode viver uma Vida Normal",
     "tituloAlternativo": "",
-    "status": "Em Andamento",
+    "status": "Em andamento",
     "capa": "https://cdn.nexustoons.com/covers/709b7acbefc145a3_1770155147680432369.jpg",
     "generos": [
-      "Ação",
-      "Aventura",
       "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Reencarnação",
+      "Superpoderes",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "o-deus-da-batalha-mais-forte-da-academia-dos-cacadores",
+    "titulo": "O Deus da Batalha Mais Forte da Academia dos Caçadores",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/31dbc7613810f6a4_1770228059306777670.png",
+    "generos": [
+      "Artes Marciais",
+      "Ação"
+    ]
+  },
+  {
+    "id": "o-deus-da-guerra-1770226272",
+    "titulo": "O Deus da Guerra",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/007ed5602bd2a843_1770226271613448589.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Ecchi",
+      "Fantasia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-deus-da-guerra-eterno",
+    "titulo": "O Deus da Guerra Eterno",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/13973e590bf80ced_1770228307832202347.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Drama",
+      "Fantasia",
+      "Mistério",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-deus-do-caos-todo-poderoso",
+    "titulo": "O Deus do Caos Todo Poderoso",
+    "tituloAlternativo": "Myst, Might, Mayhem",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/38e222bd5e574817_1770152045670395046.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Cultivo",
+      "Monstros"
+    ]
+  },
+  {
+    "id": "o-deus-marcial-retorna-ao-nivel-2",
+    "titulo": "O Deus Marcial Retorna ao Nível 2",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/15a788191ba0560c_1770157006833398210.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Família",
+      "Fantasia",
+      "Regressão",
+      "Superpoderes",
+      "Tela de Sistema"
+    ]
+  },
+  {
+    "id": "o-duo-demonico-e-justo",
+    "titulo": "O Duo Demônico e Justo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/bccf307d7705adae_1770228060806027140.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "o-escolhido-do-dragao",
+    "titulo": "O Escolhido do Dragão",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/87e85abef65472e7_1770210971834374184.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Histórico",
+      "Isekai"
+    ]
+  },
+  {
+    "id": "o-esposo-heroi-da-sobrevivencia",
+    "titulo": "O Esposo Herói da Sobrevivência!",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/939d03dcaf55f487_1770181320073385866.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Ecchi",
+      "Fantasia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-filho-abandonado-mais-poderoso",
+    "titulo": "O Filho Abandonado Mais Poderoso",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/5b19ea372dc33580_1770161728213868762.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Isekai",
+      "Vingança",
+      "luta"
+    ]
+  },
+  {
+    "id": "o-filho-bastardo-devorador-de-armas",
+    "titulo": "O Filho Bastardo Devorador de Armas",
+    "tituloAlternativo": "The Illegitimate Who Devours Weapons, The Outcast Who Inherits the Weapons' Memories, 名家の庶子は武器の記憶を継承する, 무기 먹는 서자님",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/5ed517a65ac46bff_1770154967214809282.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Regressão"
+    ]
+  },
+  {
+    "id": "o-filho-cacula-do-conde-e-um-jogador",
+    "titulo": "O Filho Caçula do Conde é um Jogador",
+    "tituloAlternativo": "126",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/98e8b7c164350f16_1770217717062002550.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Reencarnação",
+      "Sistema",
+      "Video Game",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "o-filho-justo-agora-um-vilao-possuido",
+    "titulo": "O Filho Justo, Agora um Vilão Possuído!",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/6b934fe0c48e39e6_1770226272849113490.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Histórico",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-garoto-da-morte",
+    "titulo": "O Garoto da Morte",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/895edada0dd320ee_1770395344941954893.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Fantasia",
+      "Psicológico"
+    ]
+  },
+  {
+    "id": "o-genio-terminal-a-busca-pela-sobrevivencia",
+    "titulo": "O Gênio Terminal: A Busca pela Sobrevivência",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/f5a5a909189cfb75_1770228246008379120.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "o-genro-lendario",
+    "titulo": "O Genro Lendário",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/041d98d3eeaab87f_1770227665620980207.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Harém",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-grande-soberano-demonio-celestial",
+    "titulo": "O Grande Soberano Demônio Celestial",
+    "tituloAlternativo": "신마대제, The Divine Demon's Grand Ascension, A Ascensão do Supremo Demônio Celestial",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/be29fe521c8bbbbe_1770163670804902851.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Histórico"
+    ]
+  },
+  {
+    "id": "o-grau-do-relampago",
+    "titulo": "O Grau do Relâmpago",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/afc6fa55cd25f582_1770210149703787567.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-guerreiro-de-escolta-da-familia-jang",
+    "titulo": "O Guerreiro de Escolta da Família Jang",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/0eb08430c89fb7a4_1770667101708654279.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Histórico"
+    ]
+  },
+  {
+    "id": "o-herdeiro-prodigioso-do-cla-namgung",
+    "titulo": "O Herdeiro Prodigioso do Clã Namgung",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/1904979de27ff5e2_1770228290329455314.jpeg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura"
+    ]
+  },
+  {
+    "id": "o-heroi-de-nivel-maximo-ira-voltar",
+    "titulo": "O herói de nível máximo irá voltar",
+    "tituloAlternativo": "The MAX Leveled Hero Will Return, O Herói de Nível Máximo Retornou!, O Herói de Nível Máximo Retornou",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/577e5f73b7a86376_1770229998690963095.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Isekai",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-homem-forte-do-hospital-psiquiatrico",
+    "titulo": "O Homem Forte do Hospital Psiquiátrico",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/b7ebef649f199228_1770210380867248160.webp",
+    "generos": [
+      "Artes Marciais",
+      "Comédia",
+      "Fantasia",
+      "Shounen",
+      "Sistema"
+    ]
+  },
+  {
+    "id": "o-imperador-jade-sou-eu",
+    "titulo": "O Imperador Jade Sou Eu",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/d7d01aa914b88304_1770226271401369783.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Harém",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "o-imperador-jiwu-xuan",
+    "titulo": "O Imperador Jiwu Xuan",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/ad45a7cafb60a724_1770210974578888417.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "o-imperador-qin-esta-de-volta-eu-sou-o-imperador-imortal-eterno",
+    "titulo": "O Imperador Qin está de volta! Eu sou o Imperador Imortal Eterno",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/54452239229fd661_1770668579401939818.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Cultivo",
+      "Harém",
+      "Romance",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-instrutor-demoniaco-celestial",
+    "titulo": "O Instrutor Demoníaco Celestial",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/efd831cfd95a0e4f_1770650389523424426.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "sistema"
+    ]
+  },
+  {
+    "id": "o-jovem-mestre-com-doenca-terminal-do-cla-baek",
+    "titulo": "O Jovem Mestre com Doença Terminal do Clã Baek",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/f333d36cd4fc2673_1770399650494561284.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Fantasia",
+      "Regressão",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-legado-do-espelho",
+    "titulo": "O Legado do Espelho",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/fbfa6301b969c47c_1770676305990578256.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Cultivo",
+      "Fantasia",
+      "Tragédia"
+    ]
+  },
+  {
+    "id": "o-lider-do-culto-demoniaco-e-muito-relutante",
+    "titulo": "O Líder do Culto Demoníaco é Muito Relutante!",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/1de73b6c72a99c38_1770397824753502424.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Comédia",
+      "Fantasia",
       "Murim"
     ]
   },
   {
-    "id": "solo-leveling",
-    "titulo": "Solo Leveling",
-    "tituloAlternativo": "나 혼자만 レベルアップ",
+    "id": "o-maior-discipulo-senior-do-mundo",
+    "titulo": "O Maior Discípulo Sênior do Mundo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/25ac662e07995293_1770676961454710611.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "o-maior-do-mundo",
+    "titulo": "O Maior do Mundo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/1780f8d1400a978c_1770217625650950769.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "o-medico-divino-urbano",
+    "titulo": "O Médico Divino Urbano",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/d5164419987584ce_1770154988117263415.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Harem",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-melhor-homem-no-comando",
+    "titulo": "O Melhor Homem no Comando",
+    "tituloAlternativo": "",
+    "status": "hiatus",
+    "capa": "https://cdn.nexustoons.com/covers/ebabee905da0f02a_1770163048149075480.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Escolar"
+    ]
+  },
+  {
+    "id": "o-mundo-apos-a-queda",
+    "titulo": "O Mundo Após a Queda",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/8f9182b8a4810236_1770162740731389843.jpeg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Superpoderes",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "o-novato-de-nivel-maximo",
+    "titulo": "O Novato de Nível Máximo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/560dbc87a561e458_1770165136030879649.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "o-papai-e-muito-forte",
+    "titulo": "O Papai é Muito Forte",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/2a5eae003018d567_1770655069637174365.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "o-prodigio-da-espada-da-familia-nobre",
+    "titulo": "O Prodígio da Espada da Família Nobre",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/b595fadddda60994_1770211448708474283.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Fantasia",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "o-promotor-rebelde-e-a-espada-da-justica",
+    "titulo": "O Promotor Rebelde e a Espada da Justiça",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/84679225fb10963c_1770210955802996868.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "o-rei-coletor",
+    "titulo": "O Rei Coletor",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/2eb057e1d5e9c284_1770162534927279594.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Sistema",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "o-rei-da-imperatriz-e-invicivel",
+    "titulo": "O Rei da Imperatriz É Invicível!",
+    "tituloAlternativo": "Acabou! O marido da imperatriz é realmente invencível.",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/12d9bc13f4cf52c0_1770667206005795768.webp",
+    "generos": [
+      "Artes Marciais",
+      "Drama",
+      "Fantasia",
+      "Isekai"
+    ]
+  },
+  {
+    "id": "o-rei-demonio-retornado-e-gentil",
+    "titulo": "O Rei Demônio Retornado é Gentil",
+    "tituloAlternativo": "The Regressed Demon Lord is Kind",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/6fb972a3e472c691_1770657178644517771.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Demônios",
+      "Fantasia",
+      "Magia",
+      "Viagem no Tempo"
+    ]
+  },
+  {
+    "id": "o-rei-do-submundo-e-seu-caminho-de-reencarnacao",
+    "titulo": "O Rei do Submundo e Seu Caminho de Reencarnação",
+    "tituloAlternativo": "O Retorno do Rei do Inferno",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/aa506b8b9dc29438_1770226239076914617.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "o-rei-dragao-do-mundo",
+    "titulo": "O Rei Dragão do Mundo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/80f7d199db2f7fe3_1770210969043460869.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "o-rei-jianghu-de-zero-a-numero-1",
+    "titulo": "O Rei Jianghu: De Zero a Número 1",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/346932e5881f2656_1770225746259547920.png",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Comédia",
+      "Cultivo",
+      "Drama",
+      "Fantasia",
+      "Reencarnação",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-rei-retorna-o-poder-do-estudo",
+    "titulo": "O Rei Retorna: O Poder do Estudo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/c1f5467a4c83cd58_1770226237848994442.png",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-renascimento-do-imperador-no-mundo-reverso",
+    "titulo": "O Renascimento do Imperador no Mundo Reverso",
+    "tituloAlternativo": "帝君实在太抢手",
+    "status": "hiatus",
+    "capa": "https://cdn.nexustoons.com/covers/795f7c08eb7f3bbe_1770676354448775308.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Comédia",
+      "Fantasia",
+      "Harém",
+      "Romance",
+      "Super Poderes"
+    ]
+  },
+  {
+    "id": "o-retorno-da-neta-do-cla-namgung",
+    "titulo": "O Retorno da Neta do Clã Namgung",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/dce50d7d4b9927cf_1770646559238417645.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Fantasia",
+      "Regressão"
+    ]
+  },
+  {
+    "id": "o-retorno-da-seita-demoniaca",
+    "titulo": "O Retorno da Seita Demoníaca",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/9ef5a2543be12d09_1770226311889921426.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "o-retorno-da-seita-do-monte-hua",
+    "titulo": "O Retorno da Seita do Monte Hua",
+    "tituloAlternativo": "O Retorno Vulcânico",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/660c974781dbbc6c_1770164603750712544.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia"
+    ]
+  },
+  {
+    "id": "o-retorno-do-demonio-louco",
+    "titulo": "O Retorno do Demônio Louco",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/bda9514d03a04d1f_1770169139477577179.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia"
+    ]
+  },
+  {
+    "id": "o-senhor-do-tempo-antigo",
+    "titulo": "O Senhor do Tempo Antigo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/e31207d626441d5f_1770210963729022775.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "o-sistema-devora-tudo",
+    "titulo": "O Sistema Devora-Tudo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/6ebd99d9f066001b_1770226445529157841.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Cultivo"
+    ]
+  },
+  {
+    "id": "o-tutorial-e-muito-dificil",
+    "titulo": "O Tutorial é Muito Difícil",
+    "tituloAlternativo": "The Tutorial is Too Hard",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/71dea713d113ab18_1770249621626161616.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "fantasia",
+      "luta",
+      "sistema",
+      "sobrevivencia",
+      "torre"
+    ]
+  },
+  {
+    "id": "o-ultimo-humano",
+    "titulo": "O Último Humano",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/c1f298b0d647bef6_1770168245836606738.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Mistério",
+      "Shounen",
+      "Sobrevivência",
+      "Terror",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "o-vagabundo-sorridente-e-orgulhoso",
+    "titulo": "O Vagabundo Sorridente e Orgulhoso",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/2c6b2d220a3f8ee4_1770227938365737225.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "o-vilao-do-destino-se-torna-o-patriarca-da-justica",
+    "titulo": "O Vilão do Destino Se Torna o Patriarca da Justiça",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/91369d7aeb4ebcc2_1770226290424427966.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "one-thousand-live-broadcast-big-local-tyrant",
+    "titulo": "One Thousand Live Broadcast Big Local Tyrant",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/b268fb69d8334983_1770678626868950544.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Harem"
+    ]
+  },
+  {
+    "id": "ordeal",
+    "titulo": "Ordeal",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/371a80057660da06_1770656852409242993.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Guerra",
+      "Mistério",
+      "Seinen",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "pai-incomparavel",
+    "titulo": "Pai Incomparável",
+    "tituloAlternativo": "Peerless Dad",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/e6357097d254c159_1770161681109931072.png",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "luta"
+    ]
+  },
+  {
+    "id": "para-nao-morrer",
+    "titulo": "Para não Morrer",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/33a0e400f6944b4c_1770651566944863153.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Crime",
+      "Shounen",
+      "Tragédia",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "prisao-juvenil",
+    "titulo": "Prisão Juvenil",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/117a43cc330cd7ef_1770656290654012705.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Fantasia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "providencia-de-alto-nivel",
+    "titulo": "Providência de Alto Nível",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/ae05ed2bb4aa6227_1770160932192434917.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Cultivo",
+      "Harem"
+    ]
+  },
+  {
+    "id": "quando-a-lua-negra-surgir",
+    "titulo": "Quando a Lua Negra Surgir",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/961ce57d12fb4b52_1770392190187730744.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Histórico",
+      "Isekai",
+      "Magia",
+      "Romance",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "quem-matou-o-rei-dos-moorim",
+    "titulo": "Quem Matou o Rei dos Moorim?",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/9d1f4da655f1b009_1770227309640138301.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "reborn-as-kingemperor",
+    "titulo": "Reborn As King/Emperor",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/b022650cd539ad37_1770678597220241799.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Reencarnação"
+    ]
+  },
+  {
+    "id": "reencarnacao-do-antigo-ranker-do-cla-murim",
+    "titulo": "Reencarnação do antigo Ranker do Clã Murim",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/5aa6971281a69b48_1770155261715113514.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Reencarnação",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "reencarnacao-do-deus-demonio",
+    "titulo": "Reencarnação do Deus Demônio",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/358f3cbdf0dc736b_1770433065679758724.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Comédia",
+      "Cultivo",
+      "Drama",
+      "Histórico",
+      "Murim",
+      "Reencarnação",
+      "Shounen",
+      "Tragédia",
+      "fantasia",
+      "luta"
+    ]
+  },
+  {
+    "id": "reencarnacao-do-lorde-absoluto-do-murim",
+    "titulo": "Reencarnação do Lorde Absoluto do Murim",
+    "tituloAlternativo": "Renascimento do Demônio Celestial",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/23b55d939a00db16_1770169611677958561.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "reencarnacao-do-mais-forte-deus-da-espada",
+    "titulo": "Reencarnação do Mais Forte Deus da Espada",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/ab4b8a3d8d17c477_1770678912578998908.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Ficção Científica",
+      "Luta",
+      "MMORPG",
+      "Reencarnação",
+      "VRMMO",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "reencarnado-em-um-mundo-de-cultivo-cibernetico-subi-ao-topo-lutando",
+    "titulo": "Reencarnado em um Mundo de Cultivo Cibernético, Subi ao Topo Lutando",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/620b83e61194e338_1770666746154263863.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Cultivo"
+    ]
+  },
+  {
+    "id": "regressao-absoluta",
+    "titulo": "Regressão Absoluta",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/0aafa8050a42dd01_1770162491621653115.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Regressão"
+    ]
+  },
+  {
+    "id": "renascido-como-demonio-marcial-celestial",
+    "titulo": "Renascido como Demônio Marcial Celestial",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/b46a0dd1d7565b18_1770666217650447545.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação"
+    ]
+  },
+  {
+    "id": "renascimento-do-doutor",
+    "titulo": "Renascimento do Doutor",
+    "tituloAlternativo": "Doctor's Rebirth",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/e22efceb21493986_1770166446636807619.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Isekai",
+      "Médico",
+      "Shounen",
+      "Sobrevivência",
+      "Tragédia",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "renascimento-no-apocalipse-chegando-ao-topo-abrindo-caixas",
+    "titulo": "Renascimento no Apocalipse Chegando ao Topo Abrindo Caixas",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/67131c828a0cd9cc_1770678587152865440.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação"
+    ]
+  },
+  {
+    "id": "retorno-de-vidas-passadas",
+    "titulo": "Retorno de Vidas Passadas",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/ab8c991d0ee8d761_1770657282695780944.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Seinen",
+      "Volta no Tempo",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "retorno-do-abismo",
+    "titulo": "Retorno do Abismo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/10a43aa1a24c33f2_1770646386416590980.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "retorno-do-cavaleiro-da-morte-de-nivel-apocaliptico",
+    "titulo": "Retorno do Cavaleiro da Morte de Nível Apocalíptico",
+    "tituloAlternativo": "Retorno do Cavaleiro da Morte de Nível Apocaliptico",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/4740cfc29e20ba1d_1770168201392892994.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Reencarnação"
+    ]
+  },
+  {
+    "id": "return-of-soul-master",
+    "titulo": "Return of Soul Master",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/d32fa48e843b1797_1770677289580077532.png",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Romance"
+    ]
+  },
+  {
+    "id": "reverendo-insano",
+    "titulo": "Reverendo Insano",
+    "tituloAlternativo": "",
+    "status": "cancelled",
+    "capa": "https://cdn.nexustoons.com/covers/dc46a10363747efd_1770677315219434177.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Fantasia",
+      "Regressão"
+    ]
+  },
+  {
+    "id": "roteiro-quebrado",
+    "titulo": "Roteiro Quebrado",
+    "tituloAlternativo": "Breakers",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/186e0fce276517dd_1770168311124222488.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Mistério",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "sacrificio-espiritual-o-caminho-para-a-divindade",
+    "titulo": "Sacrifício Espiritual: O Caminho para a Divindade",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/72178d0440f55531_1770659651095929167.png",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Monstros"
+    ]
+  },
+  {
+    "id": "se-tornando-um-deus-atraves-de-um-espirito-aquatico",
+    "titulo": "Se tornando um Deus Através de um Espirito Aquático",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/manga_covers/manga_new/se-tornando-um-deus-atraves-de-um-espirito-aquatico_c82b7bd3.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Cultivo",
+      "Fantasia",
+      "Tela de Sistema"
+    ]
+  },
+  {
+    "id": "sem-um-parceiro-taoista-morrerei",
+    "titulo": "Sem um Parceiro Taoísta, Morrerei",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/410cd472c6bd3145_1770676546268426521.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Ecchi",
+      "Fantasia",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "senhor-do-universo",
+    "titulo": "Senhor do Universo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/d0ffcf280dc8f21e_1770669208947432482.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Harem",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "sentido-absoluto-da-espada",
+    "titulo": "Sentido Absoluto da Espada",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/7e0ea37fb5155df8_1770162875452191698.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Regressão"
+    ]
+  },
+  {
+    "id": "seu-talento-e-meu",
+    "titulo": "Seu Talento é Meu!",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/c400256a44cec859_1770676676688631032.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Cultivo",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "shen-chong-um-peixe-com-dentes-e-a-unificacao-dos-reinos",
+    "titulo": "Shen Chong: Um Peixe com Dentes e a Unificação dos Reinos",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/cde5a7ef3badbdfd_1770647148086286028.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Harem",
+      "Mistério",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "shi-shen-ji-o-cacador-de-deuses",
+    "titulo": "Shi Shen Ji - O Caçador de Deuses",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/c53fc67d74eb3387_1770676312504658609.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Romance",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "sigrid",
+    "titulo": "Sigrid",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/2e4a0a6e5f368d27_1770650722658920821.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Monstros",
+      "Reencarnação",
+      "Romance",
+      "Shoujo"
+    ]
+  },
+  {
+    "id": "sinsujeilgeom-o-destino-de-go-mu-sung",
+    "titulo": "Sinsujeilgeom: O Destino de Go Mu Sung",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/0b8366fec3ea134c_1770676992577347548.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "sistema-divino-de-niveis",
+    "titulo": "Sistema Divino de Níveis",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/451848782e75f0d5_1770659810914631833.jpg",
+    "generos": [
+      "Apocalipse",
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama"
+    ]
+  },
+  {
+    "id": "sistema-humilde",
+    "titulo": "Sistema humilde",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/fdcd17ad4af8e857_1770665474089217354.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Cultivo",
+      "Sistema"
+    ]
+  },
+  {
+    "id": "slacking-my-way-to-immortality",
+    "titulo": "Slacking My Way to Immortality",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/755584a7dfe0b751_1770667144022698676.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "so-eu-sou-amado-pelas-constelacoes",
+    "titulo": "Só Eu Sou Amado pelas Constelações!",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/b99459a4b612bb6f_1770666991529085732.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Isekai"
+    ]
+  },
+  {
+    "id": "so-quero-morrer",
+    "titulo": "Só Quero Morrer",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/17b77b2fc5f1e8bc_1770675396036354130.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Fantasia",
+      "Histórico",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "sobrevivencia-do-genio-com-tempo-de-vida-limitado",
+    "titulo": "Sobrevivência do Gênio com Tempo de Vida Limitado",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/7ac092b92689c85e_1770226991557301461.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "sobrevivendo-ao-apocalipse",
+    "titulo": "Sobrevivendo ao Apocalipse",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/f94d12387b120414_1770228205648893489.jpg",
+    "generos": [
+      "Apocalipse",
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Monstros"
+    ]
+  },
+  {
+    "id": "sol-negro",
+    "titulo": "Sol Negro",
+    "tituloAlternativo": "Black Sun",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/c1e03a33dbb0e2d9_1770648510428875743.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Super Poderes",
+      "Suspense"
+    ]
+  },
+  {
+    "id": "soldado-de-joseon",
+    "titulo": "Soldado de Joseon",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/2aef75fd3919e869_1770676162600518281.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Seinen"
+    ]
+  },
+  {
+    "id": "sou-uma-vila-das-artes-marciais-mas-sou-a-mais-forte",
+    "titulo": "Sou Uma Vilã das Artes Marciais, Mas Sou a Mais Forte!",
+    "tituloAlternativo": "",
     "status": "Completo",
-    "capa": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105398-b673Vt5ZSuz3.jpg"
+    "capa": "https://cdn.nexustoons.com/covers/e7089b67b703ba26_1770653750508053257.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Histórico",
+      "Romance",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "soyoyu-alem-do-destino",
+    "titulo": "Soyoyu - Além do Destino",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/98d0ede8728bac72_1770678558819555439.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Histórico",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "speedrun-de-cultivo-diversao-sem-limites",
+    "titulo": "Speedrun de Cultivo, Diversão sem Limites",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/cb1c316300e6d5be_1770676268374560061.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Cultivo",
+      "Ecchi"
+    ]
+  },
+  {
+    "id": "strongest-abandoned-son",
+    "titulo": "Strongest Abandoned Son",
+    "tituloAlternativo": "",
+    "status": "cancelled",
+    "capa": "https://cdn.nexustoons.com/covers/7cf8fdd3eb6ebb22_1770665440884652718.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Harem",
+      "Romance"
+    ]
+  },
+  {
+    "id": "subindo-de-nivel-na-masmorra-exclusiva",
+    "titulo": "Subindo de Nível na Masmorra Exclusiva",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/b3bb9fd202b4daf9_1770390391794402357.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "subindo-de-nivel-no-espelho",
+    "titulo": "Subindo de Nível no Espelho",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/d93d888c6730ef8a_1770675709192638123.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Harem",
+      "Histórico",
+      "Isekai",
+      "Romance"
+    ]
+  },
+  {
+    "id": "superando-o-nivel-maximo",
+    "titulo": "Superando o Nível Máximo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/c2697ca965aec947_1770397841744527770.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "supernova-a-busca-de-yushin",
+    "titulo": "Supernova: A Busca de Yushin",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/18792095b60840ba_1770678403695561833.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Escolar",
+      "Fantasia",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "switch-a-troca-mortal",
+    "titulo": "Switch: A Troca Mortal",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/36d37d16d3d6bad8_1770671171880248945.jpeg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Escolar",
+      "Psicológico",
+      "Seinen"
+    ]
+  },
+  {
+    "id": "switch-ji-dong-e-kim-dong-chan",
+    "titulo": "Switch: Ji-Dong e Kim Dong-Chan",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/dcb913d487d42e47_1770226285359752838.webp",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Escolar",
+      "Psicológico",
+      "Seinen"
+    ]
+  },
+  {
+    "id": "the-descent-of-the-spiritual-deity",
+    "titulo": "The Descent Of The Spiritual Deity",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/60f9aa189ab18c7c_1770667193002895555.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Fantasia",
+      "Slice of Life"
+    ]
+  },
+  {
+    "id": "the-rebirth-of-an-8th-circled-wizard",
+    "titulo": "The Rebirth of an 8th Circled Wizard",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/93570c023193b1f5_1770677353640825065.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Magia"
+    ]
+  },
+  {
+    "id": "the-supreme-demon-swordmaster",
+    "titulo": "The Supreme Demon Swordmaster",
+    "tituloAlternativo": "마도제일검",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/d23b9284477a90aa_1770655527857733342.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Shounen"
+    ]
+  },
+  {
+    "id": "tian-zhu-bian-o-sagrado-despertar-celestial",
+    "titulo": "Tian Zhu Bian - O Sagrado Despertar Celestial",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/b99c283cba53de6b_1770657262983073701.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Fantasia",
+      "Harem",
+      "Shounen",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "todos-os-dias-celestiais",
+    "titulo": "Todos os Dias Celestiais",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/a5fdfde5a447de96_1770669242151824113.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "todos-os-meus-avatares-sao-magnatas",
+    "titulo": "Todos os Meus Avatares são Magnatas",
+    "tituloAlternativo": "",
+    "status": "hiatus",
+    "capa": "https://cdn.nexustoons.com/covers/b760b33188f18dfe_1770150845944299069.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Drama",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "todos-saudam-o-lider-da-seita",
+    "titulo": "Todos Saúdam o Líder da Seita",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/f8bbd78e07ced4b7_1770167725770013058.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Fantasia",
+      "Reencarnação",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "tong-a-lenda-de-busan-em-seul",
+    "titulo": "Tong: A Lenda de Busan em Seul",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/b64b0b2edbb904c4_1770678394529068479.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Drama"
+    ]
+  },
+  {
+    "id": "tornando-me-um-deus-por-mim-mesmo",
+    "titulo": "Tornando-me um Deus por Mim Mesmo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/722b30bfb03fd147_1770675914670809901.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia"
+    ]
+  },
+  {
+    "id": "treinamento-com-o-rei-demonio",
+    "titulo": "Treinamento com o Rei Demônio",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/c7f6eef97fc75cd4_1770676297834889986.webp",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Fantasia",
+      "Harem",
+      "Romance",
+      "sobrenatural"
+    ]
+  },
+  {
+    "id": "tres-mil-anos-ate-o-ceu",
+    "titulo": "Três Mil Anos até o Céu",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/490a9d5e4d5186a0_1770673960296194647.png",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Comédia",
+      "Fantasia",
+      "Harem"
+    ]
+  },
+  {
+    "id": "tropa-de-elite-fantastica",
+    "titulo": "Tropa de Elite Fantástica",
+    "tituloAlternativo": "Fantasy Enlistment Squad, Fantasy Induction Corp, 판타지 입소대s, ",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/0e96cb8e2d8f0143_1770215246671431977.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Fantasia",
+      "Magia",
+      "Militar",
+      "Revenge",
+      "Seinen",
+      "Violência"
+    ]
+  },
+  {
+    "id": "um-discipulo-vilao-nao-pode-ser-um-santo",
+    "titulo": "Um Discípulo Vilão Não Pode Ser Um Santo",
+    "tituloAlternativo": "Master: This Villainous Disciple Is Not The Holy Child",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/3d53e6c0a347baa0_1770166689167546537.png",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Ecchi",
+      "Fantasia",
+      "Harem",
+      "Histórico",
+      "Wuxia"
+    ]
+  },
+  {
+    "id": "vamos-esconder-meu-irmao-mais-novo-primeiro",
+    "titulo": "Vamos Esconder Meu Irmão Mais Novo Primeiro",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/bd12cf38116aaa48_1770650557508539154.webp",
+    "generos": [
+      "Artes Marciais",
+      "Drama",
+      "Reencarnação",
+      "Romance"
+    ]
+  },
+  {
+    "id": "vilao-inigualavel",
+    "titulo": "Vilão inigualável",
+    "tituloAlternativo": "",
+    "status": "Completo",
+    "capa": "https://cdn.nexustoons.com/covers/805655e516306772_1770653776278429342.jpg",
+    "generos": [
+      "Artes Marciais",
+      "Ação",
+      "Murim"
+    ]
+  },
+  {
+    "id": "vou-me-aposentar-depois-de-salvar-o-mundo",
+    "titulo": "Vou Me Aposentar Depois de Salvar o Mundo",
+    "tituloAlternativo": "",
+    "status": "Em andamento",
+    "capa": "https://cdn.nexustoons.com/covers/9164400ba2269376_1770231019389229110.png",
+    "generos": [
+      "Artes Marciais",
+      "Aventura",
+      "Ação",
+      "Fantasia",
+      "Tragédia"
+    ]
   }
 ]

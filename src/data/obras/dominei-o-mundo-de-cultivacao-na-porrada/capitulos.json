@@ -1,0 +1,88 @@
+{
+    "capitulos": [
+        {
+            "id": 21230,
+            "numero": 15,
+            "titulo": "Capítulo 15",
+            "dataPublicacao": "2025-08-03T14:58:50.434548+00:00"
+        },
+        {
+            "id": 21229,
+            "numero": 14,
+            "titulo": "Capítulo 14",
+            "dataPublicacao": "2025-08-03T14:58:46.412845+00:00"
+        },
+        {
+            "id": 21228,
+            "numero": 13,
+            "titulo": "Capítulo 13",
+            "dataPublicacao": "2025-08-03T14:58:47.111192+00:00"
+        },
+        {
+            "id": 21198,
+            "numero": 12,
+            "titulo": "Capítulo 12",
+            "dataPublicacao": "2025-08-03T14:58:20.208343+00:00"
+        },
+        {
+            "id": 21196,
+            "numero": 11,
+            "titulo": "Capítulo 11",
+            "dataPublicacao": "2025-08-03T14:58:19.563118+00:00"
+        },
+        {
+            "id": 21195,
+            "numero": 10,
+            "titulo": "Capítulo 10",
+            "dataPublicacao": "2025-08-03T14:58:18.850541+00:00"
+        },
+        {
+            "id": 21194,
+            "numero": 9,
+            "titulo": "Capítulo 9",
+            "dataPublicacao": "2025-08-03T14:58:18.368296+00:00"
+        },
+        {
+            "id": 21193,
+            "numero": 8,
+            "titulo": "Capítulo 8",
+            "dataPublicacao": "2025-08-03T14:58:17.406844+00:00"
+        },
+        {
+            "id": 21192,
+            "numero": 7,
+            "titulo": "Capítulo 7",
+            "dataPublicacao": "2025-08-03T14:58:17.472310+00:00"
+        },
+        {
+            "id": 21191,
+            "numero": 6,
+            "titulo": "Capítulo 6",
+            "dataPublicacao": "2025-08-03T14:58:17.362030+00:00"
+        },
+        {
+            "id": 21190,
+            "numero": 5,
+            "titulo": "Capítulo 5",
+            "dataPublicacao": "2025-08-03T14:58:16.266703+00:00"
+        },
+        {
+            "id": 21189,
+            "numero": 4,
+            "titulo": "Capítulo 4",
+            "dataPublicacao": "2025-08-03T14:58:17.455834+00:00"
+        },
+        {
+            "id": 21188,
+            "numero": 3,
+            "titulo": "Capítulo 3",
+            "dataPublicacao": "2025-08-03T14:58:15.284611+00:00"
+        },
+        {
+            "id": 21149,
+            "numero": 2,
+            "titulo": "Capítulo 2",
+            "dataPublicacao": "2025-08-03T14:57:39.574833+00:00"
+        }
+    ]
+}

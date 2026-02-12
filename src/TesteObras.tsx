@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { listarTodasObras, getObraPorSlug, getCapitulosPorObra, type ObraInfo } from './data/obras'
+import { listarTodasObras, getObraPorSlug, getCapitulosPorObra, type ObraInfo, type Capitulo } from './data/obras'
 import './TesteObras.css'
 
 /**
@@ -14,6 +14,7 @@ import './TesteObras.css'
 function TesteObras() {
     const [obras, setObras] = useState<ObraInfo[]>([])
     const [obraSelecionada, setObraSelecionada] = useState<string | null>(null)
+    const [capitulos, setCapitulos] = useState<Capitulo[]>([])
 
     useEffect(() => {
         // Carregar todas as obras
@@ -21,12 +22,19 @@ function TesteObras() {
         setObras(todasObras)
     }, [])
 
+    useEffect(() => {
+        if (obraSelecionada) {
+            getCapitulosPorObra(obraSelecionada).then(setCapitulos)
+        } else {
+            setCapitulos([])
+        }
+    }, [obraSelecionada])
+
     const handleSelecionarObra = (slug: string) => {
         setObraSelecionada(slug)
     }
 
     const obraDetalhes = obraSelecionada ? getObraPorSlug(obraSelecionada) : null
-    const capitulos = obraSelecionada ? getCapitulosPorObra(obraSelecionada) : []
 
     return (
         <div className="teste-obras">

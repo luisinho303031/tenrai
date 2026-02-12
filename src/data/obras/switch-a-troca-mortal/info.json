@@ -1,0 +1,24 @@
+{
+    "id": "switch-a-troca-mortal",
+    "meta": {
+        "titulo": "Switch: A Troca Mortal",
+        "tituloAlternativo": "",
+        "descricao": "Cuidado, valentões!  Eu vou acabar com todos!",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/36d37d16d3d6bad8_1770671171880248945.jpeg",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Ação",
+        "Drama",
+        "Escolar",
+        "Psicológico",
+        "Seinen"
+    ]
+}

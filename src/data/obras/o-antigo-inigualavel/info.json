@@ -1,0 +1,22 @@
+{
+    "id": "o-antigo-inigualavel",
+    "meta": {
+        "titulo": "O Antigo Inigualável",
+        "tituloAlternativo": "",
+        "descricao": "Nosso protagonista descobre que a vila onde vive é apenas um mundo criado por seu pai para protegê-lo. Sua jornada começa...",
+        "ano": 2026,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/87376c62398b41c3_1770227939867596264.jpg",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Aventura",
+        "Ação",
+        "Comédia"
+    ]
+}

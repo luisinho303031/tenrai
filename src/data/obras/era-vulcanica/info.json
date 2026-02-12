@@ -1,0 +1,23 @@
+{
+    "id": "era-vulcanica",
+    "meta": {
+        "titulo": "Era Vulcânica",
+        "tituloAlternativo": "",
+        "descricao": "",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/7ba68c45e6af6540_1770650272639870197.jpeg",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Aventura",
+        "Ação",
+        "Drama",
+        "Shounen"
+    ]
+}

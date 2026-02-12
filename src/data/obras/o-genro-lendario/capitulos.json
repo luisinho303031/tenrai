@@ -1,0 +1,22 @@
+{
+    "capitulos": [
+        {
+            "id": 220513,
+            "numero": 5,
+            "titulo": "Capítulo 5",
+            "dataPublicacao": "2026-02-07T01:00:21.011558+00:00"
+        },
+        {
+            "id": 220511,
+            "numero": 4,
+            "titulo": "Capítulo 4",
+            "dataPublicacao": "2026-02-07T01:00:06.031386+00:00"
+        },
+        {
+            "id": 220452,
+            "numero": 3.5,
+            "titulo": "Capítulo 3.5",
+            "dataPublicacao": "2026-02-07T00:50:28.309453+00:00"
+        }
+    ]
+}

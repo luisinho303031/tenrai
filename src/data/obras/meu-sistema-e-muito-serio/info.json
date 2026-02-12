@@ -1,0 +1,22 @@
+{
+    "id": "meu-sistema-e-muito-serio",
+    "meta": {
+        "titulo": "Meu Sistema é Muito Serio",
+        "tituloAlternativo": "",
+        "descricao": "Nunca deixarei de lutar com unhas e dentes para proteger a humanidade e todas as pessoas debaixo do céu. É hora de energizar o sistema mais uma vez, aumentando suas capacidades para enfrentar esse desafio crucial!",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/9ab23cc7b1fc93e3_1770676667924085832.jpg",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Aventura",
+        "Ação",
+        "Sistema"
+    ]
+}

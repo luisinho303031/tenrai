@@ -1,0 +1,24 @@
+{
+    "id": "sol-negro",
+    "meta": {
+        "titulo": "Sol Negro",
+        "tituloAlternativo": "Black Sun",
+        "descricao": "Um menino que não tem conhecimento do fardo que carrega ou do mal que espreita nas trevas à sua procura desde o nascimento, em breve sentirá o peso de ser a última esperança… a última chama da humanidade.",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/c1e03a33dbb0e2d9_1770648510428875743.jpg",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Aventura",
+        "Ação",
+        "Comédia",
+        "Super Poderes",
+        "Suspense"
+    ]
+}

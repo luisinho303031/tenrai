@@ -1,0 +1,76 @@
+{
+    "capitulos": [
+        {
+            "id": 151839,
+            "numero": 12,
+            "titulo": "Capítulo 12",
+            "dataPublicacao": "2025-10-24T01:29:57.628337+00:00"
+        },
+        {
+            "id": 140827,
+            "numero": 11,
+            "titulo": "Capítulo 11",
+            "dataPublicacao": "2025-10-08T03:49:04.788013+00:00"
+        },
+        {
+            "id": 140826,
+            "numero": 10,
+            "titulo": "Capítulo 10",
+            "dataPublicacao": "2025-10-08T03:49:00.965644+00:00"
+        },
+        {
+            "id": 140824,
+            "numero": 9,
+            "titulo": "Capítulo 9",
+            "dataPublicacao": "2025-10-08T03:48:59.455233+00:00"
+        },
+        {
+            "id": 140823,
+            "numero": 8,
+            "titulo": "Capítulo 8",
+            "dataPublicacao": "2025-10-08T03:48:50.793319+00:00"
+        },
+        {
+            "id": 140822,
+            "numero": 7,
+            "titulo": "Capítulo 7",
+            "dataPublicacao": "2025-10-08T03:48:45.822236+00:00"
+        },
+        {
+            "id": 140820,
+            "numero": 6,
+            "titulo": "Capítulo 6",
+            "dataPublicacao": "2025-10-08T03:48:43.676379+00:00"
+        },
+        {
+            "id": 140819,
+            "numero": 5,
+            "titulo": "Capítulo 5",
+            "dataPublicacao": "2025-10-08T03:48:24.239575+00:00"
+        },
+        {
+            "id": 141078,
+            "numero": 4,
+            "titulo": "Capítulo 4",
+            "dataPublicacao": "2025-10-08T05:19:11.242721+00:00"
+        },
+        {
+            "id": 140817,
+            "numero": 3,
+            "titulo": "Capítulo 3",
+            "dataPublicacao": "2025-10-08T03:48:19.082351+00:00"
+        },
+        {
+            "id": 140815,
+            "numero": 2,
+            "titulo": "Capítulo 2",
+            "dataPublicacao": "2025-10-08T03:48:13.943095+00:00"
+        },
+        {
+            "id": 140814,
+            "numero": 1,
+            "titulo": "Capítulo 1",
+            "dataPublicacao": "2025-10-08T03:48:29.505293+00:00"
+        }
+    ]
+}

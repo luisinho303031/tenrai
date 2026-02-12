@@ -1,0 +1,23 @@
+{
+    "id": "guerreiro-congelado",
+    "meta": {
+        "titulo": "Guerreiro Congelado",
+        "tituloAlternativo": "",
+        "descricao": "Cheok Ryugeom, o maior espadachim de Goryeo, se lançou de um penhasco com seu inimigo, sacrificando-se por seu mestre. Congelado no gelo por 900 anos, ele desperta na era moderna — sua vingança está apenas começando.",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/38dfcaf43364d5a7_1770399414793852264.webp",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Ação",
+        "Drama",
+        "Shounen",
+        "sobrenatural"
+    ]
+}

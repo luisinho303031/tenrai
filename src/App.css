@@ -41,6 +41,7 @@
   top: 0;
   height: 100vh;
 }
+
 .sidebar-header {
   padding: 2rem 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -56,6 +57,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .sidebar-user {
   margin-top: auto;
   padding: 1rem 0rem;
@@ -73,11 +75,13 @@
   object-fit: cover;
   border: none;
 }
+
 .user-info {
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
+
 .user-name {
   font-size: 0.9rem;
   color: #fff;
@@ -910,8 +914,8 @@
 
 /* Skeleton Loading Styles */
 .skeleton {
-  background: #1a1a1a;
-  background: linear-gradient(90deg, #1a1a1a 10%, #222 50%, #1a1a1a 90%);
+  background: #121212;
+  background: linear-gradient(90deg, #121212 10%, #1a1a1a 50%, #121212 90%);
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite linear;
   border-radius: 4px;
@@ -934,7 +938,10 @@
 .skeleton-cover {
   width: 140px;
   height: 200px;
-  background-color: #222;
+  background: #121212;
+  background: linear-gradient(90deg, #121212 10%, #1a1a1a 50%, #121212 90%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
   border-radius: 2px;
 }
 
@@ -942,12 +949,21 @@
   height: 1.2rem;
   width: 70%;
   margin-bottom: 2rem;
+  background: #121212;
+  background: linear-gradient(90deg, #121212 10%, #1a1a1a 50%, #121212 90%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 4px;
 }
 
 .skeleton-row {
   height: 2.5rem;
   width: 100%;
   margin-bottom: 0.5rem;
+  background: #121212;
+  background: linear-gradient(90deg, #121212 10%, #1a1a1a 50%, #121212 90%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
   border-radius: 4px;
 }
 
@@ -956,6 +972,10 @@
   height: 0.8rem;
   width: 90%;
   margin-bottom: 0.5rem;
+  background: #121212;
+  background: linear-gradient(90deg, #121212 10%, #1a1a1a 50%, #121212 90%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
   border-radius: 4px;
 }
 
@@ -963,7 +983,11 @@
   height: 1.5rem;
   width: 40%;
   margin-top: auto;
-  border-radius: 4px;
+  background: #121212;
+  background: linear-gradient(90deg, #121212 10%, #1a1a1a 50%, #121212 90%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 1px;
 }
 
 /* Login Modal */
@@ -1019,6 +1043,7 @@
   margin: 0 0 0rem 0;
   background: linear-gradient(135deg, #fff 0%, #cbd5e1 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1693,4 +1718,20 @@
     white-space: normal;
     /* Allow text to wrap if necessarily, though tag itself wraps */
   }
+}
+
+.skeleton-pulse {
+  background: #121212;
+  background: linear-gradient(90deg, #121212 10%, #1a1a1a 50%, #121212 90%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+/* Comentarios Input Styles */
+.comentario-input-mobile:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.comentario-input-mobile:focus {
+  border-bottom-color: rgba(255, 255, 255, 1) !important;
 }

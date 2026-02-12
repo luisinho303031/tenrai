@@ -1,0 +1,23 @@
+{
+    "id": "contrato-de-mercenario",
+    "meta": {
+        "titulo": "Contrato de Mercenário",
+        "tituloAlternativo": "",
+        "descricao": "Aos oito anos, Ijin Yu perdeu seus pais em um acidente de avião e ficou preso em uma terra estrangeira, forçado a se tornar um mercenário infantil para permanecer vivo. Ele volta para casa dez anos depois para se reunir com sua família na Coréia, onde comida e abrigo são suficientes e tudo parece estar em paz. Mas Ijin logo aprenderá que a vida de adolescente é uma outra façanha de sobrevivência. Com apenas um ano de ensino médio restante, Ijin deve dominar novas táticas para manobrar seu caminho em torno do campo de batalha da escola. Ele pode sobreviver a um ano de ensino médio? Ou melhor, a escola conseguirá sobreviver a ele?",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/b766241923698078_1770162664697612634.webp",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Aventura",
+        "Ação",
+        "Fantasia",
+        "Romance"
+    ]
+}

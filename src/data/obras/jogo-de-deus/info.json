@@ -1,0 +1,24 @@
+{
+    "id": "jogo-de-deus",
+    "meta": {
+        "titulo": "jogo de deus",
+        "tituloAlternativo": "God Game",
+        "descricao": "Reiyan Asura, se esse for o seu verdadeiro nome, desperta num vazio, preso por correntes. Ele não se lembra quem é nem como chegou a este mundo branco. Mal sabe ele, entrou com milhões de outros num jogo retorcido onde apenas os mais fortes prevalecem. Reiyan é tudo menos forte, mas será que ele tem um segredo enterrado que o pode ajudar a sobreviver? Bem-vindo ao Jogo de Deus. Prove o seu valor ou morra entretendo-o.",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/0aa7269007b02fc1_1770394769699050294.png",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Aventura",
+        "Ação",
+        "Seinen",
+        "Shounen",
+        "fantasia"
+    ]
+}

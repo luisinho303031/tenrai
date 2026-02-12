@@ -1,0 +1,22 @@
+{
+    "capitulos": [
+        {
+            "id": 76686,
+            "numero": 1,
+            "titulo": "Capítulo 1",
+            "dataPublicacao": "2025-08-29T22:18:16.565146+00:00"
+        },
+        {
+            "id": 70011,
+            "numero": 0.5,
+            "titulo": "Capítulo 0.5",
+            "dataPublicacao": "2025-08-21T21:39:59.666804+00:00"
+        },
+        {
+            "id": 61110,
+            "numero": 0,
+            "titulo": "Capítulo 0",
+            "dataPublicacao": "2025-08-19T17:48:05.500308+00:00"
+        }
+    ]
+}

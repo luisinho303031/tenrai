@@ -99,9 +99,10 @@ interface ObraDetalhada extends Obra {
   obr_descricao: string
 }
 
-import { getObraPorSlug, listarTodasObras, getCapitulo, getCapitulosPorObra } from './data/obras'
+import { getObraPorSlug, listarTodasObras, getCapitulosPorObra } from './data/obras'
 import GeradorObra from './GeradorObra'
 import Profile from './Profile'
+import CapituloReader from './CapituloReader'
 
 function App() {
   const [activeSection, setActiveSection] = useState('inicio')
@@ -167,8 +168,6 @@ function App() {
   const [worksRatings, setWorksRatings] = useState<Record<string | number, { average: number, total: number }>>({})
   const [ratingDistribution, setRatingDistribution] = useState<Record<number, number>>({ 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 })
   const [obraRatingsList, setObraRatingsList] = useState<any[]>([])
-  const [currentCapitulo, setCurrentCapitulo] = useState<any>(null)
-  const [loadingCapitulo, setLoadingCapitulo] = useState(false)
   const [readChapters, setReadChapters] = useState<number[]>([])
   const [chapterFilter, setChapterFilter] = useState<'all' | 'read' | 'unread'>('all')
   const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false)
@@ -215,23 +214,24 @@ function App() {
         setLoadingObra(true)
         const obra = getObraPorSlug(slug)
         if (obra) {
-          const capitulos = getCapitulosPorObra(slug)
-          setCurrentObra({
-            obr_id: obra.id, // Usar slug como ID
-            obr_nome: obra.meta.titulo,
-            obr_slug: obra.id,
-            obr_imagem: obra.imagens.capa,
-            obr_descricao: obra.meta.descricao,
-            generos: obra.generos,
-            status: obra.meta.status,
-            capitulos: capitulos.map(cap => ({
-              cap_id: cap.id,
-              cap_nome: cap.titulo,
-              cap_numero: cap.numero,
-              cap_criado_em: cap.dataPublicacao
-            }))
+          getCapitulosPorObra(slug).then(capitulos => {
+            setCurrentObra({
+              obr_id: obra.id, // Usar slug como ID
+              obr_nome: obra.meta.titulo,
+              obr_slug: obra.id,
+              obr_imagem: obra.imagens.capa,
+              obr_descricao: obra.meta.descricao,
+              generos: obra.generos,
+              status: obra.meta.status,
+              capitulos: capitulos.map(cap => ({
+                cap_id: cap.id,
+                cap_nome: cap.titulo,
+                cap_numero: cap.numero,
+                cap_criado_em: cap.dataPublicacao
+              }))
+            })
+            setLoadingObra(false)
           })
-          setLoadingObra(false)
         } else {
           setLoadingObra(false)
           setIs404(true)
@@ -263,73 +263,7 @@ function App() {
     }
   }, [currentObra, user, activeSection])
 
-  useEffect(() => {
-    if (activeSection === 'capitulo') {
-      // Assumindo URL: /capitulo/solo-leveling/1
-      const pathParts = location.pathname.split('/capitulo/')[1]?.split('/')
-      const obraSlug = pathParts?.[0]
-      const capId = pathParts?.[1] ? parseInt(pathParts[1]) : null
 
-      if (obraSlug && capId) {
-        setLoadingCapitulo(true)
-        const obra = getObraPorSlug(obraSlug)
-        const capitulo = getCapitulo(obraSlug, capId)
-
-        if (obra && capitulo) {
-          setCurrentCapitulo({
-            cap_id: capitulo.id,
-            cap_nome: capitulo.titulo,
-            cap_numero: capitulo.numero,
-            cap_criado_em: capitulo.dataPublicacao,
-            imagens: capitulo.imagens,
-            obr_id: obra.id, // Usar slug como ID
-            obr_nome: obra.meta.titulo,
-            obr_slug: obra.id,
-            obr_imagem: obra.imagens.capa
-          })
-          setLoadingCapitulo(false)
-        } else {
-          setIs404(true)
-          setLoadingCapitulo(false)
-        }
-      }
-    }
-  }, [activeSection, location.pathname])
-
-  // Save read history when chapter is loaded
-  useEffect(() => {
-    const saveToHistory = async () => {
-      if (activeSection === 'capitulo' && currentCapitulo && user) {
-        try {
-          // Use direct properties from API response
-          const obraId = currentCapitulo.obr_id
-
-          if (obraId) {
-            const { error } = await supabase
-              .from('user_reads')
-              .upsert({
-                user_id: user.id,
-                obra_id: obraId,
-                capitulo_id: currentCapitulo.cap_id,
-                capitulo_numero: currentCapitulo.cap_numero,
-                cap_nome: currentCapitulo.cap_nome,
-                obra_nome: currentCapitulo.obr_nome,
-                obr_slug: currentCapitulo.obr_slug,
-                obr_imagem: currentCapitulo.obr_imagem,
-                lido_em: new Date().toISOString()
-              }, { onConflict: 'user_id, capitulo_id' })
-
-            if (error) console.error('Error saving history:', error)
-            else console.log('Histórico salvo com sucesso para capitulo:', currentCapitulo.cap_id)
-          }
-        } catch (err) {
-          console.error('Error processing history:', err)
-        }
-      }
-    }
-
-    saveToHistory()
-  }, [currentCapitulo, user, activeSection])
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -539,15 +473,30 @@ function App() {
 
         // Filtro por tags
         if (selectedTags.length > 0) {
-          // Para simplificar, vou filtrar se a obra tem algum dos gêneros que batem com as tags selecionadas
-          // ou se tivesse tags reais.
+          const selectedTagNames = selectedTags.map(tagId => {
+            const tag = availableTags.find(t => t.tag_id === tagId)
+            return tag?.tag_nome
+          }).filter(Boolean)
+
+          localObras = localObras.filter(o => {
+            // Check if obra has any of the selected genres
+            return selectedTagNames.some(tagName =>
+              o.generos?.some(g => g.toLowerCase() === tagName?.toLowerCase())
+            )
+          })
         }
 
-        const obrasFormatadas = localObras.map((obra) => convertLocalObraToApiFormat(obra))
+        const filteredTotal = localObras.length
+        setAllWorksTotal(filteredTotal)
 
-        setAllWorksTotal(obrasFormatadas.length)
+        // Paginação: slice 0 até (página * 10)
+        const pageSize = 18
+        const paginatedLocalObras = localObras.slice(0, allWorksPage * pageSize)
+
+        const obrasFormatadas = paginatedLocalObras.map((obra) => convertLocalObraToApiFormat(obra))
+
         setAllWorks(obrasFormatadas)
-        setAllWorksHasMore(false) // Sem paginação real por enquanto
+        setAllWorksHasMore(paginatedLocalObras.length < filteredTotal)
       } catch (error) {
         console.error('Erro ao buscar todas as obras:', error)
       } finally {
@@ -571,7 +520,9 @@ function App() {
           { tag_id: 3, tag_nome: 'Aventura' },
           { tag_id: 4, tag_nome: 'Sistema' },
           { tag_id: 5, tag_nome: 'Drama' },
-          { tag_id: 6, tag_nome: 'Mistério' }
+          { tag_id: 6, tag_nome: 'Mistério' },
+          { tag_id: 7, tag_nome: 'Murim' },
+          { tag_id: 8, tag_nome: 'Artes Marciais' }
         ]
         const mockStatuses: Status[] = [
           { stt_id: 1, stt_nome: 'Em Andamento' },
@@ -726,10 +677,14 @@ function App() {
           }
         }
 
-        const obrasFormatadas = obrasFiltradas.map((obra) => convertLocalObraToApiFormat(obra))
+        const LIMIT = 18
+        const endIndex = page * LIMIT
+        const paginatedObras = obrasFiltradas.slice(0, endIndex)
+
+        const obrasFormatadas = paginatedObras.map((obra) => convertLocalObraToApiFormat(obra))
 
         setObras(obrasFormatadas)
-        setHasMore(false)
+        setHasMore(endIndex < obrasFiltradas.length)
       } catch (error) {
         console.error('Erro ao buscar obras:', error)
       } finally {
@@ -1173,7 +1128,7 @@ function App() {
         )}
       </aside>
 
-      <main className="main-content" ref={mainContentRef}>
+      <main className="main-content" ref={mainContentRef} style={activeSection === 'capitulo' && isMobile ? { padding: 0 } : {}}>
         {/* Mobile Topbar for Obra Detail */}
         {activeSection === 'obra-detalhe' && isMobile && !loadingObra && currentObra && (
           <div className="mobile-obra-topbar">
@@ -1186,18 +1141,25 @@ function App() {
           </div>
         )}
 
-        <div className="content-wrapper">
+        <div className="content-wrapper" style={activeSection === 'capitulo' ? { padding: 0, maxWidth: '100%' } : {}}>
           {activeSection === 'inicio' && !is404 && (
             <div className="section home-section">
               {/* Hero Banner */}
-              <div className="hero-banner-custom">
-                <div className="hero-content">
-                  <h2 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-                    Junte-se a comunidade no discord!
-                    <MdArrowForward size={22} />
-                  </h2>
+              <a
+                href="https://discord.gg/2U9E8DUx"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none', width: '100%', display: 'block' }}
+              >
+                <div className="hero-banner-custom">
+                  <div className="hero-content">
+                    <h2 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+                      Junte-se a comunidade no discord!
+                      <MdArrowForward size={22} />
+                    </h2>
+                  </div>
                 </div>
-              </div>
+              </a>
 
               {/* Recommended Slider Section */}
               {(loadingRecommended || recommendedObras.length > 0) && (
@@ -1210,22 +1172,30 @@ function App() {
                     <div className="slider-container">
                       <div className="slider-track" style={{ transform: 'translateX(0)' }}>
                         <div className="slide-group">
-                          <div className="recommended-card skeleton-card">
-                            <div className="rec-cover skeleton"></div>
-                            <div className="rec-info">
-                              <div className="skeleton skeleton-title" style={{ marginBottom: '0.5rem' }}></div>
-                              <div className="skeleton skeleton-desc"></div>
-                              <div className="skeleton skeleton-desc" style={{ width: '60%' }}></div>
-                              <div className="skeleton skeleton-tag-row"></div>
+                          <div className="recommended-card" style={{ display: 'flex', gap: '1rem', padding: '0', background: 'transparent', alignItems: 'flex-start', boxShadow: 'none' }}>
+                            <div style={{ width: '140px', height: '200px', backgroundColor: '#333', borderRadius: '4px', flexShrink: 0 }} className="skeleton-pulse"></div>
+                            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '0.8rem', paddingTop: '0.5rem', height: '100%' }}>
+                              <div style={{ width: '80%', height: '24px', backgroundColor: '#333', borderRadius: '4px', marginBottom: '0.5rem' }} className="skeleton-pulse"></div>
+                              <div style={{ width: '90%', height: '14px', backgroundColor: '#333', borderRadius: '4px' }} className="skeleton-pulse"></div>
+                              <div style={{ width: '95%', height: '14px', backgroundColor: '#333', borderRadius: '4px' }} className="skeleton-pulse"></div>
+                              <div style={{ width: '60%', height: '14px', backgroundColor: '#333', borderRadius: '4px', marginBottom: 'auto' }} className="skeleton-pulse"></div>
+                              <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
+                                <div style={{ width: '60px', height: '20px', backgroundColor: '#333', borderRadius: '10px' }} className="skeleton-pulse"></div>
+                                <div style={{ width: '60px', height: '20px', backgroundColor: '#333', borderRadius: '10px' }} className="skeleton-pulse"></div>
+                              </div>
                             </div>
                           </div>
-                          <div className="recommended-card skeleton-card">
-                            <div className="rec-cover skeleton"></div>
-                            <div className="rec-info">
-                              <div className="skeleton skeleton-title" style={{ marginBottom: '0.5rem' }}></div>
-                              <div className="skeleton skeleton-desc"></div>
-                              <div className="skeleton skeleton-desc" style={{ width: '60%' }}></div>
-                              <div className="skeleton skeleton-tag-row"></div>
+                          <div className="recommended-card" style={{ display: 'flex', gap: '1rem', padding: '0', background: 'transparent', alignItems: 'flex-start', boxShadow: 'none' }}>
+                            <div style={{ width: '140px', height: '200px', backgroundColor: '#333', borderRadius: '4px', flexShrink: 0 }} className="skeleton-pulse"></div>
+                            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '0.8rem', paddingTop: '0.5rem', height: '100%' }}>
+                              <div style={{ width: '80%', height: '24px', backgroundColor: '#333', borderRadius: '4px', marginBottom: '0.5rem' }} className="skeleton-pulse"></div>
+                              <div style={{ width: '90%', height: '14px', backgroundColor: '#333', borderRadius: '4px' }} className="skeleton-pulse"></div>
+                              <div style={{ width: '95%', height: '14px', backgroundColor: '#333', borderRadius: '4px' }} className="skeleton-pulse"></div>
+                              <div style={{ width: '60%', height: '14px', backgroundColor: '#333', borderRadius: '4px', marginBottom: 'auto' }} className="skeleton-pulse"></div>
+                              <div style={{ display: 'flex', gap: '0.5rem', marginTop: 'auto' }}>
+                                <div style={{ width: '60px', height: '20px', backgroundColor: '#333', borderRadius: '10px' }} className="skeleton-pulse"></div>
+                                <div style={{ width: '60px', height: '20px', backgroundColor: '#333', borderRadius: '10px' }} className="skeleton-pulse"></div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1371,24 +1341,24 @@ function App() {
 
                   if (obras.length === index + 1) {
                     return (
-                      <a
-                        href={`/obra/${obra.obr_slug}`}
+                      <Link
+                        to={`/obra/${obra.obr_slug}`}
                         ref={lastObraRef}
                         key={obra.obr_id}
                         className="release-card"
                       >
                         {cardContent}
-                      </a>
+                      </Link>
                     )
                   } else {
                     return (
-                      <a
-                        href={`/obra/${obra.obr_slug}`}
+                      <Link
+                        to={`/obra/${obra.obr_slug}`}
                         key={obra.obr_id}
                         className="release-card"
                       >
                         {cardContent}
-                      </a>
+                      </Link>
                     )
                   }
                 })}
@@ -1740,14 +1710,17 @@ function App() {
                   {/* Actions Bar */}
                   {user && (
                     <div className="obra-actions-bar" style={{ display: 'flex', width: '100%', marginBottom: '2rem', justifyContent: 'space-between' }}>
-                      <button
+                      <Link
+                        to={currentObra.capitulos && currentObra.capitulos.length > 0
+                          ? `/capitulo/${currentObra.obr_slug}/${currentObra.capitulos.sort((a: any, b: any) => a.cap_numero - b.cap_numero)[0].cap_id}`
+                          : '#'}
                         className="sidebar-nav-btn"
                         title="Ler Agora"
-                        style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.3rem', padding: '0', background: 'none', border: 'none', height: 'auto', color: 'rgba(255,255,255,0.7)', cursor: 'pointer' }}
+                        style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.3rem', padding: '0', background: 'none', border: 'none', height: 'auto', color: 'rgba(255,255,255,0.7)', cursor: 'pointer', textDecoration: 'none' }}
                       >
                         <MdPlayArrow size={18} />
                         <span style={{ fontSize: '0.7rem', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '0.5px' }}>Iniciar</span>
-                      </button>
+                      </Link>
 
                       {/* Botão Avaliar com Dropdown */}
                       <div style={{ flex: 1, position: 'relative' }}>
@@ -2106,7 +2079,7 @@ function App() {
                           if (chapterFilter === 'unread') return !readChapters.includes(cap.cap_id)
                           return true
                         }).map((cap: any) => (
-                          <Link to={`/capitulo/${cap.cap_id}`} key={cap.cap_id} className="chapter-item" style={{
+                          <Link to={`/capitulo/${currentObra.obr_slug}/${cap.cap_id}`} key={cap.cap_id} className="chapter-item" style={{
                             background: 'none',
                             padding: '0.8rem 0',
                             borderBottom: '1px solid rgba(255,255,255,0.1)',
@@ -2178,6 +2151,8 @@ function App() {
                     </div>
                   )}
 
+
+
                 </div>
               )}
             </div>
@@ -2200,71 +2175,7 @@ function App() {
           )}
 
           {activeSection === 'capitulo' && !is404 && (
-            <div className="section capitulo-section" style={{ padding: 0, background: '#000' }}>
-              {loadingCapitulo && (
-                <div style={{ padding: '4rem', textAlign: 'center', color: '#fff' }}>
-                  Carregando capítulo...
-                </div>
-              )}
-
-              {!loadingCapitulo && currentCapitulo && (
-                <div className="capitulo-reader" style={{ maxWidth: '100%', margin: '0 auto' }}>
-                  {/* Reader Header */}
-                  <div
-                    style={{
-                      position: 'sticky',
-                      top: 0,
-                      zIndex: 100,
-                      background: 'rgba(0,0,0,0.8)',
-                      backdropFilter: 'blur(10px)',
-                      padding: '1rem',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '1rem',
-                      borderBottom: '1px solid rgba(255,255,255,0.1)'
-                    }}
-                  >
-                    <button
-                      onClick={() => window.history.back()}
-                      style={{
-                        background: 'none',
-                        border: 'none',
-                        color: '#fff',
-                        cursor: 'pointer',
-                        display: 'flex',
-                        alignItems: 'center',
-                        padding: '0.2rem'
-                      }}
-                    >
-                      <MdArrowBack size={24} />
-                    </button>
-                    <h2 style={{ fontSize: '1rem', margin: 0, color: '#fff', fontWeight: 500 }}>
-                      {currentCapitulo.cap_nome}
-                    </h2>
-                  </div>
-
-                  {/* Chapter Images */}
-                  <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    {currentCapitulo.cap_paginas &&
-                      currentCapitulo.cap_paginas.map((pagina: any, index: number) => {
-                        const src = `https://cdn.verdinha.wtf${pagina.path.startsWith('/') ? '' : '/'
-                          }${pagina.path.endsWith(pagina.src)
-                            ? pagina.path
-                            : `${pagina.path}/${pagina.src}`
-                          }`
-                        return (
-                          <img
-                            key={`${pagina.numero}-${index}`}
-                            src={src}
-                            alt={`Página ${pagina.numero}`}
-                            style={{ width: '100%', display: 'block' }}
-                          />
-                        )
-                      })}
-                  </div>
-                </div>
-              )}
-            </div>
+            <CapituloReader user={user} />
           )}
 
           {is404 && (
@@ -2274,7 +2185,7 @@ function App() {
         </div>
       </main >
 
-      {activeSection !== 'obra-detalhe' && (
+      {activeSection !== 'obra-detalhe' && activeSection !== 'capitulo' && (
         <nav className="mobile-bottom-nav">
           <Link
             to="/"

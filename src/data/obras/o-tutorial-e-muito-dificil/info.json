@@ -1,0 +1,26 @@
+{
+    "id": "o-tutorial-e-muito-dificil",
+    "meta": {
+        "titulo": "O Tutorial é Muito Difícil",
+        "tituloAlternativo": "The Tutorial is Too Hard",
+        "descricao": "Em um dia chato qualquer, uma mensagem apareceu, convidando-o para o tutorial. A história sobre Lee Ho Jae e sua escapada do Tutorial. Acontece que ele escolheu a pior dificuldade: Infernal.",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/71dea713d113ab18_1770249621626161616.webp",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Aventura",
+        "Ação",
+        "fantasia",
+        "luta",
+        "sistema",
+        "sobrevivencia",
+        "torre"
+    ]
+}

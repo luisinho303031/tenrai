@@ -1,17 +1,24 @@
 {
-  "id": "cronicas-do-retorno-do-deus-marcial",
-  "meta": {
-    "titulo": "Crônicas do Retorno do Deus Marcial",
-    "tituloAlternativo": "",
-    "descricao": "ono de um talento inigualável, Dan Woohyeon. Ele pensou que governaria o mundo eternamente, até que foi selado. Milhares de anos se passaram. O mundo mudou e as únicas coisas que restaram foram o desespero e o vazio. “À medida que o vento flui, o tempo também. Realmente não há mais nada.” Uma garotinha aparece na frente de Dan Woohyeon, que não perdeu o propósito nem a vontade de viver. Dan Woohyeon sente-se unido com uma garota que parece não ter ninguém em quem se apoiar e gradualmente começa a abrir as portas do seu coração. “Meu nome é Dan Woohyeon. Quer vir comigo?” Começa a jornada de um deus marcial com um coração gelado e uma garota fofa e pura",
-    "ano": 2026,
-    "status": "Em Andamento",
-    "autor": "",
-    "artista": ""
-  },
-  "imagens": {
-    "capa": "https://pbs.twimg.com/media/FvFcFCGXgAIo1pF.jpg",
-    "banner": ""
-  },
-  "generos": []
+    "id": "cronicas-do-retorno-do-deus-marcial",
+    "meta": {
+        "titulo": "Crônicas do Retorno do Deus Marcial",
+        "tituloAlternativo": "Crónicas del regreso del dios marcial • Record of the Heavenly Demon's Comeback • Chronicles of the Martial God • Le retour du dieu martial • Crônicas do retorno do deus marcial • Crónicas del dios marcial • Crónicas del retorno del dios marcial • Возвращение бессмертного • بازگشت خدای هنرهای رزمی • A hadak ura visszatér • Возвращение еретика • ตำนานเทพยุทธ์หวนปฐพี • Ký sự về sự trở lại của thần chiến • 무신귀환록 • Record of Return • Chronicles of a Returner • Musingwihwallok • 武神帰還録 • 武神回归录 • Chron",
+        "descricao": "ono de um talento inigualável, Dan Woohyeon. Ele pensou que governaria o mundo eternamente, até que foi selado. Milhares de anos se passaram. O mundo mudou e as únicas coisas que restaram foram o desespero e o vazio. “À medida que o vento flui, o tempo também. Realmente não há mais nada.” Uma garotinha aparece na frente de Dan Woohyeon, que não perdeu o propósito nem a vontade de viver. Dan Woohyeon sente-se unido com uma garota que parece não ter ninguém em quem se apoiar e gradualmente começa a abrir as portas do seu coração. “Meu nome é Dan Woohyeon. Quer vir comigo?” Começa a jornada de um deus marcial com um coração gelado e uma garota fofa e pura.",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/4cabbe7418e23be5_1770154730783528435.webp",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Aventura",
+        "Ação",
+        "Comédia",
+        "Família",
+        "Fantasia"
+    ]
 }

@@ -1,0 +1,25 @@
+{
+    "id": "todos-saudam-o-lider-da-seita",
+    "meta": {
+        "titulo": "Todos Saúdam o Líder da Seita",
+        "tituloAlternativo": "",
+        "descricao": "Todos os membros da minha seita são anormalmente fortes. Todos os meus discípulos se tornam figurões, e eu definitivamente me tornarei invencível neste mundo!",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/f8bbd78e07ced4b7_1770167725770013058.jpg",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Aventura",
+        "Ação",
+        "Comédia",
+        "Fantasia",
+        "Reencarnação",
+        "sobrenatural"
+    ]
+}

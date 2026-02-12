@@ -1,0 +1,23 @@
+{
+    "id": "pai-incomparavel",
+    "meta": {
+        "titulo": "Pai Incomparável",
+        "tituloAlternativo": "Peerless Dad",
+        "descricao": "Uma história impressionante sobre a jornada de um lutador de artes marciais entre casamento, paternidade e lutas.",
+        "ano": 2026,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/e6357097d254c159_1770161681109931072.png",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Ação",
+        "Drama",
+        "Fantasia",
+        "luta"
+    ]
+}

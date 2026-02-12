@@ -1,0 +1,88 @@
+{
+    "capitulos": [
+        {
+            "id": 196469,
+            "numero": 14,
+            "titulo": "Capítulo 14",
+            "dataPublicacao": "2026-01-31T22:32:37.372012+00:00"
+        },
+        {
+            "id": 196468,
+            "numero": 13,
+            "titulo": "Capítulo 13",
+            "dataPublicacao": "2026-01-31T22:32:28.829056+00:00"
+        },
+        {
+            "id": 196467,
+            "numero": 12,
+            "titulo": "Capítulo 12",
+            "dataPublicacao": "2026-01-31T22:32:18.377142+00:00"
+        },
+        {
+            "id": 196466,
+            "numero": 11,
+            "titulo": "Capítulo 11",
+            "dataPublicacao": "2026-01-31T22:32:07.624787+00:00"
+        },
+        {
+            "id": 196465,
+            "numero": 10,
+            "titulo": "Capítulo 10",
+            "dataPublicacao": "2026-01-31T22:31:59.518965+00:00"
+        },
+        {
+            "id": 196477,
+            "numero": 9,
+            "titulo": "Capítulo 9",
+            "dataPublicacao": "2026-01-31T22:35:27.060228+00:00"
+        },
+        {
+            "id": 196476,
+            "numero": 8,
+            "titulo": "Capítulo 8",
+            "dataPublicacao": "2026-01-31T22:35:19.633449+00:00"
+        },
+        {
+            "id": 196475,
+            "numero": 7,
+            "titulo": "Capítulo 7",
+            "dataPublicacao": "2026-01-31T22:34:17.394092+00:00"
+        },
+        {
+            "id": 196474,
+            "numero": 6,
+            "titulo": "Capítulo 6",
+            "dataPublicacao": "2026-01-31T22:33:14.993241+00:00"
+        },
+        {
+            "id": 196473,
+            "numero": 5,
+            "titulo": "Capítulo 5",
+            "dataPublicacao": "2026-01-31T22:33:05.884962+00:00"
+        },
+        {
+            "id": 196472,
+            "numero": 4,
+            "titulo": "Capítulo 4",
+            "dataPublicacao": "2026-01-31T22:32:59.244742+00:00"
+        },
+        {
+            "id": 196471,
+            "numero": 3,
+            "titulo": "Capítulo 3",
+            "dataPublicacao": "2026-01-31T22:32:52.682954+00:00"
+        },
+        {
+            "id": 196470,
+            "numero": 2,
+            "titulo": "Capítulo 2",
+            "dataPublicacao": "2026-01-31T22:32:46.579230+00:00"
+        },
+        {
+            "id": 196464,
+            "numero": 1,
+            "titulo": "Capítulo 1",
+            "dataPublicacao": "2026-01-31T22:31:52.607622+00:00"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "capitulos": [
+        {
+            "id": 231794,
+            "numero": 9,
+            "titulo": "Capítulo 9",
+            "dataPublicacao": "2026-02-08T14:17:12.905202+00:00"
+        },
+        {
+            "id": 231791,
+            "numero": 8,
+            "titulo": "Capítulo 8",
+            "dataPublicacao": "2026-02-08T14:16:29.694159+00:00"
+        },
+        {
+            "id": 231786,
+            "numero": 7,
+            "titulo": "Capítulo 7",
+            "dataPublicacao": "2026-02-08T14:15:22.793414+00:00"
+        },
+        {
+            "id": 231778,
+            "numero": 6,
+            "titulo": "Capítulo 6",
+            "dataPublicacao": "2026-02-08T14:14:01.202163+00:00"
+        },
+        {
+            "id": 231773,
+            "numero": 5,
+            "titulo": "Capítulo 5",
+            "dataPublicacao": "2026-02-08T14:12:27.192515+00:00"
+        },
+        {
+            "id": 231768,
+            "numero": 4,
+            "titulo": "Capítulo 4",
+            "dataPublicacao": "2026-02-08T14:11:36.860758+00:00"
+        },
+        {
+            "id": 231765,
+            "numero": 3,
+            "titulo": "Capítulo 3",
+            "dataPublicacao": "2026-02-08T14:11:13.534877+00:00"
+        },
+        {
+            "id": 231761,
+            "numero": 2,
+            "titulo": "Capítulo 2",
+            "dataPublicacao": "2026-02-08T14:10:22.029750+00:00"
+        },
+        {
+            "id": 231758,
+            "numero": 1,
+            "titulo": "Capítulo 1",
+            "dataPublicacao": "2026-02-08T14:09:34.540856+00:00"
+        },
+        {
+            "id": 231750,
+            "numero": 0,
+            "titulo": "Capítulo 0",
+            "dataPublicacao": "2026-02-08T14:08:04.781387+00:00"
+        }
+    ]
+}

@@ -1,21 +1,23 @@
 {
-  "id": "eu-reencarnei-como-o-herdeiro-louco",
-  "meta": {
-    "titulo": "Eu Reencarnei como o Herdeiro Louco",
-    "tituloAlternativo": "",
-    "descricao": "Yang Jagak, que foi assassinado com veneno durante as guerra políticas do Murim. Enquanto ele pensou que estava morto, ele percebeu que estava no outro corpo de outra pessoa. Ele descobriu que estava no Culto Demoníaco, a arte que ele conhece eram as Artes Divinas do Demônio Celestial e o proprietário do corpo era o incontrolável herdeiro que cobiçava as mulheres. Por que tinha que ter sido o Culto Demoníaco e por que tinha que ser essa pessoa?",
-    "ano": 2026,
-    "status": "Em Andamento",
-    "autor": "",
-    "artista": ""
-  },
-  "imagens": {
-    "capa": "https://cdn.nexustoons.com/covers/d422ba95efa5c788_1770153322184996262.gif",
-    "banner": ""
-  },
-  "generos": [
-    "Ação",
-    "Aventura",
-    "Artes Marciais"
-  ]
+    "id": "eu-reencarnei-como-o-herdeiro-louco",
+    "meta": {
+        "titulo": "Eu Reencarnei como o Herdeiro Louco",
+        "tituloAlternativo": "",
+        "descricao": "Yang Jagak, que foi assassinado com veneno durante as guerra políticas do Murim. Enquanto ele pensou que estava morto, ele percebeu que estava no outro corpo de outra pessoa. Ele descobriu que estava no Culto Demoníaco, a arte que ele conhece eram as Artes Divinas do Demônio Celestial e o proprietário do corpo era o incontrolável herdeiro que cobiçava as mulheres. Por que tinha que ter sido o Culto Demoníaco e por que tinha que ser essa pessoa?",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/d422ba95efa5c788_1770153322184996262.gif",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Aventura",
+        "Ação",
+        "Fantasia",
+        "Reencarnação"
+    ]
 }

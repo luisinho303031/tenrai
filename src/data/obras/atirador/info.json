@@ -1,0 +1,22 @@
+{
+    "id": "atirador",
+    "meta": {
+        "titulo": "Atirador",
+        "tituloAlternativo": "",
+        "descricao": "O Assassino Nº1, Kim Gun, se vê mergulhado no mundo das artes marciais devido a um acidente misterioso. Para retornar ao seu mundo original, ele deve completar uma missão chamada “Conquista das Artes Marciais.” Com um total de 2 armas, a aventura de Kim Gun para subjugar o desconhecido mundo das artes marciais começa.",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/a7aa4dee3a7d7a48_1770664759006503373.jpg",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Ação",
+        "Histórico",
+        "Isekai"
+    ]
+}

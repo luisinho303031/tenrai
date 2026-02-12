@@ -1,0 +1,26 @@
+{
+    "id": "tropa-de-elite-fantastica",
+    "meta": {
+        "titulo": "Tropa de Elite Fantástica",
+        "tituloAlternativo": "Fantasy Enlistment Squad, Fantasy Induction Corp, 판타지 입소대s, ",
+        "descricao": "Na Passagem da Montanha Jeokun, fronteira entre demônios e a Federação Interespécies, treinamento militar e combate real se misturam. Em busca dos profetizados Dez Transcendentes, a Federação mantém um recrutamento constante, mas os novatos logo descobrem que o verdadeiro inferno não são os demônios, e sim a própria vida militar.\n\nTropa de Elite Fantástica é uma fantasia sombria sobre sobreviver a monstros, guerras e à brutalidade absurda de um sistema que chama isso de “formação”.",
+        "ano": 2026,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/0e96cb8e2d8f0143_1770215246671431977.jpg",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Aventura",
+        "Fantasia",
+        "Magia",
+        "Militar",
+        "Revenge",
+        "Seinen",
+        "Violência"
+    ]
+}

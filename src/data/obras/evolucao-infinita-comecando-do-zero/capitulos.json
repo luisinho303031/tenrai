@@ -1,0 +1,364 @@
+{
+    "capitulos": [
+        {
+            "id": 242112,
+            "numero": 60,
+            "titulo": "Capítulo 60",
+            "dataPublicacao": "2026-02-11T20:59:38.776391+00:00"
+        },
+        {
+            "id": 242110,
+            "numero": 59,
+            "titulo": "Capítulo 59",
+            "dataPublicacao": "2026-02-11T20:58:30.116657+00:00"
+        },
+        {
+            "id": 242109,
+            "numero": 58,
+            "titulo": "Capítulo 58",
+            "dataPublicacao": "2026-02-11T20:56:57.058263+00:00"
+        },
+        {
+            "id": 195929,
+            "numero": 57,
+            "titulo": "Capítulo 57",
+            "dataPublicacao": "2026-01-30T21:49:21.932169+00:00"
+        },
+        {
+            "id": 194635,
+            "numero": 56,
+            "titulo": "Capítulo 56",
+            "dataPublicacao": "2026-01-27T02:19:34.092834+00:00"
+        },
+        {
+            "id": 194296,
+            "numero": 55,
+            "titulo": "Capítulo 55",
+            "dataPublicacao": "2026-01-23T03:12:26.397380+00:00"
+        },
+        {
+            "id": 193912,
+            "numero": 54,
+            "titulo": "Capítulo 54",
+            "dataPublicacao": "2026-01-22T02:30:39.854336+00:00"
+        },
+        {
+            "id": 193077,
+            "numero": 53,
+            "titulo": "Capítulo 53",
+            "dataPublicacao": "2026-01-17T19:38:56.642434+00:00"
+        },
+        {
+            "id": 192503,
+            "numero": 52,
+            "titulo": "Capítulo 52",
+            "dataPublicacao": "2026-01-12T19:03:57.706882+00:00"
+        },
+        {
+            "id": 192502,
+            "numero": 51,
+            "titulo": "Capítulo 51",
+            "dataPublicacao": "2026-01-12T19:03:30.401147+00:00"
+        },
+        {
+            "id": 191862,
+            "numero": 50,
+            "titulo": "Capítulo 50",
+            "dataPublicacao": "2026-01-08T23:11:59.354970+00:00"
+        },
+        {
+            "id": 190180,
+            "numero": 49,
+            "titulo": "Capítulo 49",
+            "dataPublicacao": "2026-01-04T19:35:17.490852+00:00"
+        },
+        {
+            "id": 190177,
+            "numero": 48,
+            "titulo": "Capítulo 48",
+            "dataPublicacao": "2026-01-04T19:34:03.600155+00:00"
+        },
+        {
+            "id": 189282,
+            "numero": 47,
+            "titulo": "Capítulo 47",
+            "dataPublicacao": "2025-12-28T00:23:34.808972+00:00"
+        },
+        {
+            "id": 176683,
+            "numero": 46,
+            "titulo": "Capítulo 46",
+            "dataPublicacao": "2025-12-23T19:09:25.664190+00:00"
+        },
+        {
+            "id": 176153,
+            "numero": 45,
+            "titulo": "Capítulo 45",
+            "dataPublicacao": "2025-12-19T19:12:46.697441+00:00"
+        },
+        {
+            "id": 175252,
+            "numero": 44,
+            "titulo": "Capítulo 44",
+            "dataPublicacao": "2025-12-16T13:35:28.366506+00:00"
+        },
+        {
+            "id": 173286,
+            "numero": 43,
+            "titulo": "Capítulo 43",
+            "dataPublicacao": "2025-12-13T00:40:22.475438+00:00"
+        },
+        {
+            "id": 172111,
+            "numero": 42,
+            "titulo": "Capítulo 42",
+            "dataPublicacao": "2025-12-09T12:15:04.023141+00:00"
+        },
+        {
+            "id": 172110,
+            "numero": 41,
+            "titulo": "Capítulo 41",
+            "dataPublicacao": "2025-12-09T12:14:35.196487+00:00"
+        },
+        {
+            "id": 172109,
+            "numero": 40,
+            "titulo": "Capítulo 40",
+            "dataPublicacao": "2025-12-09T12:14:04.979625+00:00"
+        },
+        {
+            "id": 172108,
+            "numero": 39,
+            "titulo": "Capítulo 39",
+            "dataPublicacao": "2025-12-09T12:13:38.164494+00:00"
+        },
+        {
+            "id": 169611,
+            "numero": 38,
+            "titulo": "Capítulo 38",
+            "dataPublicacao": "2025-12-04T19:33:43.651265+00:00"
+        },
+        {
+            "id": 168762,
+            "numero": 37,
+            "titulo": "Capítulo 37",
+            "dataPublicacao": "2025-12-01T23:48:52.898378+00:00"
+        },
+        {
+            "id": 167872,
+            "numero": 36,
+            "titulo": "Capítulo 36",
+            "dataPublicacao": "2025-11-28T11:21:32.858873+00:00"
+        },
+        {
+            "id": 167151,
+            "numero": 35,
+            "titulo": "Capítulo 35",
+            "dataPublicacao": "2025-11-25T15:38:01.405487+00:00"
+        },
+        {
+            "id": 167150,
+            "numero": 34,
+            "titulo": "Capítulo 34",
+            "dataPublicacao": "2025-11-25T15:38:10.791356+00:00"
+        },
+        {
+            "id": 166726,
+            "numero": 33,
+            "titulo": "Capítulo 33",
+            "dataPublicacao": "2025-11-23T00:58:43.262833+00:00"
+        },
+        {
+            "id": 161964,
+            "numero": 32,
+            "titulo": "Capítulo 32",
+            "dataPublicacao": "2025-11-15T11:45:23.121661+00:00"
+        },
+        {
+            "id": 161472,
+            "numero": 31,
+            "titulo": "Capítulo 31",
+            "dataPublicacao": "2025-11-14T20:25:08.022451+00:00"
+        },
+        {
+            "id": 161471,
+            "numero": 30,
+            "titulo": "Capítulo 30",
+            "dataPublicacao": "2025-11-14T20:25:53.389676+00:00"
+        },
+        {
+            "id": 161963,
+            "numero": 29,
+            "titulo": "Capítulo 29",
+            "dataPublicacao": "2025-11-15T11:45:36.898714+00:00"
+        },
+        {
+            "id": 161470,
+            "numero": 28,
+            "titulo": "Capítulo 28",
+            "dataPublicacao": "2025-11-14T20:25:08.022624+00:00"
+        },
+        {
+            "id": 161469,
+            "numero": 27,
+            "titulo": "Capítulo 27",
+            "dataPublicacao": "2025-11-14T20:25:24.357382+00:00"
+        },
+        {
+            "id": 161989,
+            "numero": 26,
+            "titulo": "Capítulo 26",
+            "dataPublicacao": "2025-11-15T13:16:07.516752+00:00"
+        },
+        {
+            "id": 161962,
+            "numero": 25,
+            "titulo": "Capítulo 25",
+            "dataPublicacao": "2025-11-15T11:45:02.121291+00:00"
+        },
+        {
+            "id": 161468,
+            "numero": 24,
+            "titulo": "Capítulo 24",
+            "dataPublicacao": "2025-11-14T20:26:48.848341+00:00"
+        },
+        {
+            "id": 161961,
+            "numero": 23,
+            "titulo": "Capítulo 23",
+            "dataPublicacao": "2025-11-15T11:45:08.326510+00:00"
+        },
+        {
+            "id": 161466,
+            "numero": 22,
+            "titulo": "Capítulo 22",
+            "dataPublicacao": "2025-11-14T20:21:51.513988+00:00"
+        },
+        {
+            "id": 161960,
+            "numero": 21,
+            "titulo": "Capítulo 21",
+            "dataPublicacao": "2025-11-15T11:42:22.456231+00:00"
+        },
+        {
+            "id": 161465,
+            "numero": 20,
+            "titulo": "Capítulo 20",
+            "dataPublicacao": "2025-11-14T20:23:25.574569+00:00"
+        },
+        {
+            "id": 161463,
+            "numero": 19,
+            "titulo": "Capítulo 19",
+            "dataPublicacao": "2025-11-14T20:19:57.498399+00:00"
+        },
+        {
+            "id": 161461,
+            "numero": 18,
+            "titulo": "Capítulo 18",
+            "dataPublicacao": "2025-11-14T20:19:52.502858+00:00"
+        },
+        {
+            "id": 161459,
+            "numero": 17,
+            "titulo": "Capítulo 17",
+            "dataPublicacao": "2025-11-14T20:19:29.413942+00:00"
+        },
+        {
+            "id": 161458,
+            "numero": 16,
+            "titulo": "Capítulo 16",
+            "dataPublicacao": "2025-11-14T20:19:20.337099+00:00"
+        },
+        {
+            "id": 161457,
+            "numero": 15,
+            "titulo": "Capítulo 15",
+            "dataPublicacao": "2025-11-14T20:19:52.491838+00:00"
+        },
+        {
+            "id": 161455,
+            "numero": 14,
+            "titulo": "Capítulo 14",
+            "dataPublicacao": "2025-11-14T20:20:36.283036+00:00"
+        },
+        {
+            "id": 161454,
+            "numero": 13,
+            "titulo": "Capítulo 13",
+            "dataPublicacao": "2025-11-14T20:19:06.219035+00:00"
+        },
+        {
+            "id": 161453,
+            "numero": 12,
+            "titulo": "Capítulo 12",
+            "dataPublicacao": "2025-11-14T20:18:18.766640+00:00"
+        },
+        {
+            "id": 161958,
+            "numero": 11,
+            "titulo": "Capítulo 11",
+            "dataPublicacao": "2025-11-15T11:43:14.036131+00:00"
+        },
+        {
+            "id": 161451,
+            "numero": 10,
+            "titulo": "Capítulo 10",
+            "dataPublicacao": "2025-11-14T20:14:15.335090+00:00"
+        },
+        {
+            "id": 78204,
+            "numero": 9,
+            "titulo": "Capítulo 9",
+            "dataPublicacao": "2025-09-11T17:55:22.910451+00:00"
+        },
+        {
+            "id": 78203,
+            "numero": 8,
+            "titulo": "Capítulo 8",
+            "dataPublicacao": "2025-09-11T17:55:48.063345+00:00"
+        },
+        {
+            "id": 78172,
+            "numero": 7,
+            "titulo": "Capítulo 7",
+            "dataPublicacao": "2025-09-10T17:21:00.187437+00:00"
+        },
+        {
+            "id": 77806,
+            "numero": 6,
+            "titulo": "Capítulo 6",
+            "dataPublicacao": "2025-09-07T21:48:36.245441+00:00"
+        },
+        {
+            "id": 77804,
+            "numero": 5,
+            "titulo": "Capítulo 5",
+            "dataPublicacao": "2025-09-07T07:41:55.718196+00:00"
+        },
+        {
+            "id": 77769,
+            "numero": 4,
+            "titulo": "Capítulo 4",
+            "dataPublicacao": "2025-09-06T19:38:14.644747+00:00"
+        },
+        {
+            "id": 77768,
+            "numero": 3,
+            "titulo": "Capítulo 3",
+            "dataPublicacao": "2025-09-06T19:38:03.532801+00:00"
+        },
+        {
+            "id": 77767,
+            "numero": 2,
+            "titulo": "Capítulo 2",
+            "dataPublicacao": "2025-09-06T19:37:20.566510+00:00"
+        },
+        {
+            "id": 77766,
+            "numero": 1,
+            "titulo": "Capítulo 1",
+            "dataPublicacao": "2025-09-06T19:37:01.975490+00:00"
+        }
+    ]
+}

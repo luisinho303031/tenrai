@@ -1,0 +1,24 @@
+{
+    "id": "invincivel-com-100-hits",
+    "meta": {
+        "titulo": "Invincível com 100 Hits",
+        "tituloAlternativo": "",
+        "descricao": "Ainda não disponível em português.",
+        "ano": 2026,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/2a0e512ce94e4333_1770226287703141069.webp",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Ação",
+        "Drama",
+        "Fantasia",
+        "Histórico",
+        "Seinen"
+    ]
+}

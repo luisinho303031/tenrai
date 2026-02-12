@@ -43,8 +43,12 @@ import todasObrasRaw from './todasobras.json'
 const todasObrasResumo = todasObrasRaw as ObraResumo[]
 
 // Carregar todos os arquivos de informação e capítulos dinamicamente
+// Carregar todos os arquivos de informação dinamicamente (eager para info básica)
 const infoFiles = import.meta.glob('./**/info.json', { eager: true })
-const capitulosFiles = import.meta.glob('./**/capitulos.json', { eager: true })
+
+// Carregar arquivos de capítulos sob demanda (lazy)
+const capitulosFiles = import.meta.glob('./**/capitulos.json')
+const individualChapterFiles = import.meta.glob('./**/capitulos/*.json')
 
 // Função helper para buscar obra completa por slug
 export const getObraPorSlug = (slug: string): ObraInfo | null => {
@@ -56,19 +60,30 @@ export const getObraPorSlug = (slug: string): ObraInfo | null => {
     return null
 }
 
-// Função helper para buscar capítulos de uma obra
-export const getCapitulosPorObra = (slug: string): Capitulo[] => {
+// Função helper para buscar capítulos de uma obra (agora assíncrona)
+export const getCapitulosPorObra = async (slug: string): Promise<Capitulo[]> => {
     for (const path in capitulosFiles) {
         if (path.includes(`/${slug}/capitulos.json`)) {
-            return (capitulosFiles[path] as CapitulosData).capitulos || []
+            const module = await capitulosFiles[path]() as CapitulosData
+            return module.capitulos || []
         }
     }
+    // Fallback: tentar ver se existem arquivos individuais se o capitulos.json nao existir
+    // (Opcional, mas mantemos o comportamento original focando no capitulos.json para listas)
     return []
 }
 
-// Função helper para buscar capítulo específico
-export const getCapitulo = (obraSlug: string, capituloId: number): Capitulo | null => {
-    const capitulos = getCapitulosPorObra(obraSlug)
+// Função helper para buscar capítulo específico (agora assíncrona e usando arquivos individuais)
+export const getCapitulo = async (obraSlug: string, capituloId: number): Promise<Capitulo | null> => {
+    // Tentar carregar o arquivo individual do capítulo
+    const key = `./${obraSlug}/capitulos/${capituloId}.json`
+    if (key in individualChapterFiles) {
+        const module = await individualChapterFiles[key]() as any
+        return module.default || module
+    }
+
+    // Fallback para o arquivo de todos os capítulos
+    const capitulos = await getCapitulosPorObra(obraSlug)
     return capitulos.find(cap => cap.id === capituloId) || null
 }
 

@@ -1,0 +1,26 @@
+{
+    "id": "aparencias",
+    "meta": {
+        "titulo": "Aparências",
+        "tituloAlternativo": "Aparencias, lookskin",
+        "descricao": "Daniel é um solitário pouco atraente que acorda em um corpo diferente. Agora alto, bonito e mais legal do que nunca em sua nova forma, Daniel pretende alcançar tudo o que não conseguiu antes. Até onde ele irá para manter seu corpo... e seus segredos?",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/34ecd5d066666939_1770167925100333641.webp",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Ação",
+        "Comédia",
+        "Drama",
+        "Escolar",
+        "Luta",
+        "Shounen",
+        "sobrenatural"
+    ]
+}

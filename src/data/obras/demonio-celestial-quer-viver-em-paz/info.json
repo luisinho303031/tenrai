@@ -1,22 +1,24 @@
 {
-  "id": "demonio-celestial-quer-viver-em-paz",
-  "meta": {
-    "titulo": "Demônio Celestial Quer Viver em Paz",
-    "tituloAlternativo": "",
-    "descricao": "\"Eu quero viver de maneira oposta na minha próxima vida...\" Cheonma, que tinha apenas medo e admiração, obtém uma pista para aprender adequadamente magia espiritual em sua morte. Magia espiritual não se trata apenas de cobiçar as almas dos outros. Assim, Cheonma acorda no corpo de Confúcio Byeoktaesan, que pode morrer a qualquer momento...",
-    "ano": 2026,
-    "status": "Em Andamento",
-    "autor": "",
-    "artista": ""
-  },
-  "imagens": {
-    "capa": "https://cdn.nexustoons.com/covers/3279fe6c180ae65a_1770653468318384385.webp",
-    "banner": ""
-  },
-  "generos": [
-    "Ação",
-    "Aventura",
-    "Fantasia",
-    "Artes Marciais"
-  ]
+    "id": "demonio-celestial-quer-viver-em-paz",
+    "meta": {
+        "titulo": "Demônio Celestial Quer Viver em Paz",
+        "tituloAlternativo": "",
+        "descricao": "\"Eu quero viver de maneira oposta na minha próxima vida...\" Cheonma, que tinha apenas medo e admiração, obtém uma pista para aprender adequadamente magia espiritual em sua morte. Magia espiritual não se trata apenas de cobiçar as almas dos outros. Assim, Cheonma acorda no corpo de Confúcio Byeoktaesan, que pode morrer a qualquer momento...",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/3279fe6c180ae65a_1770653468318384385.webp",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Ação",
+        "Demônios",
+        "Fantasia",
+        "Reencarnação",
+        "Shounen"
+    ]
 }

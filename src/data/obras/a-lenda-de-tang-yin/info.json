@@ -1,0 +1,26 @@
+{
+    "id": "a-lenda-de-tang-yin",
+    "meta": {
+        "titulo": "A Lenda de Tang Yin",
+        "tituloAlternativo": "",
+        "descricao": "Possuindo força extraordinária, mas um fracassado na vida real, Tang Yin é um assassino que vive na obscuridade.  Superar seus próprios limites em batalha é sua única busca. Seu nome, uma lenda em si.",
+        "ano": 2026,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/62d164a71ffc9a0e_1770226577577381937.jpg",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Aventura",
+        "Ação",
+        "Cultivo",
+        "Fantasia",
+        "Histórico",
+        "Isekai",
+        "Romance"
+    ]
+}

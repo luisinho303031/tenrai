@@ -1,0 +1,25 @@
+{
+    "id": "o-maior-do-mundo",
+    "meta": {
+        "titulo": "O Maior do Mundo",
+        "tituloAlternativo": "",
+        "descricao": "Não precisa de longas explicações. Eu sou o maior do mundo.",
+        "ano": 2026,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/1780f8d1400a978c_1770217625650950769.jpg",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Aventura",
+        "Ação",
+        "Drama",
+        "Fantasia",
+        "Shounen",
+        "sobrenatural"
+    ]
+}

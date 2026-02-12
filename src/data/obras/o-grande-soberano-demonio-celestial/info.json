@@ -1,22 +1,21 @@
 {
-  "id": "o-grande-soberano-demonio-celestial",
-  "meta": {
-    "titulo": "O Grande Soberano Demônio Celestial",
-    "tituloAlternativo": "The Divine Demon's Grand Ascension",
-    "descricao": "Ainda na infância, Bu Eunseol perdeu seu avô para um assassino misterioso. Buscando vingança, ele se tornará mestre das artes marciais das dez seitas demoníacas e enfrentará incontáveis chacinas para se tornar o mais forte. \"Eu vou te encontrar, e eu vou te matar.\" Agora, no núcleo onde todos os demônios residem, o demônio celestial desperta.",
-    "ano": 2026,
-    "status": "Em Andamento",
-    "autor": "",
-    "artista": ""
-  },
-  "imagens": {
-    "capa": "https://cdn.nexustoons.com/covers/be29fe521c8bbbbe_1770163670804902851.webp",
-    "banner": ""
-  },
-  "generos": [
-    "Ação",
-    "Fantasia",
-    "Aventura",
-    "Artes Marciais"
-  ]
+    "id": "o-grande-soberano-demonio-celestial",
+    "meta": {
+        "titulo": "O Grande Soberano Demônio Celestial",
+        "tituloAlternativo": "신마대제, The Divine Demon's Grand Ascension, A Ascensão do Supremo Demônio Celestial",
+        "descricao": "Ainda na infância, Bu Eunseol perdeu seu avô para um assassino misterioso. Buscando vingança, ele se tornará mestre das artes marciais das dez seitas demoníacas e enfrentará incontáveis chacinas para se tornar o mais forte. \"Eu vou te encontrar, e eu vou te matar.\" Agora, no núcleo onde todos os demônios residem, o demônio celestial desperta.",
+        "ano": 2025,
+        "status": "Em andamento",
+        "autor": "",
+        "artista": ""
+    },
+    "imagens": {
+        "capa": "https://cdn.nexustoons.com/covers/be29fe521c8bbbbe_1770163670804902851.webp",
+        "banner": ""
+    },
+    "generos": [
+        "Artes Marciais",
+        "Ação",
+        "Histórico"
+    ]
 }

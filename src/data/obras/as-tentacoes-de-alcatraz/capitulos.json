@@ -1,0 +1,88 @@
+{
+    "capitulos": [
+        {
+            "id": 227277,
+            "numero": 14,
+            "titulo": "Capítulo 14",
+            "dataPublicacao": "2026-02-08T00:10:04.903300+00:00"
+        },
+        {
+            "id": 227266,
+            "numero": 13,
+            "titulo": "Capítulo 13",
+            "dataPublicacao": "2026-02-08T00:08:24.706609+00:00"
+        },
+        {
+            "id": 227254,
+            "numero": 12,
+            "titulo": "Capítulo 12",
+            "dataPublicacao": "2026-02-08T00:06:34.617481+00:00"
+        },
+        {
+            "id": 227243,
+            "numero": 11,
+            "titulo": "Capítulo 11",
+            "dataPublicacao": "2026-02-08T00:04:23.419648+00:00"
+        },
+        {
+            "id": 227232,
+            "numero": 10,
+            "titulo": "Capítulo 10",
+            "dataPublicacao": "2026-02-08T00:02:27.681191+00:00"
+        },
+        {
+            "id": 227220,
+            "numero": 9,
+            "titulo": "Capítulo 9",
+            "dataPublicacao": "2026-02-08T00:00:03.376789+00:00"
+        },
+        {
+            "id": 227205,
+            "numero": 8,
+            "titulo": "Capítulo 8",
+            "dataPublicacao": "2026-02-07T23:57:38.687156+00:00"
+        },
+        {
+            "id": 227189,
+            "numero": 7,
+            "titulo": "Capítulo 7",
+            "dataPublicacao": "2026-02-07T23:56:25.942759+00:00"
+        },
+        {
+            "id": 228028,
+            "numero": 6,
+            "titulo": "Capítulo 6",
+            "dataPublicacao": "2026-02-08T02:49:51.312770+00:00"
+        },
+        {
+            "id": 227174,
+            "numero": 4,
+            "titulo": "Capítulo 4",
+            "dataPublicacao": "2026-02-07T23:49:13.119508+00:00"
+        },
+        {
+            "id": 227165,
+            "numero": 3,
+            "titulo": "Capítulo 3",
+            "dataPublicacao": "2026-02-07T23:46:50.072194+00:00"
+        },
+        {
+            "id": 227156,
+            "numero": 2,
+            "titulo": "Capítulo 2",
+            "dataPublicacao": "2026-02-07T23:45:13.644483+00:00"
+        },
+        {
+            "id": 227139,
+            "numero": 1,
+            "titulo": "Capítulo 1",
+            "dataPublicacao": "2026-02-07T23:42:24.787692+00:00"
+        },
+        {
+            "id": 227116,
+            "numero": 0,
+            "titulo": "Capítulo 0",
+            "dataPublicacao": "2026-02-07T23:39:00.082847+00:00"
+        }
+    ]
+}
